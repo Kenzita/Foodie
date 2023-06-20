@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    display: block;
+}
+
+// HEADER & FOOTER
+header {
+    background-image: url(../img/NavBar_Bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+        width: 13%;
+    }
+
+    nav {
+        width: 73%;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            font-size: 0;
+            li{
+                a{font-size: 1.63vw;
+                color: black;}
+            }
+        }
+    }
+}
+
+footer{
+    background-color: #F7D776;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 15%;
+    }
+    p{
+        font-size: 1.06vw;
+        margin: .5%;
+    }
+    .reseaux{margin-top: 1%;
+        width: 10%;
+        display: flex;
+        justify-content: space-around;
+        a{
+            img{
+                width: 90%;
+            }
+        }
+    }
+    p:last-child{
+        font-size: .65vw;
+        margin-top: 4%;
+        margin-bottom: 1%;
+    }
+}
+
+// BODY → POSTS
+.FoodieFinds{
+    .FindsFeed{
+        width: 63%;
+        margin: 0 auto;
+        font-weight: 400;
+        .FindsPost1{
+            width: 74%;
+            display: flex;
+            .FindsTxt{
+                display: flex;
+                flex-direction: column;
+                width: 53%;
+                background-color: #F7D776;
+                border-top-left-radius: 18%;
+                .users{
+                    display: flex;
+                    align-items: center;
+                    padding: 3.5vh 1.5vw 1vh;
+                    img{
+                        width: 25%;
+                    }
+                    .userInfos{
+                        padding: 0 1vw;
+                        .userNames{
+                            font-size: 1.31vw;
+                            // font-weight: 500;
+                        }
+                        .userRanks{
+                            font-size: .8vw;
+                        }
+                    }
+                }
+                .PostContent{
+                    padding: 0 2vw;
+                    .PostRestaurants{
+                        font-size: 1.2vw;
+                        text-align: center;
+                        padding-bottom: 1vh;
+                    }
+                    .Post{
+                        font-size: 1.06vw;
+                    }
+                }
+            }
+        }
+        .FindsImg{
+            width: 47%;
+            img{
+                width: 100%;
+                border-bottom-right-radius: 15%;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+header {
+  background-image: url(../img/NavBar_Bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header img {
+  width: 13%;
+}
+header nav {
+  width: 73%;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 0;
+}
+header nav ul li a {
+  font-size: 1.63vw;
+  color: black;
+}
+
+footer {
+  background-color: #F7D776;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer img {
+  width: 15%;
+}
+footer p {
+  font-size: 1.06vw;
+  margin: 0.5%;
+}
+footer .reseaux {
+  margin-top: 1%;
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+footer .reseaux a img {
+  width: 90%;
+}
+footer p:last-child {
+  font-size: 0.65vw;
+  margin-top: 4%;
+  margin-bottom: 1%;
+}
+
+.FoodieFinds .FindsFeed {
+  width: 63%;
+  margin: 0 auto;
+  font-weight: 400;
+}
+.FoodieFinds .FindsFeed .FindsPost1 {
+  width: 74%;
+  display: flex;
+}
+.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt {
+  display: flex;
+  flex-direction: column;
+  width: 53%;
+  background-color: #F7D776;
+  border-top-left-radius: 18%;
+}
+.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .users {
+  display: flex;
+  align-items: center;
+  padding: 3.5vh 1.5vw 1vh;
+}
+.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .users img {
+  width: 25%;
+}
+.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .users .userInfos {
+  padding: 0 1vw;
+}
+.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .users .userInfos .userNames {
+  font-size: 1.31vw;
+}
+.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .users .userInfos .userRanks {
+  font-size: 0.8vw;
+}
+.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .PostContent {
+  padding: 0 2vw;
+}
+.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .PostContent .PostRestaurants {
+  font-size: 1.2vw;
+  text-align: center;
+  padding-bottom: 1vh;
+}
+.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .PostContent .Post {
+  font-size: 1.06vw;
+}
+.FoodieFinds .FindsFeed .FindsImg {
+  width: 47%;
+}
+.FoodieFinds .FindsFeed .FindsImg img {
+  width: 100%;
+  border-bottom-right-radius: 15%;
+}/*# sourceMappingURL=FoodieFinds.css.map */
