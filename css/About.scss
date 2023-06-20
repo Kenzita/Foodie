@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    display: block;
+}
+
+header {
+    background-image: url(../img/NavBar_Bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    img {
+        width: 13%;
+    }
+
+    nav {
+        width: 73%;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            font-size: 0;
+
+            li {
+                a {
+                    font-size: 25px;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #F7D776;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 15%;
+    }
+
+    p {
+        margin: .5%;
+    }
+
+    .reseaux {
+        margin-top: 1%;
+        width: 10%;
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            img {
+                width: 90%;
+            }
+        }
+    }
+
+    p:last-child {
+        font-size: 10px;
+        margin-top: 4%;
+        margin-bottom: 1%;
+    }
+}
+
+
+main {
+    h1 {
+        font-weight: 700;
+        font-size: 4vw;
+        color: #F29727;
+        text-align: center;
+        margin: 3vw;
+        margin-bottom: 2.5vh;
+    }
+
+    .notrehistoire {
+        margin: 3vw auto;
+        border-radius: 3em;
+        background-color: #F7D776;
+        width: 50%;
+
+        .aventure {
+            margin: 10vh;
+            position: relative;
+            width: 55%;
+
+            .histoiretexte {
+                padding-top: 3.5vh;
+
+
+                h2 {
+                    text-align: center;
+                    padding-bottom: 4vh;
+                }
+
+                p {
+                    padding-bottom: 6vh;
+                    font-size: 1em;
+                }
+            }
+
+            img {
+                width: 100%;
+                position: absolute;
+                left: 105%;
+                top: -10%;
+                border-radius: 5%;
+            }
+        }
+    }
+
+    .dreamteam{
+background-color: #CEE8A8 ;
+
+h2{
+    text-align: center;
+    padding: 5vh;
+}
+
+.profils{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+
+    .profil{
+        width: 23vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 5vh;
+
+        p{
+            padding-top: 7vh;
+            text-align: center;
+        span{
+            font-weight: bold;
+        }}
+    }
+}
+    }
+
+    .notresite {
+        margin: 3vw auto;
+        border-radius: 30px;
+        background-color: #F7D776;
+        width: 50%;
+      
+
+        .site {
+            margin: 10vh;
+            position: relative;
+            width: 43%;
+
+            .sitetexte {
+                padding-top: 3.5vh;
+                width:27vw;
+                h2 {
+                    text-align: center;
+                    padding-bottom: .5vh;
+                }
+
+                p {
+                    padding: 4vh 0;
+                    font-size: 1em;
+                  
+                }
+            }
+
+            img {
+                width: 90%;
+                position: absolute;
+                left: -40vh;
+                top: -7vh;
+                border-radius: 3em;
+            }
+        }
+    }
+
+
+
+}
