@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  background-image: url(../img/Contact_BG.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img {
+  display: block;
+}
+
+header {
+  background-image: url(../img/NavBar_Bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header img {
+  width: 13%;
+}
+header nav {
+  width: 73%;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 0;
+}
+header nav ul li a {
+  font-size: 25px;
+  color: black;
+}
+
+footer {
+  background-color: #F7D776;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer img {
+  width: 15%;
+}
+footer p {
+  margin: 0.5%;
+}
+footer .reseaux {
+  margin-top: 1%;
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+footer .reseaux a img {
+  width: 90%;
+}
+footer p:last-child {
+  font-size: 10px;
+  margin-top: 4%;
+  margin-bottom: 1%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .titre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .titre h1 {
+  font-size: 3em;
+  color: #F29727;
+  text-align: center;
+  padding: 6vh 0 5vh;
+}
+main .titre p:first-of-type {
+  text-align: center;
+  width: 58vw;
+  font-size: 1em;
+  font-weight: 200;
+}
+main .titre p:nth-of-type(2) {
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+main .titre p:nth-of-type(3) {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+  padding: 5vh;
+}
+main .formulaire {
+  width: 50vw;
+}
+main .formulaire .form1 {
+  display: flex;
+  align-items: last baseline;
+}
+main .formulaire .form1 fieldset {
+  border: none;
+}
+main .formulaire .form1 fieldset p {
+  display: flex;
+  flex-direction: column;
+  padding: 1vh 0;
+  width: 30vw;
+}
+main .formulaire .form1 fieldset p label {
+  font-size: 1em;
+  margin-left: 2vw;
+}
+main .formulaire .form1 fieldset p input {
+  border: none;
+  background-color: #E2E2E2;
+  margin-left: 1.5vh;
+  border-radius: 3em;
+  padding: 0.6vw;
+}
+main .formulaire .form1 fieldset p select {
+  border: none;
+  background-color: #E2E2E2;
+  margin-left: 1.5vh;
+  border-radius: 3em;
+  padding: 0.5vw;
+}
+main .formulaire .boxmessage .RGPDs input {
+  margin: 0;
+  display: inline-block;
+  width: 5vw;
+}
+main .formulaire .boxmessage .RGPDs label {
+  font-size: 0.6em;
+  width: 20vw;
+}
+main .formulaire .boxmessage .messages p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .formulaire .boxmessage .messages p label {
+  align-self: flex-start;
+  margin-left: 1.5vw;
+}
+main .formulaire .boxmessage .messages p textarea {
+  padding: 1vw;
+  background-color: #E2E2E2;
+  border: none;
+  font-family: poppins;
+  border-radius: 3em;
+}
+main .formulaire .boxmessage input {
+  background-color: #FDF5DE;
+  color: #F29727;
+  padding: 1vh 5vw;
+  font-size: 2em;
+  border: none;
+  border-radius: 3em;
+  margin: 5vh 0 10vh;
+  position: relative;
+  left: 18vw;
+}/*# sourceMappingURL=contactbtb.css.map */
