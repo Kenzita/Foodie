@@ -8,6 +8,7 @@
 body {
   background-color: white;
   font-family: "Poppins", sans-serif;
+  background-image: url(../img/Contact_BG.svg);
 }
 
 img {
@@ -136,14 +137,14 @@ main .formulaire .form1 fieldset p select {
   border-radius: 3em;
   padding: 0.5vw;
 }
-main .formulaire .boxmessage .RGPDs input {
-  margin: 0;
-  display: inline-block;
-  width: 5vw;
+main .formulaire .boxmessage .RGPDs {
+  width: 59vw;
+  display: flex;
+  justify-content: flex-end;
 }
-main .formulaire .boxmessage .RGPDs label {
+main .formulaire .boxmessage .RGPDs p {
   font-size: 0.6em;
-  width: 20vw;
+  margin-left: 1vw;
 }
 main .formulaire .boxmessage .messages p {
   display: flex;
@@ -162,7 +163,7 @@ main .formulaire .boxmessage .messages p textarea {
   font-family: poppins;
   border-radius: 3em;
 }
-main .formulaire .boxmessage input {
+main .formulaire .boxmessage .btn-submit {
   background-color: #FDF5DE;
   color: #F29727;
   padding: 1vh 5vw;
