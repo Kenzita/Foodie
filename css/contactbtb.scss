@@ -167,15 +167,13 @@ main {
         .boxmessage {
             .RGPDs {
 
-                input {
-                    margin: 0;
-                    display: inline-block;
-                    width: 5vw;
-                }
-
-                label {
+                width: 59vw;
+                display: flex;
+                justify-content: flex-end;
+        
+                p {
                     font-size: .6em;
-                    width: 20vw;
+     margin-left: 1vw;
                 }
           
             }
@@ -200,11 +198,9 @@ main {
                         border-radius: 3em;
                     }
                 }
-
-
             }
 
-            input {
+            .btn-submit {
                 background-color: #FDF5DE;
                 color: #F29727;
                 padding: 1vh 5vw;
