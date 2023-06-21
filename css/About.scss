@@ -120,7 +120,7 @@ main {
             }
 
             img {
-                width: 100%;
+                width: 95%;
                 position: absolute;
                 left: 105%;
                 top: -10%;
@@ -129,36 +129,38 @@ main {
         }
     }
 
-    .dreamteam{
-background-color: #CEE8A8 ;
+    .dreamteam {
+        background-color: #CEE8A8;
 
-h2{
-    text-align: center;
-    padding: 5vh;
-}
-
-.profils{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 5vh;
-
-    .profil{
-        width: 23vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 5vh;
-
-        p{
-            padding-top: 7vh;
+        h2 {
             text-align: center;
-        span{
-            font-weight: bold;
-        }}
-    }
-}
+            padding: 5vh;
+        }
+
+        .profils {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 5vh;
+
+            .profil {
+                width: 23vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: first baseline;
+                padding-bottom: 5vh;
+
+                p {
+                    padding-top: 7vh;
+                    text-align: center;
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
     }
 
     .notresite {
@@ -166,7 +168,7 @@ h2{
         border-radius: 30px;
         background-color: #F7D776;
         width: 50%;
-      
+
 
         .site {
             margin: 10vh;
@@ -175,21 +177,22 @@ h2{
 
             .sitetexte {
                 padding-top: 3.5vh;
-                width:27vw;
+                width: 27vw;
+
                 h2 {
                     text-align: center;
                     padding-bottom: .5vh;
                 }
 
                 p {
-                    padding: 5vh 0;
+                    padding: 5.5vh 0;
                     font-size: 1em;
-                  
+
                 }
             }
 
             img {
-                width: 90%;
+                width: 95%;
                 position: absolute;
                 left: 140%;
                 top: -14%;
@@ -200,4 +203,210 @@ h2{
 
 
 
+}
+
+// --------------------------- Responsive
+
+@media screen and (max-width: 1200px) {
+    main {
+        .notrehistoire {
+            .aventure {
+                img {
+                    width: 100%;
+                    position: absolute;
+                    left: 105%;
+                    top: 13%;
+                    border-radius: 5%;
+                }
+            }
+        }
+
+        .notresite {
+            .site{
+                img{
+                    width: 100%;
+                    position: absolute;
+                    left: 140%;
+                    top: 5%;
+                    border-radius: 5%; 
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        .notrehistoire{
+            .aventure{
+                .histoiretexte{
+padding-top: 2vh;
+
+h2{
+    font-size: 1.3em;
+}
+
+p{
+    font-size: .8em;
+}
+               }
+               img {
+             
+                left: 105%;
+                top: 10%;
+               
+            }
+            }
+        }
+
+        .dreamteam{
+            .profils{
+                .profil{
+                    img{
+                        width: 85%
+                    }
+                    p{
+                        font-size: .9em;
+                    }
+                }
+            }
+        }
+        .notresite{
+            .site{
+                .sitetexte{
+padding-top: 2vh;
+
+h2{
+    font-size: 1.3em;
+}
+
+p{
+    font-size: .8em;
+}
+               }
+               img {
+                width: 90%;
+                position: absolute;
+                left: 140%;
+                top: 4%;
+                border-radius: 5%;
+            }
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    header{
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .notrehistoire{
+            .aventure{
+               img {
+                top: 13%;
+            }
+            }
+        }
+        .notresite{
+            .site{
+               img {
+                top: 7%
+            }
+            }
+        }
+
+    }
+
+}
+@media screen and (max-width: 768px) {
+    header{
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .notrehistoire{
+            width: 70%;
+            .aventure{
+               img {
+                top: 9%;
+                width: 85%;
+           
+            }
+            }
+        }
+
+        .dreamteam{
+            .profils{
+                .profil{
+                    p{
+                        font-size: .7em;
+                    }
+                }
+            }
+        }
+        .notresite{
+            width: 70%;
+            .site{
+
+                .sitetexte{
+                    width: 40vw;
+                }
+               img {
+                top: 4%;
+                width: 80%;
+               
+            }
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    header{
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        p{
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+
+    main {
+
+    .notrehistoire{
+        width: 100%;
+        border-radius: 0px;
+        
+    }}
 }

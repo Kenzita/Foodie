@@ -99,7 +99,7 @@ main .notrehistoire .aventure .histoiretexte p {
   font-size: 1em;
 }
 main .notrehistoire .aventure img {
-  width: 100%;
+  width: 95%;
   position: absolute;
   left: 105%;
   top: -10%;
@@ -123,7 +123,7 @@ main .dreamteam .profils .profil {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: first baseline;
   padding-bottom: 5vh;
 }
 main .dreamteam .profils .profil p {
@@ -153,13 +153,116 @@ main .notresite .site .sitetexte h2 {
   padding-bottom: 0.5vh;
 }
 main .notresite .site .sitetexte p {
-  padding: 5vh 0;
+  padding: 5.5vh 0;
   font-size: 1em;
 }
 main .notresite .site img {
-  width: 90%;
+  width: 95%;
   position: absolute;
   left: 140%;
   top: -14%;
   border-radius: 5%;
+}
+
+@media screen and (max-width: 1200px) {
+  main .notrehistoire .aventure img {
+    width: 100%;
+    position: absolute;
+    left: 105%;
+    top: 13%;
+    border-radius: 5%;
+  }
+  main .notresite .site img {
+    width: 100%;
+    position: absolute;
+    left: 140%;
+    top: 5%;
+    border-radius: 5%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main .notrehistoire .aventure .histoiretexte {
+    padding-top: 2vh;
+  }
+  main .notrehistoire .aventure .histoiretexte h2 {
+    font-size: 1.3em;
+  }
+  main .notrehistoire .aventure .histoiretexte p {
+    font-size: 0.8em;
+  }
+  main .notrehistoire .aventure img {
+    left: 105%;
+    top: 10%;
+  }
+  main .dreamteam .profils .profil img {
+    width: 85%;
+  }
+  main .dreamteam .profils .profil p {
+    font-size: 0.9em;
+  }
+  main .notresite .site .sitetexte {
+    padding-top: 2vh;
+  }
+  main .notresite .site .sitetexte h2 {
+    font-size: 1.3em;
+  }
+  main .notresite .site .sitetexte p {
+    font-size: 0.8em;
+  }
+  main .notresite .site img {
+    width: 90%;
+    position: absolute;
+    left: 140%;
+    top: 4%;
+    border-radius: 5%;
+  }
+}
+@media screen and (max-width: 960px) {
+  header nav ul li a {
+    font-size: 23px;
+  }
+  main .notrehistoire .aventure img {
+    top: 13%;
+  }
+  main .notresite .site img {
+    top: 7%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header nav ul li a {
+    font-size: 18px;
+  }
+  main .notrehistoire {
+    width: 70%;
+  }
+  main .notrehistoire .aventure img {
+    top: 9%;
+    width: 85%;
+  }
+  main .dreamteam .profils .profil p {
+    font-size: 0.7em;
+  }
+  main .notresite {
+    width: 70%;
+  }
+  main .notresite .site .sitetexte {
+    width: 40vw;
+  }
+  main .notresite .site img {
+    top: 4%;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  header nav ul li a {
+    font-size: 12px;
+  }
+  footer p {
+    text-align: center;
+    font-size: 12px;
+  }
+  main .notrehistoire {
+    width: 100%;
+    border-radius: 0px;
+  }
 }/*# sourceMappingURL=About.css.map */
