@@ -27,6 +27,35 @@
     </header>
 
     <div class="FoodieFinds">
+        <div id="toggle"></div>
+        <div id="FindsNavCities">
+            <div id="FindsNav">
+                <input type="text" placeholder="Rechercher une ville" id="search">
+                <p id="menu">Menu</p>
+            </div>
+            <nav>
+                <div class="FindsCities">
+                    <img src="img/Finds_Lille.png" alt="Photo de la gare Lille Flandres">
+                    <p class="CityNames">LILLE</p>
+                </div>
+                <div class="FindsCities">
+                    <img src="img/Finds_Lens.png" alt="Photo de la place Jean Jaurès à Lens">
+                    <p class="CityNames">LENS</p>
+                </div>
+                <div class="FindsCities">
+                    <img src="img/Finds_Arras.png" alt="Photo du beffroi d'Arras">
+                    <p class="CityNames">ARRAS</p>
+                </div>
+                <div class="FindsCities">
+                    <img src="img/Finds_Béthune.png" alt="Photo du beffroi de Béthune">
+                    <p class="CityNames">BÉTHUNE</p>
+                </div>
+                <div class="FindsCities">
+                    <img src="img/Finds_Valenciennes.png" alt="Photo du vieux château d'eau de Valenciennes">
+                    <p class="CityNames">VALENCIENNES</p>
+                </div>
+            </nav>
+        </div>
         <div class="FindsFeed">
             <div class="FindsPostYellow">
                 <div class="FindsTxt">
@@ -153,6 +182,22 @@
             Mentions légales</p>
     </footer>
 
+    <!-- SCRIPT MENU BURGER -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        const toggle = document.getElementById('toggle');
+        const navigation = document.getElementById('FindsNavCities');
+        document.onclick = function(e) {
+            if(e.target.id !== 'toggle' && e.target.id !== 'FindsNavCities'){
+                toggle.classList.remove('active');
+                FindsNavCities.classList.remove('active');
+            }
+        }
+        toggle.onclick = function(){
+            toggle.classList.toggle('active')
+            FindsNavCities.classList.toggle('active')
+        }    
+    </script>
 </body>
 
 </html>
