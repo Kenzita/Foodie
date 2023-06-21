@@ -3,6 +3,7 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,7 +15,7 @@ img {
     display: block;
 }
 
-// HEADER & FOOTER
+// HEADER
 header {
     background-image: url(../img/NavBar_Bg.svg);
     background-repeat: no-repeat;
@@ -23,7 +24,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    margin-bottom: 4vh;
+    box-shadow: 0 -1vh 2vh;
     img {
         width: 13%;
     }
@@ -44,12 +46,14 @@ header {
     }
 }
 
+// FOOTER
 footer{
     background-color: #F7D776;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 4vh;
     img{
         width: 15%;
     }
@@ -80,8 +84,11 @@ footer{
         width: 63%;
         margin: 0 auto;
         font-weight: 400;
-        .FindsPost1{
+        display: flex;
+        flex-direction: column;
+        .FindsPostYellow{
             width: 74%;
+            padding: 4vh 0;
             display: flex;
             .FindsTxt{
                 display: flex;
@@ -89,82 +96,149 @@ footer{
                 width: 53%;
                 background-color: #F7D776;
                 border-top-left-radius: 14.92% 20%;
-                .users{
-                    display: flex;
-                    align-items: center;
-                    padding: 3.8vh 2vw 1vh;
-                    img{
-                        width: 25%;
-                    }
-                    .userInfos{
-                        padding: 0 1vw;
-                        .userNames{
-                            font-size: 1.31vw;
-                            // font-weight: 500;
-                        }
-                        .userRanks{
-                            font-size: .8vw;
-                            margin-top: -.5vh;
-                        }
-                    }
-                }
                 .FindsLine{
                     height: .5%;
                     width: 50%;
                     margin: 0 auto 1vh;
                     background-color: #FAE7AD;
                 }
-                .PostContent{
-                    padding: 0 2vw;
-                    .PostRestaurants{
-                        font-size: 1.2vw;
-                        text-align: center;
-                        padding-bottom: 1vh;
-                    }
-                    .Post{
-                        font-size: 1.06vw;
-                    }
-                }
             }
         }
-        .FindsImg{
-            width: 47%;
-            position: relative;
-            img{
-                width: 100%;
-                border-bottom-right-radius: 16.785% 20%;
-            }
-            #options{
-                width: 10%;
-                height: 2.371%;
-                position: absolute;
-                top: 5%;
-                right: 5%;
-                .dots{
-                    width: 20%;
-                    height: 100%;
-                    border-radius: 50%;
-                    border: .07vw solid #858585;
-                    background-color: #d9d9d9;
-                    &::before, &::after{
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    width: 16.41%;
-                    height: 82.1%;
-                    border-radius: 50%;
-                    border: .07vw solid #858585;
-                    background-color: #d9d9d9;
-                    }
-                    &::before{
-                        left: 40%;
-                    }
-                    &::after{
-                        left: 80%;
-                    }
+        .FindsPostGreen{
+            width: 74%;
+            padding: 4vh 0;
+            display: flex;
+            align-self: flex-end;
+            .FindsTxt{
+                display: flex;
+                flex-direction: column;
+                width: 53%;
+                background-color: #CEE8A8;
+                border-top-left-radius: 14.92% 20%;
+                .FindsLine{
+                    height: .5%;
+                    width: 50%;
+                    margin: 0 auto 1vh;
+                    background-color: #e5f5cc;
                 }
             }
         }
     }
 }
 
+.users{
+    display: flex;
+    align-items: center;
+    padding: 3.8vh 2vw 1vh;
+    img{
+        width: 25%;
+    }
+    .userInfos{
+        padding: 0 1vw;
+        .userNames{
+            font-size: 1.31vw;
+        }
+        .userRanks{
+            font-size: .8vw;
+            margin-top: -.5vh;
+        }
+    }
+}
+
+.PostContent{
+    padding: 0 2vw;
+    .PostRestaurants{
+        font-size: 1.2vw;
+        text-align: center;
+        padding-bottom: 1vh;
+    }
+    .Post{
+        font-size: 1.06vw;
+    }
+}
+
+.FindsImg{
+    width: 47%;
+    position: relative;
+    img{
+        width: 100%;
+        border-bottom-right-radius: 16.785% 20%;
+    }
+    .options{
+        width: 10%;
+        height: 2.371%;
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        .dots{
+            width: 20%;
+            height: 100%;
+            border-radius: 50%;
+            border: .07vw solid .858585;
+            background-color: #d9d9d9;
+            &::before, &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 16.41%;
+            height: 82.1%;
+            border-radius: 50%;
+            border: .07vw solid #858585;
+            background-color: #d9d9d9;
+            }
+            &::before{
+                left: 40%;
+            }
+            &::after{
+                left: 80%;
+            }
+        }
+    }
+    .like{
+        position: absolute;
+        background-color: #d9d9d9;
+        width: 4%;
+        height: 4.742%;
+        transform: rotate(45deg);
+        bottom: 10%;
+        right: 10%;
+        z-index: 1;
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #d9d9d9;
+        }
+        &::before{
+            left: -50%;
+        }
+        &::after{
+            top: -50%;
+        }
+    }
+    .like-bg{
+        position: absolute;
+        background-color: #858585;
+        width: 4.12%;
+        height: 4.892%;
+        transform: rotate(45deg);
+        bottom: 9.9%;
+        right: 9.9%;
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #858585;
+        }
+        &::before{
+            left: -50%;
+        }
+        &::after{
+            top: -50%;
+        }
+    }
+}

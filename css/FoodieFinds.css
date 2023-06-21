@@ -3,6 +3,7 @@
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +22,8 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 4vh;
+  box-shadow: 0 -1vh 2vh;
 }
 header img {
   width: 13%;
@@ -45,6 +48,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 4vh;
 }
 footer img {
   width: 15%;
@@ -72,76 +76,101 @@ footer p:last-child {
   width: 63%;
   margin: 0 auto;
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
 }
-.FoodieFinds .FindsFeed .FindsPost1 {
+.FoodieFinds .FindsFeed .FindsPostYellow {
   width: 74%;
+  padding: 4vh 0;
   display: flex;
 }
-.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt {
+.FoodieFinds .FindsFeed .FindsPostYellow .FindsTxt {
   display: flex;
   flex-direction: column;
   width: 53%;
   background-color: #F7D776;
   border-top-left-radius: 14.92% 20%;
 }
-.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .users {
-  display: flex;
-  align-items: center;
-  padding: 3.8vh 2vw 1vh;
-}
-.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .users img {
-  width: 25%;
-}
-.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .users .userInfos {
-  padding: 0 1vw;
-}
-.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .users .userInfos .userNames {
-  font-size: 1.31vw;
-}
-.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .users .userInfos .userRanks {
-  font-size: 0.8vw;
-  margin-top: -0.5vh;
-}
-.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .FindsLine {
+.FoodieFinds .FindsFeed .FindsPostYellow .FindsTxt .FindsLine {
   height: 0.5%;
   width: 50%;
   margin: 0 auto 1vh;
   background-color: #FAE7AD;
 }
-.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .PostContent {
+.FoodieFinds .FindsFeed .FindsPostGreen {
+  width: 74%;
+  padding: 4vh 0;
+  display: flex;
+  align-self: flex-end;
+}
+.FoodieFinds .FindsFeed .FindsPostGreen .FindsTxt {
+  display: flex;
+  flex-direction: column;
+  width: 53%;
+  background-color: #CEE8A8;
+  border-top-left-radius: 14.92% 20%;
+}
+.FoodieFinds .FindsFeed .FindsPostGreen .FindsTxt .FindsLine {
+  height: 0.5%;
+  width: 50%;
+  margin: 0 auto 1vh;
+  background-color: #e5f5cc;
+}
+
+.users {
+  display: flex;
+  align-items: center;
+  padding: 3.8vh 2vw 1vh;
+}
+.users img {
+  width: 25%;
+}
+.users .userInfos {
+  padding: 0 1vw;
+}
+.users .userInfos .userNames {
+  font-size: 1.31vw;
+}
+.users .userInfos .userRanks {
+  font-size: 0.8vw;
+  margin-top: -0.5vh;
+}
+
+.PostContent {
   padding: 0 2vw;
 }
-.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .PostContent .PostRestaurants {
+.PostContent .PostRestaurants {
   font-size: 1.2vw;
   text-align: center;
   padding-bottom: 1vh;
 }
-.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .PostContent .Post {
+.PostContent .Post {
   font-size: 1.06vw;
 }
-.FoodieFinds .FindsFeed .FindsImg {
+
+.FindsImg {
   width: 47%;
   position: relative;
 }
-.FoodieFinds .FindsFeed .FindsImg img {
+.FindsImg img {
   width: 100%;
   border-bottom-right-radius: 16.785% 20%;
 }
-.FoodieFinds .FindsFeed .FindsImg #options {
+.FindsImg .options {
   width: 10%;
   height: 2.371%;
   position: absolute;
-  top: 5%;
-  right: 5%;
+  top: 10%;
+  right: 10%;
 }
-.FoodieFinds .FindsFeed .FindsImg #options .dots {
+.FindsImg .options .dots {
   width: 20%;
   height: 100%;
   border-radius: 50%;
-  border: 0.07vw solid #858585;
+  border: 0.07vw solid 0.858585;
   background-color: #d9d9d9;
 }
-.FoodieFinds .FindsFeed .FindsImg #options .dots::before, .FoodieFinds .FindsFeed .FindsImg #options .dots::after {
+.FindsImg .options .dots::before, .FindsImg .options .dots::after {
   content: "";
   position: absolute;
   top: 0;
@@ -151,9 +180,56 @@ footer p:last-child {
   border: 0.07vw solid #858585;
   background-color: #d9d9d9;
 }
-.FoodieFinds .FindsFeed .FindsImg #options .dots::before {
+.FindsImg .options .dots::before {
   left: 40%;
 }
-.FoodieFinds .FindsFeed .FindsImg #options .dots::after {
+.FindsImg .options .dots::after {
   left: 80%;
+}
+.FindsImg .like {
+  position: absolute;
+  background-color: #d9d9d9;
+  width: 4%;
+  height: 4.742%;
+  transform: rotate(45deg);
+  bottom: 10%;
+  right: 10%;
+  z-index: 1;
+}
+.FindsImg .like::before, .FindsImg .like::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+.FindsImg .like::before {
+  left: -50%;
+}
+.FindsImg .like::after {
+  top: -50%;
+}
+.FindsImg .like-bg {
+  position: absolute;
+  background-color: #858585;
+  width: 4.12%;
+  height: 4.892%;
+  transform: rotate(45deg);
+  bottom: 9.9%;
+  right: 9.9%;
+}
+.FindsImg .like-bg::before, .FindsImg .like-bg::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #858585;
+}
+.FindsImg .like-bg::before {
+  left: -50%;
+}
+.FindsImg .like-bg::after {
+  top: -50%;
 }/*# sourceMappingURL=FoodieFinds.css.map */
