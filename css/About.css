@@ -95,7 +95,7 @@ main .notrehistoire .aventure .histoiretexte h2 {
   padding-bottom: 4vh;
 }
 main .notrehistoire .aventure .histoiretexte p {
-  padding-bottom: 6vh;
+  padding-bottom: 4vh;
   font-size: 1em;
 }
 main .notrehistoire .aventure img {
@@ -153,13 +153,13 @@ main .notresite .site .sitetexte h2 {
   padding-bottom: 0.5vh;
 }
 main .notresite .site .sitetexte p {
-  padding: 4vh 0;
+  padding: 5vh 0;
   font-size: 1em;
 }
 main .notresite .site img {
   width: 90%;
   position: absolute;
-  left: -40vh;
-  top: -7vh;
-  border-radius: 3em;
+  left: 140%;
+  top: -14%;
+  border-radius: 5%;
 }/*# sourceMappingURL=About.css.map */
