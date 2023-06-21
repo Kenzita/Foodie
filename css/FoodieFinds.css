@@ -18,7 +18,6 @@ header {
   background-image: url(../img/NavBar_Bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -83,12 +82,12 @@ footer p:last-child {
   flex-direction: column;
   width: 53%;
   background-color: #F7D776;
-  border-top-left-radius: 18%;
+  border-top-left-radius: 14.92% 20%;
 }
 .FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .users {
   display: flex;
   align-items: center;
-  padding: 3.5vh 1.5vw 1vh;
+  padding: 3.8vh 2vw 1vh;
 }
 .FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .users img {
   width: 25%;
@@ -101,6 +100,13 @@ footer p:last-child {
 }
 .FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .users .userInfos .userRanks {
   font-size: 0.8vw;
+  margin-top: -0.5vh;
+}
+.FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .FindsLine {
+  height: 0.5%;
+  width: 50%;
+  margin: 0 auto 1vh;
+  background-color: #FAE7AD;
 }
 .FoodieFinds .FindsFeed .FindsPost1 .FindsTxt .PostContent {
   padding: 0 2vw;
@@ -115,8 +121,39 @@ footer p:last-child {
 }
 .FoodieFinds .FindsFeed .FindsImg {
   width: 47%;
+  position: relative;
 }
 .FoodieFinds .FindsFeed .FindsImg img {
   width: 100%;
-  border-bottom-right-radius: 15%;
+  border-bottom-right-radius: 16.785% 20%;
+}
+.FoodieFinds .FindsFeed .FindsImg #options {
+  width: 10%;
+  height: 2.371%;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.FoodieFinds .FindsFeed .FindsImg #options .dots {
+  width: 20%;
+  height: 100%;
+  border-radius: 50%;
+  border: 0.07vw solid #858585;
+  background-color: #d9d9d9;
+}
+.FoodieFinds .FindsFeed .FindsImg #options .dots::before, .FoodieFinds .FindsFeed .FindsImg #options .dots::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 16.41%;
+  height: 82.1%;
+  border-radius: 50%;
+  border: 0.07vw solid #858585;
+  background-color: #d9d9d9;
+}
+.FoodieFinds .FindsFeed .FindsImg #options .dots::before {
+  left: 40%;
+}
+.FoodieFinds .FindsFeed .FindsImg #options .dots::after {
+  left: 80%;
 }/*# sourceMappingURL=FoodieFinds.css.map */

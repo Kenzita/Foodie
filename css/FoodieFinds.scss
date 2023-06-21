@@ -19,7 +19,7 @@ header {
     background-image: url(../img/NavBar_Bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    // width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -88,11 +88,11 @@ footer{
                 flex-direction: column;
                 width: 53%;
                 background-color: #F7D776;
-                border-top-left-radius: 18%;
+                border-top-left-radius: 14.92% 20%;
                 .users{
                     display: flex;
                     align-items: center;
-                    padding: 3.5vh 1.5vw 1vh;
+                    padding: 3.8vh 2vw 1vh;
                     img{
                         width: 25%;
                     }
@@ -104,8 +104,15 @@ footer{
                         }
                         .userRanks{
                             font-size: .8vw;
+                            margin-top: -.5vh;
                         }
                     }
+                }
+                .FindsLine{
+                    height: .5%;
+                    width: 50%;
+                    margin: 0 auto 1vh;
+                    background-color: #FAE7AD;
                 }
                 .PostContent{
                     padding: 0 2vw;
@@ -122,9 +129,40 @@ footer{
         }
         .FindsImg{
             width: 47%;
+            position: relative;
             img{
                 width: 100%;
-                border-bottom-right-radius: 15%;
+                border-bottom-right-radius: 16.785% 20%;
+            }
+            #options{
+                width: 10%;
+                height: 2.371%;
+                position: absolute;
+                top: 5%;
+                right: 5%;
+                .dots{
+                    width: 20%;
+                    height: 100%;
+                    border-radius: 50%;
+                    border: .07vw solid #858585;
+                    background-color: #d9d9d9;
+                    &::before, &::after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    width: 16.41%;
+                    height: 82.1%;
+                    border-radius: 50%;
+                    border: .07vw solid #858585;
+                    background-color: #d9d9d9;
+                    }
+                    &::before{
+                        left: 40%;
+                    }
+                    &::after{
+                        left: 80%;
+                    }
+                }
             }
         }
     }
