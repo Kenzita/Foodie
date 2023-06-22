@@ -23,7 +23,8 @@
   <!-- Header -->
   <header>
     <img src="img/FOODIE_LOGO.svg" alt="logoFoodie">
-    <nav>
+    <div id="toggle"></div>
+    <nav id="navigation">
       <ul>
         <li><a href="">FOODIEVILLES</a></li>
         <li><a href="">FOODIEFINDS</a></li>
@@ -34,6 +35,17 @@
   </header>
   <main class="center">
     <h1>FOODIE VILLES</h1>
+
+    <div class="selectVilles">
+      <select name="villes" id="villes">
+        <option value="select" disabled selected>Selectionner une ville</option>
+        <option value="lille">Lille</option>
+        <option value="arras">Arras</option>
+        <option value="lens">Lens</option>
+        <option value="bethune">Béthune</option>
+        <option value="valenciennes">Valenciennes</option>
+      </select>    
+    </div>
 
 
     <div class="carte">
@@ -49,15 +61,19 @@
     </div>
     <div class="cadres">
     <div class="cadre jaune" id="lille">
-      <img src="img/cities-resto1.png" alt="">
+      <div class="cadresImg">
+        <img src="img/cities-resto1.png" alt="">
+      </div>
      <div class="cadretexte" > <h2>Lille</h2>
       <h3>
         Le comptoir des saveurs
       </h3>
       <p> Notre ambiance chaleureuse et notre service attentif vous promettent un moment inoubliable.</p></div>
     </div>
-    <div class="cadre vert" id="Arras">
-      <img src="img/cities-resto2.png" alt="">
+    <div class="cadre vert" id="arras">
+      <div class="cadresImg">
+        <img src="img/cities-resto2.png" alt="">
+      </div>
      <div class="cadretexte" > <h2>Arras</h2>
       <h3>
         Le Jardin Gourmand
@@ -66,7 +82,9 @@
         savoureux.</p></div>
     </div>
     <div class="cadre jaune" id="lens">
-      <img src="img/cities-resto3.png" alt="">
+      <div class="cadresImg">
+        <img src="img/cities-resto3.png" alt="">
+      </div>
      <div class="cadretexte" > <h2>Lens</h2>
       <h3>
         La Table Enchantée
@@ -74,7 +92,9 @@
       <p> Bienvenue dans notre havre gourmand où chaque bouchée est une véritable expérience gustative.</p></div>
     </div>
     <div class="cadre vert" id="bethune">
-      <img src="img/cities-resto4.png" alt="">
+      <div class="cadresImg">
+        <img src="img/cities-resto4.png" alt="">
+      </div>
      <div class="cadretexte" > <h2>Béthune</h2>
       <h3>
         L'Antre des Délices
@@ -83,7 +103,9 @@
         la gastronomie.</p></div>
     </div>
     <div class="cadre jaune" id="valenciennes">
-      <img src="img/cities-resto5.png" alt="">
+      <div class="cadresImg">
+        <img src="img/cities-resto5.png" alt="">
+      </div>
     <div class="cadretexte" >  <h2>Valenciennes</h2>
       <h3>
         Saveurs Urbaines
@@ -114,6 +136,10 @@
       d’utilisation - Politique de cookies - Mentions légales
     </p>
   </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/burger.js"></script>
 </body>
 
 </html>
