@@ -251,6 +251,8 @@ footer{
     }
 }
 
+// MENU / NAVIGATION DES VILLES
+// MENU BURGER
 #toggle{
     position: fixed;
     display: block;
@@ -294,6 +296,8 @@ footer{
     }
 }
 
+// NAVIGATION DES VILLES
+// FOND
 .FoodieFinds{
     display: flex;
     #FindsNavCities{
@@ -317,6 +321,7 @@ footer{
             background-color: #F7D776;
             border-radius: 50% / 1%;
         }
+        // NAVIGATION
         #FindsNav{
             display: flex;
             input{
