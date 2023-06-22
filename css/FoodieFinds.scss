@@ -27,6 +27,7 @@ header {
     margin-bottom: 10vh;
     box-shadow: 0 -1vh 2vh;
     position: fixed;
+    z-index: 99;
     img {
         width: 13%;
     }
@@ -127,6 +128,7 @@ footer{
     padding: 3.8vh 2vw 1vh;
     img{
         width: 25%;
+        cursor: pointer;
     }
     .userInfos{
         padding: 0 1vw;
@@ -157,7 +159,6 @@ footer{
 .FindsImg{
     width: 47%;
     position: relative;
-    z-index: -1;
     img{
         width: 100%;
         border-bottom-right-radius: 16.785% 20%;
@@ -207,35 +208,35 @@ footer{
 
 // MENU / NAVIGATION DES VILLES
 // MENU BURGER
-#toggle{
-    position: fixed;
-    display: block;
-    background-color: #F7D776;
-    width: 1.5vw;
-    height: .4vh;
-    top: 18vh;
-    left: 1.7vw;
-    border-radius: 10% / 50%;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-    z-index: 10;
-    &::before, &::after{
-        content: '';
-        position: absolute;
+    #toggle{
+        position: fixed;
         display: block;
         background-color: #F7D776;
-        border-radius: 10% / 50%;
         width: 1.5vw;
         height: .4vh;
+        top: 18vh;
+        left: 1.7vw;
+        border-radius: 10% / 50%;
+        z-index: 2;
+        cursor: pointer;
         transition: all .3s ease-in-out;
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            display: block;
+            background-color: #F7D776;
+            border-radius: 10% / 50%;
+            width: 1.5vw;
+            height: .4vh;
+            transition: all .3s ease-in-out;
+        }
+        &::before{
+            top: -1vh;
+        }
+        &::after{
+            top: 1vh;
+        }
     }
-    &::before{
-        top: -1vh;
-    }
-    &::after{
-        top: 1vh;
-    }
-}
 
 #toggle.active{
     background-color: transparent;
@@ -257,16 +258,18 @@ footer{
     display: flex;
     #FindsNavCities{
         position: fixed;
-        left: -100%;
+        left: -100vw;
         top: 0;
         z-index: -1;
         width: 20%;
         height: 100vh;
         background-color: #FAE7AD;
-        border-bottom-right-radius: 10% 5.23%;
+        // border-bottom-right-radius: 10% 5.23%;
         overflow-y: scroll;
         overflow-x: hidden;
         box-shadow: -1vw 0 2vw;
+        z-index: 1
+        ;
         &::-webkit-scrollbar{
             background-color: #fffcf1;
             border-radius: 50% / 1%;
@@ -278,10 +281,8 @@ footer{
         }
         // NAVIGATION
         #FindsNav{
-            display: flex;
             input{
                 position: absolute;
-                z-index: 10;
                 top: 16.4vh;
                 left: 5vw;
                 height: 3.5vh;
@@ -289,10 +290,9 @@ footer{
                 border-radius: 7% / 50%;
                 border: 0.2vw solid transparent;
                 background-color: #fffcf1;
-                padding-top: .8vh;
+                padding-left: .4vw;
                 &::placeholder{
                     font-size: 1.06vw;
-                    padding-left: .4vw;
                 }
             }
             #menu{
@@ -330,3 +330,242 @@ footer{
     }
 }
 
+// RESPONSIVE
+@media screen and (max-width: 960px) {
+    header{
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 1.86vw;
+                    }
+                }
+            }
+        }
+    }
+    .FoodieFinds{
+        .FindsFeed{
+            margin: 16vh auto 0;
+            .FindsPostYellow{
+                width: 80%;
+            }
+            .FindsPostGreen{
+                width: 80%;
+            }
+        }
+        #toggle{
+            width: 2.5vw;
+            &::before, &::after{
+                width: 2.5vw;
+            }
+        }
+        #FindsNavCities{
+            width: 25%;
+            #FindsNav{
+                input{
+                    height: 4.5vh;
+                    top: 15.4vh;
+                    border-radius: 12% / 50%;
+                    padding-left: 1vw;
+                    &::placeholder{
+                        font-size: 1.16vw;
+                    }
+                }
+            }
+            nav{
+                margin-top: 21vh;
+                .FindsCities{
+                    .CityNames{
+                        font-size: 1.8vw;
+                    }
+                }
+            }
+        }
+        }
+        #toggle{
+            top: 17vh;
+        }
+    }
+
+@media screen and (max-width: 768px) {
+    header{
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 2.5vw;
+                    }
+                }
+            }
+        }
+    }
+    .FoodieFinds{
+        .FindsFeed{
+            margin: 7vh auto 0;
+            .FindsPostYellow{
+            width: 100%;
+            padding: 2vh 0;
+            }
+            .FindsPostGreen{
+                width: 100%;
+                padding: 2vh 0;
+            }
+            .users{
+                padding: 2vh 3vw .7vh;
+                .userNames{
+                    font-size: 1.71vw;
+                }
+                .userRanks{
+                    font-size: 1vw;
+                    margin-top: -.2vh;
+                }
+            }
+            .PostContent{
+                padding: 0 3vw;
+                .PostRestaurants{
+                    font-size: 1.5vw;
+                }
+                .Post{
+                    font-size: 1.26vw;
+                }
+            }
+            .FindsImg{
+                .options{
+                    font-size: 3vw;
+                }
+                .like{
+                    font-size: 2.7vw;
+                    i{
+                        padding: .5vh .4vw .1vh .4vw;
+                    }
+                }
+                .likeAmount{
+                    font-size: 1vw;
+                    right: 4.7vw;
+                    bottom: 1.6vh;
+                    padding: .1vh 2.5vw .1vh .8vw;
+                }
+            }
+        }
+        #toggle{
+            width: 3.5vw;
+            left: 3vw;
+            top: 9vh;
+            &::before, &::after{
+                width: 3.5vw;
+            }
+        }
+        #FindsNavCities{
+            width: 40vw;
+            #FindsNav{
+                input{
+                    top: 7.5vh;
+                    left: 9vw;
+                    height: 3vh;
+                    border-radius: 10% / 50%;
+                    padding-left: 1vw;
+                    &::placeholder{
+                        font-size: 2vw;
+                    }
+                }
+            }
+            nav{
+                margin-top: 12vh;
+                .FindsCities{
+                    .CityNames{
+                        font-size: 3vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    header{
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 2vw;
+                    }
+                }
+            }
+        }
+    }
+    .FoodieFinds{
+        .FindsFeed{
+            width: 66%;
+            margin: 5.5vh auto 0;
+            .FindsPostYellow{
+                padding: 1.5vh 0;
+            }
+            .FindsPostGreen{
+                padding: 1.5vh 0;
+            }
+            .users{
+                padding: 1.5vh 3vw .5vh;
+                .userNames{
+                    font-size: 1.8vw;
+                }
+                .userRanks{
+                    font-size: 1.1vw;
+                }
+            }
+            .PostContent{
+                .PostRestaurants{
+                    font-size: 1.6vw;
+                }
+                .Post{
+                    font-size: 1.4vw;
+                }
+            }
+            .FindsImg{
+                .options{
+                    font-size: 4vw;
+                }
+                .like{
+                    font-size: 3.7vw;
+                }
+                .likeAmount{
+                    font-size: 1.1vw;
+                    right: 5.3vw;
+                    bottom: 1.25vh;
+                    padding: .1vh 3vw .1vh .8vw;
+                }
+            }
+        }
+        #toggle{
+            width: 7vw;
+            height: .5vh;
+            left: 4.5vw;
+            top: 7.5vh;
+            &::before, &::after{
+                width: 7vw;
+                height: .5vh;
+            }
+        }
+        #FindsNavCities{
+            width: 75vw;
+            #FindsNav{
+                input{
+                    top: 5.8vh;
+                    left: 15vw;
+                    height: 4vh;
+                    border-radius: 10% / 50%;
+                    padding-left: 2.5vw;
+                    &::placeholder{
+                        font-size: 3.5vw;
+                    }
+                }
+            }
+            nav{
+                .FindsCities{
+                    .CityNames{
+                        font-size: 5vw;
+                    }
+                }
+            }
+        }
+    }
+}

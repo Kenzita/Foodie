@@ -26,6 +26,7 @@ header {
   margin-bottom: 10vh;
   box-shadow: 0 -1vh 2vh;
   position: fixed;
+  z-index: 99;
 }
 header img {
   width: 13%;
@@ -113,6 +114,7 @@ footer p:last-child {
 }
 .users img {
   width: 25%;
+  cursor: pointer;
 }
 .users .userInfos {
   padding: 0 1vw;
@@ -140,7 +142,6 @@ footer p:last-child {
 .FindsImg {
   width: 47%;
   position: relative;
-  z-index: -1;
 }
 .FindsImg img {
   width: 100%;
@@ -195,9 +196,9 @@ footer p:last-child {
   top: 18vh;
   left: 1.7vw;
   border-radius: 10%/50%;
+  z-index: 2;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  z-index: 10;
 }
 #toggle::before, #toggle::after {
   content: "";
@@ -235,16 +236,16 @@ footer p:last-child {
 }
 .FoodieFinds #FindsNavCities {
   position: fixed;
-  left: -100%;
+  left: -100vw;
   top: 0;
   z-index: -1;
   width: 20%;
   height: 100vh;
   background-color: #FAE7AD;
-  border-bottom-right-radius: 10% 5.23%;
   overflow-y: scroll;
   overflow-x: hidden;
   box-shadow: -1vw 0 2vw;
+  z-index: 1;
 }
 .FoodieFinds #FindsNavCities::-webkit-scrollbar {
   background-color: #fffcf1;
@@ -255,12 +256,8 @@ footer p:last-child {
   background-color: #F7D776;
   border-radius: 50%/1%;
 }
-.FoodieFinds #FindsNavCities #FindsNav {
-  display: flex;
-}
 .FoodieFinds #FindsNavCities #FindsNav input {
   position: absolute;
-  z-index: 10;
   top: 16.4vh;
   left: 5vw;
   height: 3.5vh;
@@ -268,15 +265,13 @@ footer p:last-child {
   border-radius: 7%/50%;
   border: 0.2vw solid transparent;
   background-color: #fffcf1;
-  padding-top: 0.8vh;
+  padding-left: 0.4vw;
 }
 .FoodieFinds #FindsNavCities #FindsNav input::-moz-placeholder {
   font-size: 1.06vw;
-  padding-left: 0.4vw;
 }
 .FoodieFinds #FindsNavCities #FindsNav input::placeholder {
   font-size: 1.06vw;
-  padding-left: 0.4vw;
 }
 .FoodieFinds #FindsNavCities #FindsNav #menu {
   font-size: 1vw;
@@ -308,4 +303,200 @@ footer p:last-child {
 }
 .FoodieFinds #FindsNavCities.active #menu.active {
   left: 3vw;
+}
+
+@media screen and (max-width: 960px) {
+  header nav ul li a {
+    font-size: 1.86vw;
+  }
+  .FoodieFinds .FindsFeed {
+    margin: 16vh auto 0;
+  }
+  .FoodieFinds .FindsFeed .FindsPostYellow {
+    width: 80%;
+  }
+  .FoodieFinds .FindsFeed .FindsPostGreen {
+    width: 80%;
+  }
+  .FoodieFinds #toggle {
+    width: 2.5vw;
+  }
+  .FoodieFinds #toggle::before, .FoodieFinds #toggle::after {
+    width: 2.5vw;
+  }
+  .FoodieFinds #FindsNavCities {
+    width: 25%;
+  }
+  .FoodieFinds #FindsNavCities #FindsNav input {
+    height: 4.5vh;
+    top: 15.4vh;
+    border-radius: 12%/50%;
+    padding-left: 1vw;
+  }
+  .FoodieFinds #FindsNavCities #FindsNav input::-moz-placeholder {
+    font-size: 1.16vw;
+  }
+  .FoodieFinds #FindsNavCities #FindsNav input::placeholder {
+    font-size: 1.16vw;
+  }
+  .FoodieFinds #FindsNavCities nav {
+    margin-top: 21vh;
+  }
+  .FoodieFinds #FindsNavCities nav .FindsCities .CityNames {
+    font-size: 1.8vw;
+  }
+  #toggle {
+    top: 17vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  header nav ul li a {
+    font-size: 2.5vw;
+  }
+  .FoodieFinds .FindsFeed {
+    margin: 7vh auto 0;
+  }
+  .FoodieFinds .FindsFeed .FindsPostYellow {
+    width: 100%;
+    padding: 2vh 0;
+  }
+  .FoodieFinds .FindsFeed .FindsPostGreen {
+    width: 100%;
+    padding: 2vh 0;
+  }
+  .FoodieFinds .FindsFeed .users {
+    padding: 2vh 3vw 0.7vh;
+  }
+  .FoodieFinds .FindsFeed .users .userNames {
+    font-size: 1.71vw;
+  }
+  .FoodieFinds .FindsFeed .users .userRanks {
+    font-size: 1vw;
+    margin-top: -0.2vh;
+  }
+  .FoodieFinds .FindsFeed .PostContent {
+    padding: 0 3vw;
+  }
+  .FoodieFinds .FindsFeed .PostContent .PostRestaurants {
+    font-size: 1.5vw;
+  }
+  .FoodieFinds .FindsFeed .PostContent .Post {
+    font-size: 1.26vw;
+  }
+  .FoodieFinds .FindsFeed .FindsImg .options {
+    font-size: 3vw;
+  }
+  .FoodieFinds .FindsFeed .FindsImg .like {
+    font-size: 2.7vw;
+  }
+  .FoodieFinds .FindsFeed .FindsImg .like i {
+    padding: 0.5vh 0.4vw 0.1vh 0.4vw;
+  }
+  .FoodieFinds .FindsFeed .FindsImg .likeAmount {
+    font-size: 1vw;
+    right: 4.7vw;
+    bottom: 1.6vh;
+    padding: 0.1vh 2.5vw 0.1vh 0.8vw;
+  }
+  .FoodieFinds #toggle {
+    width: 3.5vw;
+    left: 3vw;
+    top: 9vh;
+  }
+  .FoodieFinds #toggle::before, .FoodieFinds #toggle::after {
+    width: 3.5vw;
+  }
+  .FoodieFinds #FindsNavCities {
+    width: 40vw;
+  }
+  .FoodieFinds #FindsNavCities #FindsNav input {
+    top: 7.5vh;
+    left: 9vw;
+    height: 3vh;
+    border-radius: 10%/50%;
+    padding-left: 1vw;
+  }
+  .FoodieFinds #FindsNavCities #FindsNav input::-moz-placeholder {
+    font-size: 2vw;
+  }
+  .FoodieFinds #FindsNavCities #FindsNav input::placeholder {
+    font-size: 2vw;
+  }
+  .FoodieFinds #FindsNavCities nav {
+    margin-top: 12vh;
+  }
+  .FoodieFinds #FindsNavCities nav .FindsCities .CityNames {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  header nav ul li a {
+    font-size: 2vw;
+  }
+  .FoodieFinds .FindsFeed {
+    width: 66%;
+    margin: 5.5vh auto 0;
+  }
+  .FoodieFinds .FindsFeed .FindsPostYellow {
+    padding: 1.5vh 0;
+  }
+  .FoodieFinds .FindsFeed .FindsPostGreen {
+    padding: 1.5vh 0;
+  }
+  .FoodieFinds .FindsFeed .users {
+    padding: 1.5vh 3vw 0.5vh;
+  }
+  .FoodieFinds .FindsFeed .users .userNames {
+    font-size: 1.8vw;
+  }
+  .FoodieFinds .FindsFeed .users .userRanks {
+    font-size: 1.1vw;
+  }
+  .FoodieFinds .FindsFeed .PostContent .PostRestaurants {
+    font-size: 1.6vw;
+  }
+  .FoodieFinds .FindsFeed .PostContent .Post {
+    font-size: 1.4vw;
+  }
+  .FoodieFinds .FindsFeed .FindsImg .options {
+    font-size: 4vw;
+  }
+  .FoodieFinds .FindsFeed .FindsImg .like {
+    font-size: 3.7vw;
+  }
+  .FoodieFinds .FindsFeed .FindsImg .likeAmount {
+    font-size: 1.1vw;
+    right: 5.3vw;
+    bottom: 1.25vh;
+    padding: 0.1vh 3vw 0.1vh 0.8vw;
+  }
+  .FoodieFinds #toggle {
+    width: 7vw;
+    height: 0.5vh;
+    left: 4.5vw;
+    top: 7.5vh;
+  }
+  .FoodieFinds #toggle::before, .FoodieFinds #toggle::after {
+    width: 7vw;
+    height: 0.5vh;
+  }
+  .FoodieFinds #FindsNavCities {
+    width: 75vw;
+  }
+  .FoodieFinds #FindsNavCities #FindsNav input {
+    top: 5.8vh;
+    left: 15vw;
+    height: 4vh;
+    border-radius: 10%/50%;
+    padding-left: 2.5vw;
+  }
+  .FoodieFinds #FindsNavCities #FindsNav input::-moz-placeholder {
+    font-size: 3.5vw;
+  }
+  .FoodieFinds #FindsNavCities #FindsNav input::placeholder {
+    font-size: 3.5vw;
+  }
+  .FoodieFinds #FindsNavCities nav .FindsCities .CityNames {
+    font-size: 5vw;
+  }
 }/*# sourceMappingURL=FoodieFinds.css.map */
