@@ -782,6 +782,7 @@ footer p:last-child {
   }
   section .actucontainer .actu {
     width: 90%;
+    margin-left: 5%;
   }
   section .actucontainer .actu .span {
     font-size: 18px;
@@ -862,6 +863,7 @@ footer p:last-child {
     left: 35%;
     margin-bottom: 5%;
     margin-top: 5%;
+    padding-right: 5%;
   }
   section .flexpartenaires h4 {
     margin-bottom: 5%;
