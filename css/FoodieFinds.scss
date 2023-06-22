@@ -1,0 +1,571 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    display: block;
+}
+
+// HEADER
+header {
+    background-image: url(../img/NavBar_Bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10vh;
+    box-shadow: 0 -1vh 2vh;
+    position: fixed;
+    z-index: 99;
+    img {
+        width: 13%;
+    }
+
+    nav {
+        width: 73%;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            font-size: 0;
+            li{
+                a{font-size: 1.63vw;
+                color: black;}
+            }
+        }
+    }
+}
+
+// FOOTER
+footer{
+    background-color: #F7D776;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4vh;
+    img{
+        width: 15%;
+    }
+    p{
+        font-size: 1.06vw;
+        margin: .5%;
+    }
+    .reseaux{margin-top: 1%;
+        width: 10%;
+        display: flex;
+        justify-content: space-around;
+        a{
+            img{
+                width: 90%;
+            }
+        }
+    }
+    p:last-child{
+        font-size: .65vw;
+        margin-top: 4%;
+        margin-bottom: 1%;
+    }
+}
+
+// BODY → PUBLICATIONS
+.FoodieFinds{
+    // PROPORTIONS ET DISPOSITION DES PUBLICATIONS SUR LA PAGE
+    .FindsFeed{
+        width: 63%;
+        margin: 18vh auto 0;
+        // font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        // PUBLICATIONS IMPAIRES → DIMENSIONS, ESPACEMENT ET POSITION
+        .FindsPostYellow{
+            width: 74%;
+            padding: 4vh 0;
+            display: flex;
+            // DIMENSIONS, ANGLE ARRONDI ET COULEUR DE FOND DU CÔTÉ TEXTE
+            .FindsTxt{
+                display: flex;
+                flex-direction: column;
+                width: 53%;
+                background-color: #F7D776;
+                border-top-left-radius: 14.92% 20%;
+            }
+        }
+        // PUBLICATIONS PAIRES → DIMENSIONS, ESPACEMENT ET POSITION
+        .FindsPostGreen{
+            width: 74%;
+            padding: 4vh 0;
+            display: flex;
+            align-self: flex-end;
+            // DIMENSIONS, ANGLE ARRONDI ET COULEUR DE FOND DU CÔTÉ TEXTE
+            .FindsTxt{
+                display: flex;
+                flex-direction: column;
+                width: 53%;
+                background-color: #CEE8A8;
+                border-top-left-radius: 14.92% 20%;
+            }
+        }
+    }
+}
+
+// PUBLICATIONS → UTILISATEURS → DISPOSITION, ESPACEMENT ET TAILLES
+.users{
+    display: flex;
+    align-items: center;
+    padding: 3.8vh 2vw 1vh;
+    img{
+        width: 25%;
+        cursor: pointer;
+    }
+    .userInfos{
+        padding: 0 1vw;
+        .userNames{
+            font-size: 1.31vw;
+        }
+        .userRanks{
+            font-size: .8vw;
+            margin-top: -.5vh;
+        }
+    }
+}
+
+// PUBLICATIONS → CONTENUS → DISPOSITION, ESPACEMENT ET TAILLES
+.PostContent{
+    padding: 0 2vw;
+    .PostRestaurants{
+        font-size: 1.2vw;
+        text-align: center;
+        padding-bottom: 1vh;
+    }
+    .Post{
+        font-size: 1.06vw;
+    }
+}
+
+// PUBLICATIONS → IMAGES → BORD ARRONDI, TAILLES, DISPOSITION DES OPTIONS ET DU LIKE
+.FindsImg{
+    width: 47%;
+    position: relative;
+    img{
+        width: 100%;
+        border-bottom-right-radius: 16.785% 20%;
+    }
+    // OPTIONS → DIMENSIONS ET POSITIONNEMENT
+    .options{
+        font-size: 2vw;
+        position: absolute;
+        display: block;
+        top: 4%;
+        right: 10%;
+        cursor: pointer;
+        i{
+            background-color: rgba($color: #fffcf1, $alpha: .7);
+            border-radius: 50% / 20%;
+            padding: .2vh .1vw;
+            color: #858585;
+        }
+    }
+    // LIKE → DIMENSIONS ET POSITIONNEMENT
+    .like{
+        font-size: 1.7vw;
+        position: absolute;
+        display: block;
+        bottom: 5%;
+        right: 10%;
+        z-index: 2;
+        cursor: pointer;
+        i{
+            background-color: rgba($color: #fffcf1, $alpha: .7);
+            color: #858585;
+            padding: .5vh .3vw .2vh .25vw;
+            border-radius: 50%;
+        }
+    }
+    .likeAmount{
+        position: absolute;
+        bottom: 7.95%;
+        right: 15.2%;
+        background-color: rgba($color: #d9d9d9, $alpha: .7);
+        font-size: .7vw;
+        padding: 0 1.8vw 0 .8vw;
+        border-top-left-radius: 15% 50%;
+        border-bottom-left-radius: 15% 50%;
+    }
+}
+
+// MENU / NAVIGATION DES VILLES
+// MENU BURGER
+    #toggle{
+        position: fixed;
+        display: block;
+        background-color: #F7D776;
+        width: 1.5vw;
+        height: .4vh;
+        top: 18vh;
+        left: 1.7vw;
+        border-radius: 10% / 50%;
+        z-index: 2;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            display: block;
+            background-color: #F7D776;
+            border-radius: 10% / 50%;
+            width: 1.5vw;
+            height: .4vh;
+            transition: all .3s ease-in-out;
+        }
+        &::before{
+            top: -1vh;
+        }
+        &::after{
+            top: 1vh;
+        }
+    }
+
+#toggle.active{
+    background-color: transparent;
+    &::before{
+        top: 0;
+        rotate: 45deg;
+        background-color: #fffcf1;
+    }
+    &::after{
+        top: 0;
+        rotate: -45deg;
+        background-color: #fffcf1;
+    }
+}
+
+// NAVIGATION DES VILLES
+// FOND
+.FoodieFinds{
+    display: flex;
+    #FindsNavCities{
+        position: fixed;
+        left: -100vw;
+        top: 0;
+        z-index: -1;
+        width: 20%;
+        height: 100vh;
+        background-color: #FAE7AD;
+        // border-bottom-right-radius: 10% 5.23%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        box-shadow: -1vw 0 2vw;
+        z-index: 1
+        ;
+        &::-webkit-scrollbar{
+            background-color: #fffcf1;
+            border-radius: 50% / 1%;
+            height: 80%;
+        }
+        &::-webkit-scrollbar-thumb{
+            background-color: #F7D776;
+            border-radius: 50% / 1%;
+        }
+        // NAVIGATION
+        #FindsNav{
+            input{
+                position: absolute;
+                top: 16.4vh;
+                left: 5vw;
+                height: 3.5vh;
+                width: 60%;
+                border-radius: 7% / 50%;
+                border: 0.2vw solid transparent;
+                background-color: #fffcf1;
+                padding-left: .4vw;
+                &::placeholder{
+                    font-size: 1.06vw;
+                }
+            }
+            #menu{
+                font-size: 1vw;
+                position: absolute;
+                top: 16.7vh;
+                left: 103vw;
+            }
+        }
+        nav{
+            margin-top: 22vh;
+            .FindsCities{
+                display: block;
+                width: 100%;
+                padding: 1.25vh 0;
+                img{
+                    width: 50%;
+                    margin: 0 auto;
+                }
+                .CityNames{
+                    margin: 0 auto;
+                    text-align: center;
+                    font-size: 1.4vw;
+                    letter-spacing: .2vw;
+                    padding-top: .5vh;
+                }
+            }
+        }
+    }
+    #FindsNavCities.active{
+        left: 0;
+        #menu.active{
+            left: 3vw;
+        }
+    }
+}
+
+// RESPONSIVE
+@media screen and (max-width: 960px) {
+    header{
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 1.86vw;
+                    }
+                }
+            }
+        }
+    }
+    .FoodieFinds{
+        .FindsFeed{
+            margin: 16vh auto 0;
+            .FindsPostYellow{
+                width: 80%;
+            }
+            .FindsPostGreen{
+                width: 80%;
+            }
+        }
+        #toggle{
+            width: 2.5vw;
+            &::before, &::after{
+                width: 2.5vw;
+            }
+        }
+        #FindsNavCities{
+            width: 25%;
+            #FindsNav{
+                input{
+                    height: 4.5vh;
+                    top: 15.4vh;
+                    border-radius: 12% / 50%;
+                    padding-left: 1vw;
+                    &::placeholder{
+                        font-size: 1.16vw;
+                    }
+                }
+            }
+            nav{
+                margin-top: 21vh;
+                .FindsCities{
+                    .CityNames{
+                        font-size: 1.8vw;
+                    }
+                }
+            }
+        }
+        }
+        #toggle{
+            top: 17vh;
+        }
+    }
+
+@media screen and (max-width: 768px) {
+    header{
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 2.5vw;
+                    }
+                }
+            }
+        }
+    }
+    .FoodieFinds{
+        .FindsFeed{
+            margin: 7vh auto 0;
+            .FindsPostYellow{
+            width: 100%;
+            padding: 2vh 0;
+            }
+            .FindsPostGreen{
+                width: 100%;
+                padding: 2vh 0;
+            }
+            .users{
+                padding: 2vh 3vw .7vh;
+                .userNames{
+                    font-size: 1.71vw;
+                }
+                .userRanks{
+                    font-size: 1vw;
+                    margin-top: -.2vh;
+                }
+            }
+            .PostContent{
+                padding: 0 3vw;
+                .PostRestaurants{
+                    font-size: 1.5vw;
+                }
+                .Post{
+                    font-size: 1.26vw;
+                }
+            }
+            .FindsImg{
+                .options{
+                    font-size: 3vw;
+                }
+                .like{
+                    font-size: 2.7vw;
+                    i{
+                        padding: .5vh .4vw .1vh .4vw;
+                    }
+                }
+                .likeAmount{
+                    font-size: 1vw;
+                    right: 4.7vw;
+                    bottom: 1.6vh;
+                    padding: .1vh 2.5vw .1vh .8vw;
+                }
+            }
+        }
+        #toggle{
+            width: 3.5vw;
+            left: 3vw;
+            top: 9vh;
+            &::before, &::after{
+                width: 3.5vw;
+            }
+        }
+        #FindsNavCities{
+            width: 40vw;
+            #FindsNav{
+                input{
+                    top: 7.5vh;
+                    left: 9vw;
+                    height: 3vh;
+                    border-radius: 10% / 50%;
+                    padding-left: 1vw;
+                    &::placeholder{
+                        font-size: 2vw;
+                    }
+                }
+            }
+            nav{
+                margin-top: 12vh;
+                .FindsCities{
+                    .CityNames{
+                        font-size: 3vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    header{
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 2vw;
+                    }
+                }
+            }
+        }
+    }
+    .FoodieFinds{
+        .FindsFeed{
+            width: 66%;
+            margin: 5.5vh auto 0;
+            .FindsPostYellow{
+                padding: 1.5vh 0;
+            }
+            .FindsPostGreen{
+                padding: 1.5vh 0;
+            }
+            .users{
+                padding: 1.5vh 3vw .5vh;
+                .userNames{
+                    font-size: 1.8vw;
+                }
+                .userRanks{
+                    font-size: 1.1vw;
+                }
+            }
+            .PostContent{
+                .PostRestaurants{
+                    font-size: 1.6vw;
+                }
+                .Post{
+                    font-size: 1.4vw;
+                }
+            }
+            .FindsImg{
+                .options{
+                    font-size: 4vw;
+                }
+                .like{
+                    font-size: 3.7vw;
+                }
+                .likeAmount{
+                    font-size: 1.1vw;
+                    right: 5.3vw;
+                    bottom: 1.25vh;
+                    padding: .1vh 3vw .1vh .8vw;
+                }
+            }
+        }
+        #toggle{
+            width: 7vw;
+            height: .5vh;
+            left: 4.5vw;
+            top: 7.5vh;
+            &::before, &::after{
+                width: 7vw;
+                height: .5vh;
+            }
+        }
+        #FindsNavCities{
+            width: 75vw;
+            #FindsNav{
+                input{
+                    top: 5.8vh;
+                    left: 15vw;
+                    height: 4vh;
+                    border-radius: 10% / 50%;
+                    padding-left: 2.5vw;
+                    &::placeholder{
+                        font-size: 3.5vw;
+                    }
+                }
+            }
+            nav{
+                .FindsCities{
+                    .CityNames{
+                        font-size: 5vw;
+                    }
+                }
+            }
+        }
+    }
+}
