@@ -208,7 +208,7 @@ main .formulaire .boxmessage .btn-submit {
     width: 100%;
   }
   main .formulaire .form1 fieldset p {
-    width: 60%;
+    width: 100%;
   }
   main .formulaire .form1 fieldset p input {
     padding: 2vw;
