@@ -1,1 +1,890 @@
-/*# sourceMappingURL=styles.css.map */
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+
+.center {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header .headercontainer {
+  width: 100%;
+  background-image: url(../img/home_header.png);
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .headercontainer div.bg {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .logo {
+  width: 25%;
+  z-index: 1;
+}
+header .logobg {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  width: 30%;
+}
+header .logobg img {
+  width: 130%;
+}
+header .navbar {
+  background-image: url(../img/NavBar_BG_1.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3vh 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+header .navbar .nav {
+  width: 73%;
+}
+header .navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0;
+}
+header .navbar ul li a {
+  font-size: 1.63vw;
+  color: black;
+}
+
+Section {
+  background-image: url();
+  background-size: 100%;
+  padding-top: 5%;
+}
+Section h1 {
+  font-size: 6vw;
+  color: #CEE8A8;
+  padding-bottom: 1%;
+  width: 42%;
+  border-right: 3px solid #CEE8A8;
+  margin-bottom: 4%;
+  padding-left: 7%;
+}
+Section .actucontainer {
+  display: flex;
+  justify-content: space-around;
+}
+Section .actucontainer .actu {
+  background-color: #CEE8A8;
+  border-radius: 7%;
+  width: 60%;
+  margin-left: 5%;
+  margin-right: 5%;
+  position: relative;
+}
+Section .actucontainer .actu h3 {
+  font-size: 40px;
+  margin-left: 5%;
+  font-weight: 500;
+  margin-top: 2%;
+}
+Section .actucontainer .actu p {
+  padding-left: 3%;
+  width: 60%;
+  padding-top: 2%;
+}
+Section .actucontainer .actu p span {
+  font-size: 18px;
+  font-weight: 600;
+  width: 50%;
+}
+Section .actucontainer .actu .span {
+  font-size: 12px;
+  color: rgb(102, 101, 101);
+  width: 50%;
+  margin-top: 10%;
+  padding-bottom: 5%;
+}
+Section .actucontainer .actu img {
+  width: 30%;
+  height: 50%;
+  border-radius: 15%;
+  margin-left: 65%;
+  position: absolute;
+  top: 20%;
+}
+Section .actucontainer .actu a {
+  font-size: 20px;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  color: black;
+  border-bottom: 1px solid black;
+}
+Section .actucontainer .eventcontainer {
+  margin-right: 5%;
+  width: 50%;
+  background-color: #CEE8A8;
+  border-radius: 10%;
+  font-size: 14px;
+}
+Section .actucontainer .eventcontainer .event h3 {
+  font-size: 28px;
+  margin-left: 8%;
+  padding-top: 5%;
+}
+Section .actucontainer .eventcontainer .event p {
+  padding-left: 5%;
+  font-size: 12px;
+  padding-top: 2%;
+}
+Section .actucontainer .eventcontainer .event p span {
+  color: rgb(102, 101, 101);
+}
+Section .actucontainer .eventcontainer .event .border {
+  border-bottom: 3px solid white;
+  width: 100%;
+  padding-top: 5%;
+}
+Section .actucontainer .eventcontainer .restodujour h3 {
+  font-size: 18px;
+  margin-left: 8%;
+  margin-top: 3%;
+}
+Section .actucontainer .eventcontainer .restodujour .restodujourcontainer {
+  display: flex;
+}
+Section .actucontainer .eventcontainer .restodujour .restodujourcontainer img {
+  width: 65%;
+  margin-top: 2%;
+  margin-left: 15%;
+  border-radius: 15%;
+}
+Section .actucontainer .eventcontainer .restodujour .restodujourcontainer .escargottext {
+  width: 100%;
+  margin-right: 5%;
+}
+Section .actucontainer .eventcontainer .restodujour .restodujourcontainer .escargottext p {
+  padding-top: 3%;
+}
+Section .actucontainer .eventcontainer .restodujour .restodujourcontainer .escargottext p span {
+  font-weight: 800;
+}
+Section .titrenoté {
+  font-size: 8vh;
+  font-weight: 500;
+  color: #E3C463;
+  text-align: center;
+  margin-top: 15%;
+}
+Section .bordernoté {
+  border-bottom: 4px solid #E3C463;
+  width: 800px;
+  margin-left: 20%;
+  margin-bottom: 7%;
+}
+Section .flexnoté {
+  display: flex;
+  justify-content: space-evenly;
+}
+Section .noté1 {
+  position: relative;
+  background-color: #E3C463;
+  border-radius: 7%;
+  width: 50%;
+  padding: 2%;
+  margin: 2%;
+}
+Section .noté1 img {
+  width: 100%;
+  border-radius: 7%;
+}
+Section .noté1 h4 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+Section .noté1 p {
+  text-align: center;
+}
+Section .noté1 .info {
+  display: flex;
+  color: #525252;
+  font-size: 14px;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+Section .noté1 .info p {
+  padding-top: 5%;
+  padding-bottom: 15%;
+}
+Section .noté1 i {
+  position: absolute;
+  color: rgb(98, 95, 95);
+  right: 8%;
+  bottom: 3%;
+  font-size: 40px;
+}
+Section .noté2 {
+  position: relative;
+  background-color: #E3C463;
+  border-radius: 7%;
+  width: 50%;
+  padding: 2%;
+  margin: 2%;
+}
+Section .noté2 img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 7%;
+}
+Section .noté2 h4 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+Section .noté2 p {
+  text-align: center;
+}
+Section .noté2 .info {
+  display: flex;
+  color: #525252;
+  font-size: 14px;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+Section .noté2 .info p {
+  padding-top: 5%;
+  padding-bottom: 15%;
+}
+Section .noté2 i {
+  position: absolute;
+  color: rgb(98, 95, 95);
+  right: 8%;
+  bottom: 3%;
+  font-size: 40px;
+}
+Section .noté3 {
+  position: relative;
+  background-color: #E3C463;
+  border-radius: 7%;
+  width: 50%;
+  padding: 2%;
+  margin: 2%;
+}
+Section .noté3 img {
+  width: 100%;
+  border-radius: 7%;
+}
+Section .noté3 h4 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+Section .noté3 p {
+  text-align: center;
+}
+Section .noté3 .info {
+  display: flex;
+  justify-content: space-between;
+  color: #525252;
+  font-size: 14px;
+  margin-top: 5%;
+}
+Section .noté3 .info p {
+  padding-top: 5%;
+  padding-bottom: 15%;
+}
+Section .noté3 i {
+  position: absolute;
+  color: rgb(98, 95, 95);
+  right: 8%;
+  bottom: 3%;
+  font-size: 40px;
+}
+Section .flexcontainer {
+  position: relative;
+  margin-bottom: 8%;
+  margin-top: 5%;
+}
+Section .flexcontainer .titreflex {
+  display: flex;
+}
+Section .flexcontainer .titreflex h2 {
+  font-size: 80px;
+  color: #CEE8A8;
+  margin-left: 5%;
+  font-weight: 500;
+}
+Section .flexcontainer .titreflex .barre {
+  border-bottom: 4px solid #CEE8A8;
+  width: 50%;
+  margin-bottom: 3.5%;
+  margin-left: 8%;
+}
+Section .flexcontainer .flexfeed {
+  display: flex;
+  justify-content: space-around;
+}
+Section .flexcontainer .flexfeed .feed1 {
+  position: relative;
+  background-color: #CEE8A8;
+  width: 60%;
+  height: 40vh;
+  margin: 3%;
+  border-radius: 10%;
+}
+Section .flexcontainer .flexfeed .feed1 img {
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+Section .flexcontainer .flexfeed .feed1 .title {
+  display: flex;
+}
+Section .flexcontainer .flexfeed .feed1 .title .Nom {
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 15%;
+  border-bottom: 2px solid black;
+}
+Section .flexcontainer .flexfeed .feed1 .title .Nom i {
+  padding-right: 5%;
+}
+Section .flexcontainer .flexfeed .feed1 span {
+  position: absolute;
+  left: 8%;
+  top: 50%;
+}
+Section .flexcontainer .flexfeed .feed2 {
+  position: relative;
+  background-color: #CEE8A8;
+  width: 60%;
+  height: 40vh;
+  margin: 3%;
+  border-radius: 10%;
+}
+Section .flexcontainer .flexfeed .feed2 img {
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+Section .flexcontainer .flexfeed .feed2 .title {
+  display: flex;
+}
+Section .flexcontainer .flexfeed .feed2 .title .Nom {
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 15%;
+  border-bottom: 2px solid black;
+}
+Section .flexcontainer .flexfeed .feed2 .title .Nom i {
+  padding-right: 5%;
+}
+Section .flexcontainer .flexfeed .feed2 span {
+  position: absolute;
+  left: 8%;
+  top: 50%;
+}
+Section .flexcontainer .flexfeed .feed3 {
+  position: relative;
+  background-color: #CEE8A8;
+  width: 60%;
+  height: 40vh;
+  margin: 3%;
+  border-radius: 10%;
+}
+Section .flexcontainer .flexfeed .feed3 img {
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+Section .flexcontainer .flexfeed .feed3 .title {
+  display: flex;
+}
+Section .flexcontainer .flexfeed .feed3 .title .Nom {
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 15%;
+  border-bottom: 2px solid black;
+}
+Section .flexcontainer .flexfeed .feed3 .title .Nom i {
+  padding-right: 5%;
+}
+Section .flexcontainer .flexfeed .feed3 span {
+  position: absolute;
+  left: 8%;
+  top: 50%;
+}
+Section .flexcontainer .voirplus {
+  position: absolute;
+  background-color: #CEE8A8;
+  width: 8%;
+  border-radius: 8%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 2%;
+  bottom: -30%;
+  right: 5%;
+}
+Section .flexcontainer .voirplus a {
+  font-size: 18px;
+  padding-left: 18%;
+  color: black;
+}
+Section .flexpartenaires {
+  padding-bottom: 5%;
+}
+Section .flexpartenaires h4 {
+  font-size: 6vw;
+  text-align: center;
+  color: #F7D776;
+}
+Section .flexpartenaires .img {
+  display: flex;
+  justify-content: space-evenly;
+}
+Section .flexpartenaires .img img {
+  width: 10%;
+}
+
+footer {
+  background-color: #F7D776;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer img {
+  width: 15%;
+}
+footer p {
+  margin: 0.5%;
+  font-size: 1.06vw;
+}
+footer .reseaux {
+  margin-top: 1%;
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+footer .reseaux a img {
+  width: 90%;
+}
+footer p:last-child {
+  font-size: 0.65vw;
+  margin-top: 4%;
+  margin-bottom: 1%;
+}
+
+@media screen and (max-width: 1200px) {
+  header .navbar {
+    padding: 2vh 0px;
+  }
+  section .flexcontainer {
+    margin-bottom: 15%;
+  }
+  section .flexcontainer .voirplus {
+    width: 10%;
+  }
+  section .flexpartenaires h4 {
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section .actucontainer .actu img {
+    height: 30%;
+    top: 5%;
+  }
+  section .bordernoté {
+    margin-left: 11%;
+  }
+  section .flexcontainer .flexfeed .feed1 .title .Nom {
+    margin-left: 0%;
+  }
+  section .flexcontainer .flexfeed .feed1 span {
+    top: 40%;
+  }
+  section .flexcontainer .flexfeed .feed2 .title .Nom {
+    margin-left: 0%;
+  }
+  section .flexcontainer .flexfeed .feed2 span {
+    top: 40%;
+  }
+  section .flexcontainer .flexfeed .feed3 .title .Nom {
+    margin-left: 0%;
+  }
+  section .flexcontainer .flexfeed .feed3 span {
+    top: 40%;
+  }
+  section .flexcontainer .voirplus {
+    width: 11%;
+  }
+}
+@media screen and (max-width: 960px) {
+  header .headercontainer {
+    height: 400px;
+  }
+  header .logo {
+    width: 40%;
+  }
+  header .logobg {
+    width: 50%;
+  }
+  header .navbar {
+    background-size: cover;
+    height: 10vh;
+    padding: 4%;
+  }
+  header .navbar .nav {
+    width: 100%;
+  }
+  header .navbar .nav ul li a {
+    font-size: 3vw;
+  }
+  section .actucontainer .actu {
+    margin: 1%;
+    padding-bottom: 10%;
+  }
+  section .actucontainer .actu p {
+    width: 90%;
+  }
+  section .actucontainer .actu img {
+    height: 30%;
+    margin-bottom: 10%;
+    top: 53%;
+  }
+  section .actucontainer .actu a {
+    bottom: 5%;
+  }
+  section .actucontainer .eventcontainer {
+    margin-right: 1%;
+  }
+  section .actucontainer .eventcontainer .restodujour {
+    padding-top: 5%;
+  }
+  section .actucontainer .eventcontainer .restodujour .escargottext p {
+    line-height: 120%;
+  }
+  section .bordernoté {
+    margin-left: 9%;
+  }
+  section .flexnoté .noté1 {
+    width: 30%;
+  }
+  section .flexnoté .noté1 img {
+    width: 100%;
+  }
+  section .flexnoté .noté2 {
+    width: 30%;
+  }
+  section .flexnoté .noté2 img {
+    width: 100%;
+  }
+  section .flexnoté .noté3 {
+    width: 30%;
+  }
+  section .flexnoté .noté3 img {
+    width: 100%;
+  }
+  section .flexcontainer {
+    margin-bottom: 15%;
+  }
+  section .flexcontainer .flexfeed .feed1 .title .Nom {
+    margin-left: 0%;
+  }
+  section .flexcontainer .flexfeed .feed1 span {
+    top: 40%;
+  }
+  section .flexcontainer .flexfeed .feed2 .title .Nom {
+    margin-left: 0%;
+  }
+  section .flexcontainer .flexfeed .feed2 span {
+    top: 40%;
+  }
+  section .flexcontainer .flexfeed .feed3 .title .Nom {
+    margin-left: 0%;
+  }
+  section .flexcontainer .flexfeed .feed3 span {
+    top: 40%;
+  }
+  section .flexcontainer .voirplus {
+    left: 42%;
+    width: 15%;
+    padding-left: 1.2%;
+  }
+  section .flexpartenaires {
+    margin-bottom: 5%;
+  }
+  section .flexpartenaires h4 {
+    padding-top: 10%;
+    padding-bottom: 4%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .headercontainer {
+    height: 300px;
+  }
+  header .logo {
+    width: 50%;
+  }
+  header .logobg {
+    width: 60%;
+  }
+  header .navbar {
+    background-size: cover;
+    height: 10vh;
+    padding: 2%;
+  }
+  header .navbar .nav {
+    width: 100%;
+  }
+  header .navbar .nav ul li a {
+    font-size: 4.4vw;
+  }
+  section h1 {
+    font-size: 8vw;
+    border: none;
+    margin-left: 20%;
+  }
+  section .bordernoté {
+    width: 80%;
+  }
+  section .actucontainer .actu img {
+    display: none;
+  }
+  section .actucontainer .actu p {
+    width: 99%;
+  }
+  section .eventcontainer .restodujour .escargottext p {
+    padding-left: 8%;
+    font-size: 12px;
+  }
+  section .eventcontainer .restodujour img {
+    display: none;
+  }
+  section .titrenoté {
+    font-size: 6.5vh;
+  }
+  section .noté1 .info {
+    margin-bottom: 15%;
+  }
+  section .flexcontainer .titreflex .barre {
+    margin-bottom: 7%;
+  }
+  section .flexcontainer .flexfeed .feed1 {
+    margin: 1%;
+  }
+  section .flexcontainer .flexfeed .feed1 .title .Nom {
+    margin-left: 0%;
+    border: none;
+  }
+  section .flexcontainer .flexfeed .feed2 {
+    margin: 1%;
+  }
+  section .flexcontainer .flexfeed .feed2 .title .Nom {
+    margin-left: 0%;
+    border: none;
+  }
+  section .flexcontainer .flexfeed .feed3 {
+    margin: 1%;
+  }
+  section .flexcontainer .flexfeed .feed3 .title .Nom {
+    margin-left: 0%;
+    border: none;
+  }
+  section .flexcontainer .voirplus {
+    width: 21%;
+  }
+  section .flexcontainer .voirplus a {
+    font-size: 25px;
+  }
+  section .flexpartenaires .img img {
+    width: 23%;
+  }
+  footer img {
+    display: none;
+  }
+  footer p {
+    font-size: 2vw;
+  }
+  footer a img {
+    width: 100%;
+  }
+  footer p:last-child {
+    font-size: 1.5vw;
+    padding-left: 3%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  header .headercontainer {
+    height: 200px;
+  }
+  header .logo {
+    width: 50%;
+  }
+  header .logobg {
+    width: 50%;
+  }
+  header .navbar {
+    background-size: cover;
+    height: 10vh;
+    padding: 0%;
+  }
+  header .navbar .nav {
+    width: 100%;
+  }
+  header .navbar .nav ul li a {
+    font-size: 4.4vw;
+  }
+  section h1 {
+    font-size: 12vw;
+    margin-left: 12%;
+    width: 75%;
+    border: none;
+    border-bottom: 3px solid #CEE8A8;
+  }
+  section .actucontainer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+  }
+  section .actucontainer .actu {
+    width: 90%;
+  }
+  section .actucontainer .actu .span {
+    font-size: 18px;
+  }
+  section .actucontainer .eventcontainer {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10%;
+  }
+  section .actucontainer .eventcontainer .event .border {
+    border-bottom: 10px solid white;
+    padding-top: 2%;
+  }
+  section .actucontainer .eventcontainer .event span {
+    font-size: 18px;
+  }
+  section .actucontainer .eventcontainer .restodujour .restodujourcontainer .escargottext p {
+    padding-top: 0%;
+    margin-bottom: 5%;
+    font-size: 17px;
+  }
+  section .titrenoté {
+    font-size: 4vh;
+  }
+  section .bordernoté {
+    margin-bottom: 20%;
+  }
+  section .flexnoté {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  section .flexnoté .noté1 {
+    margin-bottom: 10%;
+    width: 96%;
+  }
+  section .flexnoté .noté1 p {
+    margin-bottom: -5%;
+  }
+  section .flexnoté .noté2 {
+    margin-bottom: 10%;
+    width: 96%;
+  }
+  section .flexnoté .noté3 {
+    margin-bottom: 10%;
+    width: 96%;
+  }
+  section .flexcontainer .titreflex {
+    margin-bottom: 15%;
+  }
+  section .flexcontainer .titreflex h2 {
+    margin-left: 30%;
+  }
+  section .flexcontainer .titreflex .barre {
+    border: none;
+  }
+  section .flexcontainer .flexfeed {
+    display: block;
+  }
+  section .flexcontainer .flexfeed .feed1 {
+    margin-left: 2.5%;
+    width: 95%;
+    margin-bottom: 10%;
+  }
+  section .flexcontainer .flexfeed .feed2 {
+    margin-left: 2.5%;
+    width: 95%;
+    margin-bottom: 10%;
+  }
+  section .flexcontainer .flexfeed .feed3 {
+    margin-left: 2.5%;
+    width: 95%;
+    margin-bottom: 10%;
+  }
+  section .flexcontainer .voirplus {
+    width: 33%;
+    bottom: -8%;
+    left: 35%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+  section .flexpartenaires h4 {
+    margin-bottom: 5%;
+  }
+  section .flexpartenaires .img {
+    margin-bottom: 5%;
+  }
+  section .flexpartenaires .img img {
+    width: 25%;
+    margin: 5%;
+  }
+  footer img {
+    display: none;
+  }
+  footer p {
+    font-size: 3vw;
+  }
+  footer a img {
+    width: 100%;
+  }
+  footer p:last-child {
+    font-size: 2.4vw;
+    padding-left: 3%;
+    text-align: center;
+  }
+}/*# sourceMappingURL=styles.css.map */
