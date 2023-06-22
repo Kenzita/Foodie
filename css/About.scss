@@ -222,13 +222,13 @@ main {
         }
 
         .notresite {
-            .site{
-                img{
+            .site {
+                img {
                     width: 100%;
                     position: absolute;
                     left: 140%;
                     top: 5%;
-                    border-radius: 5%; 
+                    border-radius: 5%;
                 }
             }
         }
@@ -238,60 +238,64 @@ main {
 
 @media screen and (max-width: 1024px) {
     main {
-        .notrehistoire{
-            .aventure{
-                .histoiretexte{
-padding-top: 2vh;
+        .notrehistoire {
+            .aventure {
+                .histoiretexte {
+                    padding-top: 2vh;
 
-h2{
-    font-size: 1.3em;
-}
+                    h2 {
+                        font-size: 1.3em;
+                    }
 
-p{
-    font-size: .8em;
-}
-               }
-               img {
-             
-                left: 105%;
-                top: 10%;
-               
-            }
+                    p {
+                        font-size: .8em;
+                    }
+                }
+
+                img {
+
+                    left: 105%;
+                    top: 10%;
+
+                }
             }
         }
 
-        .dreamteam{
-            .profils{
-                .profil{
-                    img{
+        .dreamteam {
+            .profils {
+                .profil {
+                    img {
                         width: 85%
                     }
-                    p{
+
+                    p {
                         font-size: .9em;
                     }
                 }
             }
         }
-        .notresite{
-            .site{
-                .sitetexte{
-padding-top: 2vh;
 
-h2{
-    font-size: 1.3em;
-}
+        .notresite {
+            .site {
+                .sitetexte {
+                    padding-top: 2vh;
 
-p{
-    font-size: .8em;
-}
-               }
-               img {
-                width: 90%;
-                position: absolute;
-                left: 140%;
-                top: 4%;
-                border-radius: 5%;
-            }
+                    h2 {
+                        font-size: 1.3em;
+                    }
+
+                    p {
+                        font-size: .8em;
+                    }
+                }
+
+                img {
+                    width: 90%;
+                    position: absolute;
+                    left: 140%;
+                    top: 4%;
+                    border-radius: 5%;
+                }
             }
         }
 
@@ -300,81 +304,89 @@ p{
 }
 
 @media screen and (max-width: 960px) {
-    header{
-        nav{
-            ul{
-                li{
-                    a{
+    header {
+        nav {
+            ul {
+                li {
+                    a {
                         font-size: 23px;
                     }
                 }
             }
         }
     }
+
     main {
-        .notrehistoire{
-            .aventure{
-               img {
-                top: 13%;
-            }
+        .notrehistoire {
+            .aventure {
+                img {
+                    top: 13%;
+                }
             }
         }
-        .notresite{
-            .site{
-               img {
-                top: 7%
-            }
+
+        .notresite {
+            .site {
+                img {
+                    top: 7%
+                }
             }
         }
 
     }
 
 }
+
 @media screen and (max-width: 768px) {
-    header{
-        nav{
-            ul{
-                li{
-                    a{
+    header {
+        nav {
+            ul {
+                li {
+                    a {
                         font-size: 18px;
                     }
                 }
             }
         }
     }
+
     main {
-        .notrehistoire{
+        .notrehistoire {
             width: 70%;
-            .aventure{
-               img {
-                top: 9%;
-                width: 85%;
-           
-            }
+
+            .aventure {
+                img {
+                    top: 9%;
+                    width: 85%;
+
+                }
             }
         }
 
-        .dreamteam{
-            .profils{
-                .profil{
-                    p{
+        .dreamteam {
+            .profils {
+                .profil {
+                    p {
                         font-size: .7em;
                     }
                 }
             }
         }
-        .notresite{
-            width: 70%;
-            .site{
 
-                .sitetexte{
+        .notresite {
+            width: 70%;
+
+            .site {
+
+                .sitetexte {
                     width: 40vw;
                 }
-               img {
-                top: 4%;
-                width: 80%;
-               
-            }
+
+                img {
+                    top: 4%;
+                    width: 80%;
+
+                }
             }
         }
 
@@ -383,11 +395,15 @@ p{
 }
 
 @media screen and (max-width:480px) {
-    header{
-        nav{
-            ul{
-                li{
-                    a{
+    * {
+        box-sizing: border-box;
+    }
+
+    header {
+        nav {
+            ul {
+                li {
+                    a {
                         font-size: 12px;
                     }
                 }
@@ -395,8 +411,10 @@ p{
         }
     }
 
-    footer{
-        p{
+    footer {
+        width: 100%;
+
+        p {
             text-align: center;
             font-size: 12px;
         }
@@ -404,9 +422,156 @@ p{
 
     main {
 
-    .notrehistoire{
+        .notrehistoire {
+            width: 100%;
+            border-radius: 0px;
+
+            .aventure {
+                width: 85%;
+                position: static;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                .histoiretexte {
+                    h2 {
+                        font-size: 1.5em;
+
+                    }
+
+                    p {
+                        font-size: 1em;
+                        padding: 1vw;
+                        text-align: justify;
+                    }
+                }
+
+                img {
+                    margin: 2vh;
+                    width: 50%;
+                    margin-top: 0;
+                    position: static;
+                }}
+            }
+        
+    
+
+    .notresite {
         width: 100%;
         border-radius: 0px;
-        
-    }}
+
+        .site {
+            margin: 2vw;
+            width: 98%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .sitetexte {
+                width: 85%;
+                position: static;
+
+                h2 {
+                    font-size: 1.5em;
+
+                }
+
+                p {
+                    font-size: 1em;
+                    padding: 1vw;
+                    text-align: justify;
+                }
+            }
+
+            img {
+                margin: 2vh;
+                width: 50%;
+                margin-top: 0;
+                position: static;
+            }
+        }
+    }
+
+    .dreamteam {
+        h2 {
+            font-size: 1em;
+        }
+
+        .profils {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .profil {
+                width: 80%;
+
+                p {
+                    padding-top: 4vh;
+                    font-size: 1em;
+                }
+
+                img {
+                    width: 50%;
+                }
+
+
+            }
+        }
+    }
+}
+}
+
+@media screen and (max-width:1920px) {
+    main{
+        .notrehistoire{
+            .aventure{
+           .histoiretexte{
+
+            h2{
+                font-size: 2em;
+            }
+
+            p{
+                font-size: 1.4em;
+            }
+           }
+img{
+    width: 105%;
+}
+            }
+        }
+        .notresite{
+            .site{
+           .sitetexte{
+
+            h2{
+                font-size: 2em;
+            }
+
+            p{
+                font-size: 1.4em;
+            }
+           }
+img{
+    width: 98%;
+}
+            }
+        }
+        .dreamteam{
+            h2{
+                font-size: 2em;
+            }
+
+            .profils{
+                .profil{
+                    img{
+                        width: 90%;
+                    }
+                    p{
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+    }
 }
