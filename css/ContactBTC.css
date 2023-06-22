@@ -9,10 +9,16 @@ body {
   background-color: white;
   font-family: "Poppins", sans-serif;
   background-image: url(../img/Contact_BG.svg);
+  background-size: cover;
 }
 
 img {
   display: block;
+}
+
+.center {
+  margin: 0 auto;
+  width: 80%;
 }
 
 header {
@@ -34,6 +40,7 @@ header nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   font-size: 0;
 }
 header nav ul li a {
@@ -47,6 +54,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 footer img {
   width: 15%;
@@ -67,6 +75,7 @@ footer p:last-child {
   font-size: 10px;
   margin-top: 4%;
   margin-bottom: 1%;
+  text-align: center;
 }
 
 main {
@@ -109,6 +118,7 @@ main .formulaire {
 main .formulaire .form1 {
   display: flex;
   align-items: last baseline;
+  justify-content: center;
 }
 main .formulaire .form1 fieldset {
   border: none;
@@ -126,7 +136,6 @@ main .formulaire .form1 fieldset p label {
 main .formulaire .form1 fieldset p input {
   border: none;
   background-color: #E2E2E2;
-  margin-left: 1.5vh;
   border-radius: 3em;
   padding: 0.6vw;
 }
@@ -162,6 +171,8 @@ main .formulaire .boxmessage .messages p textarea {
   border: none;
   font-family: poppins;
   border-radius: 3em;
+  width: 60vw;
+  height: 30vh;
 }
 main .formulaire .boxmessage .btn-submit {
   background-color: #FDF5DE;
@@ -173,4 +184,76 @@ main .formulaire .boxmessage .btn-submit {
   margin: 5vh 0 10vh;
   position: relative;
   left: 18vw;
+}
+
+@media screen and (max-width: 960px) {
+  header nav ul li a {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header nav ul li a {
+    font-size: 13px;
+  }
+  main .formulaire {
+    width: 60%;
+  }
+  main .formulaire .form1 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main .formulaire .form1 fieldset {
+    width: 100%;
+  }
+  main .formulaire .form1 fieldset p {
+    width: 60%;
+  }
+  main .formulaire .form1 fieldset p input {
+    padding: 2vw;
+  }
+  main .formulaire .form1 fieldset p select {
+    padding: 2vw;
+  }
+  main .formulaire .boxmessage .messages p textarea {
+    padding: 3vw;
+  }
+  main .formulaire .boxmessage .btn-submit {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    background-image: none;
+  }
+  header nav ul li a {
+    font-size: 13px;
+  }
+  main .formulaire {
+    margin: 0;
+  }
+  main .formulaire .form1 {
+    width: 60vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main .formulaire .form1 fieldset {
+    width: 100%;
+  }
+  main .formulaire .form1 fieldset p input {
+    padding: 2vw;
+    margin: 0;
+  }
+  main .formulaire .form1 fieldset p select {
+    padding: 2vw;
+    margin: 0;
+  }
+  main .formulaire .boxmessage .messages p textarea {
+    padding: 3vw;
+  }
+  main .formulaire .boxmessage .btn-submit {
+    font-size: 1em;
+  }
 }/*# sourceMappingURL=ContactBTC.css.map */

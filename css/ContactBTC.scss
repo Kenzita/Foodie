@@ -9,12 +9,18 @@ body {
     background-color: white;
     font-family: 'Poppins', sans-serif;
     background-image: url(../img/Contact_BG.svg);
+    background-size: cover;
+ 
 }
 
 img {
     display: block;
 }
 
+.center{
+    margin: 0 auto;
+    width: 80%;
+}
 header {
     background-image: url(../img/NavBar_BG_1.svg);
     background-repeat: no-repeat;
@@ -36,6 +42,7 @@ header {
             list-style: none;
             display: flex;
             justify-content: space-around;
+            align-items: center;
             font-size: 0;
 
             li {
@@ -54,6 +61,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
     img {
         width: 15%;
@@ -80,6 +88,7 @@ footer {
         font-size: 10px;
         margin-top: 4%;
         margin-bottom: 1%;
+        text-align: center;
     }
 }
 
@@ -128,6 +137,7 @@ main {
         .form1 {
             display: flex;
             align-items: last baseline;
+            justify-content: center;
 
             fieldset {
                 border: none;
@@ -146,7 +156,7 @@ main {
                     input {
                         border: none;
                         background-color: #E2E2E2;
-                        margin-left: 1.5vh;
+                        // margin-left: 1.5vh;
                         border-radius: 3em;
                         padding: .6vw;
                     }
@@ -164,15 +174,15 @@ main {
 
         .boxmessage {
             .RGPDs {
-width: 59vw;
+                width: 59vw;
                 display: flex;
                 justify-content: flex-end;
-        
+
                 p {
                     font-size: .6em;
-     margin-left: 1vw;
+                    margin-left: 1vw;
                 }
-          
+
             }
 
             .messages {
@@ -193,13 +203,15 @@ width: 59vw;
                         border: none;
                         font-family: poppins;
                         border-radius: 3em;
+                        width: 60vw;
+                        height: 30vh ;
                     }
                 }
 
 
             }
 
-           .btn-submit{
+            .btn-submit {
                 background-color: #FDF5DE;
                 color: #F29727;
                 padding: 1vh 5vw;
@@ -213,3 +225,192 @@ width: 59vw;
         }
     }
 }
+
+// ------- Responsive 
+
+@media screen and (max-width:960px) {
+    header {
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {  header { 
+
+       nav {
+        ul {
+            li {
+                a {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+main{
+    .formulaire{
+width: 60%;
+      
+        .form1{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            fieldset{
+        
+                width:100% ;
+                p{
+              
+                    width: 60%;
+                    input{
+                        padding: 2vw;
+                    }
+                    select{
+                        padding: 2vw;
+                    }
+                }
+            }
+        }
+        .boxmessage{
+            .messages {
+                p{
+                textarea{
+                    padding: 3vw;
+                }
+            }}
+        
+        .btn-submit{
+            font-size: 1em;
+    
+        }}
+        }
+        
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+   body{
+    background-image: none;
+   }
+    
+    header {
+        nav {
+          
+            ul {
+                li {
+                    a {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .formulaire{
+
+          margin: 0;
+            .form1{
+                width: 60vw;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                fieldset{
+    
+                  width:100%;
+                    p{
+                  
+                        input{
+                            padding: 2vw;
+                            margin: 0;
+                        }
+                        select{
+                            padding: 2vw;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .boxmessage{
+                .messages {
+                    p{
+                    textarea{
+                        padding: 3vw;
+                    }
+                }}
+            
+            .btn-submit{
+                font-size: 1em;
+        
+            }}
+            }
+            
+        }
+
+  
+    }
+
+// @media screen and (max-width:1920px) {
+
+//     main {
+//         .titre {
+//             p:first-of-type {
+
+//                 font-size: 1.7em;
+
+//             }
+
+//             p:nth-of-type(2) {
+
+//                 font-size: 1.2em;
+
+//             }
+
+//             p:nth-of-type(3) {
+
+//                 font-size: 1.5em;
+
+//             }
+//         }
+
+//         .formulaire {
+//             font-size: 1.3em;
+
+//             .form1 {
+             
+//                     input {
+//                         font-size: 1.2em;
+//                     }
+
+//                     select{
+//                         font-size: 1.2em;
+//                     }
+                
+//             }
+//                 .boxmessage {
+//                     .RGPDs {
+//                         p {
+//                             font-size: .9em;
+//                         }
+//                     }
+//                 .messages{
+                
+//                   p{ textarea{
+//                         font-size: 1em;
+//                         margin-left: 7vw;
+//                     }}
+//                 }
+//                 }
+//             }
+//         }
+
+//     }
+
+
