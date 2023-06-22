@@ -84,7 +84,7 @@ footer{
     // PROPORTIONS ET DISPOSITION DES PUBLICATIONS SUR LA PAGE
     .FindsFeed{
         width: 63%;
-        margin: 17vh auto 0;
+        margin: 18vh auto 0;
         // font-weight: 400;
         display: flex;
         flex-direction: column;
@@ -164,99 +164,42 @@ footer{
     }
     // OPTIONS → DIMENSIONS ET POSITIONNEMENT
     .options{
-        width: 2%;
-        height: 10%;
+        font-size: 2vw;
         position: absolute;
         display: block;
-        top: 10%;
+        top: 4%;
         right: 10%;
         cursor: pointer;
-        .dots{
-            width: 100%;
-            height: 23.72%;
-            border-radius: 50%;
-            border: .07vw solid #858585;
-            background-color: #d9d9d9;
-            &::before, &::after{
-            content: '';
-            position: absolute;
-            display: block;
-            top: 0;
-            width: 82.1%;
-            height: 19.46%;
-            border-radius: 50%;
-            border: .07vw solid #858585;
-            background-color: #d9d9d9;
-            }
-            &::before{
-                top: 40%;
-            }
-            &::after{
-                top: 80%;
-            }
+        i{
+            background-color: rgba($color: #fffcf1, $alpha: .7);
+            border-radius: 50% / 20%;
+            padding: .2vh .1vw;
+            color: #858585;
         }
     }
     // LIKE → DIMENSIONS ET POSITIONNEMENT
     .like{
+        font-size: 1.7vw;
         position: absolute;
         display: block;
-        background-color: #d9d9d9;
-        width: 4%;
-        height: 4.742%;
-        transform: rotate(45deg);
-        bottom: 10%;
+        bottom: 5%;
         right: 10%;
         z-index: 2;
         cursor: pointer;
-        &::before, &::after{
-            content: '';
-            position: absolute;
-            display: block;
-            width: 100%;
-            height: 100%;
+        i{
+            background-color: rgba($color: #fffcf1, $alpha: .7);
+            color: #858585;
+            padding: .5vh .3vw .2vh .25vw;
             border-radius: 50%;
-            background-color: #d9d9d9;
-        }
-        &::before{
-            left: -50%;
-        }
-        &::after{
-            top: -50%;
-        }
-    }
-    .like-bg{
-        position: absolute;
-        display: block;
-        background-color: #858585;
-        width: 4.12%;
-        height: 4.892%;
-        transform: rotate(45deg);
-        bottom: 9.9%;
-        right: 9.9%;
-        z-index: 1;
-        &::before, &::after{
-            content: '';
-            position: absolute;
-            display: block;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background-color: #858585;
-        }
-        &::before{
-            left: -50%;
-        }
-        &::after{
-            top: -50%;
         }
     }
     .likeAmount{
         position: absolute;
-        bottom: 8.85%;
-        right: 12%;
+        bottom: 7.95%;
+        right: 15.2%;
         background-color: rgba($color: #d9d9d9, $alpha: .7);
         font-size: .7vw;
-        padding: 0 1.5vw 0 .8vw;
+        padding: 0 1.8vw 0 .8vw;
         border-top-left-radius: 15% 50%;
         border-bottom-left-radius: 15% 50%;
     }
