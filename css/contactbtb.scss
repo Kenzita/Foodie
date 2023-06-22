@@ -17,6 +17,11 @@ img {
     display: block;
 }
 
+.center{
+    margin: 0 auto;
+    width: 80%;
+}
+
 header {
     background-image: url(../img/NavBar_Bg.svg);
     background-repeat: no-repeat;
@@ -82,6 +87,7 @@ footer {
         font-size: 10px;
         margin-top: 4%;
         margin-bottom: 1%;
+        text-align: center;
     }
 }
 
@@ -130,6 +136,7 @@ main {
         .form1 {
             display: flex;
             align-items: last baseline;
+            justify-content: center;
 
             fieldset {
                 border: none;
@@ -148,7 +155,7 @@ main {
                     input {
                         border: none;
                         background-color: #E2E2E2;
-                        margin-left: 1.5vh;
+                        // margin-left: 1.5vh;
                         border-radius: 3em;
                         padding: .6vw;
                     }
@@ -196,6 +203,8 @@ main {
                         border: none;
                         font-family: poppins;
                         border-radius: 3em;
+                        width: 60vw;
+                        height: 30vh ;
                     }
                 }
             }
@@ -214,3 +223,134 @@ main {
         }
     }
 }
+
+// ------- Responsive 
+
+@media screen and (max-width:960px) {
+    header {
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {  header { 
+
+       nav {
+        ul {
+            li {
+                a {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+main{
+    .formulaire{
+width: 60%;
+      
+        .form1{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            fieldset{
+        
+                width:100% ;
+                p{
+              
+                    width: 60%;
+                    input{
+                        padding: 2vw;
+                    }
+                    select{
+                        padding: 2vw;
+                    }
+                }
+            }
+        }
+        .boxmessage{
+            .messages {
+                p{
+                textarea{
+                    padding: 3vw;
+                }
+            }}
+        
+        .btn-submit{
+            font-size: 1em;
+    
+        }}
+        }
+        
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+   body{
+    background-image: none;
+   }
+    
+    header {
+        nav {
+          
+            ul {
+                li {
+                    a {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .formulaire{
+
+          margin: 0;
+            .form1{
+                width: 60vw;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                fieldset{
+    
+                  width:100%;
+                    p{
+                  width: 100%;
+                        input{
+                            padding: 2vw;
+                            margin: 0;
+                        }
+                        select{
+                            padding: 2vw;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .boxmessage{
+                .messages {
+                    p{
+                    textarea{
+                        padding: 3vw;
+                    }
+                }}
+            
+            .btn-submit{
+                font-size: 1em;
+        
+            }}
+            }
+            
+        }
+
+  
+    }
