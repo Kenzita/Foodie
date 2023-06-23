@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    display: block;
+}
+
+header {
+    background-image: url(../img/NavBar_Bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    img {
+        width: 13%;
+    }
+
+    div {nav {
+        width: 73%;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            font-size: 0;
+
+            li {
+                a {
+                    font-size: 25px;
+                    color: black;
+                }
+            }
+        }
+    }}
+}
+
+footer {
+    background-color: #F7D776;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 15%;
+    }
+
+    p {
+        margin: .5%;
+    }
+
+    .reseaux {
+        margin-top: 1%;
+        width: 10%;
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            img {
+                width: 90%;
+            }
+        }
+    }
+
+    p:last-child {
+        font-size: 10px;
+        margin-top: 4%;
+        margin-bottom: 1%;
+    }
+}
+
+
+main {
+    h1 {
+        font-weight: 700;
+        font-size: 4vw;
+        color: #F29727;
+        text-align: center;
+        margin: 3vw;
+        margin-bottom: 2.5vh;
+    }
+
+    .notrehistoire {
+        margin: 3vw auto;
+        border-radius: 3em;
+        background-color: #F7D776;
+        width: 50%;
+
+        .aventure {
+            margin: 10vh;
+            position: relative;
+            width: 55%;
+
+            .histoiretexte {
+                padding-top: 3.5vh;
+
+
+                h2 {
+                    text-align: center;
+                    padding-bottom: 4vh;
+                }
+
+                p {
+                    padding-bottom: 4vh;
+                    font-size: 1em;
+                }
+            }
+
+            img {
+                width: 95%;
+                position: absolute;
+                left: 105%;
+                top: -10%;
+                border-radius: 5%;
+            }
+        }
+    }
+
+    .dreamteam {
+        background-color: #CEE8A8;
+
+        h2 {
+            text-align: center;
+            padding: 5vh;
+        }
+
+        .profils {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 5vh;
+
+            .profil {
+                width: 23vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: first baseline;
+                padding-bottom: 5vh;
+
+                p {
+                    padding-top: 7vh;
+                    text-align: center;
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .notresite {
+        margin: 3vw auto;
+        border-radius: 30px;
+        background-color: #F7D776;
+        width: 50%;
+
+
+        .site {
+            margin: 10vh;
+            position: relative;
+            width: 43%;
+
+            .sitetexte {
+                padding-top: 3.5vh;
+                width: 27vw;
+
+                h2 {
+                    text-align: center;
+                    padding-bottom: .5vh;
+                }
+
+                p {
+                    padding: 5.5vh 0;
+                    font-size: 1em;
+
+                }
+            }
+
+            img {
+                width: 95%;
+                position: absolute;
+                left: 140%;
+                top: -14%;
+                border-radius: 5%;
+            }
+        }
+    }
+
+
+
+}
+
+// --------------------------- Responsive
+
+@media screen and (max-width: 1200px) {
+    main {
+        .notrehistoire {
+            .aventure {
+                img {
+                    width: 100%;
+                    position: absolute;
+                    left: 105%;
+                    top: 13%;
+                    border-radius: 5%;
+                }
+            }
+        }
+
+        .notresite {
+            .site{
+                img{
+                    width: 100%;
+                    position: absolute;
+                    left: 140%;
+                    top: 5%;
+                    border-radius: 5%; 
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        .notrehistoire{
+            .aventure{
+                .histoiretexte{
+padding-top: 2vh;
+
+h2{
+    font-size: 1.3em;
+}
+
+p{
+    font-size: .8em;
+}
+               }
+               img {
+             
+                left: 105%;
+                top: 10%;
+               
+            }
+            }
+        }
+
+        .dreamteam{
+            .profils{
+                .profil{
+                    img{
+                        width: 85%
+                    }
+                    p{
+                        font-size: .9em;
+                    }
+                }
+            }
+        }
+        .notresite{
+            .site{
+                .sitetexte{
+padding-top: 2vh;
+
+h2{
+    font-size: 1.3em;
+}
+
+p{
+    font-size: .8em;
+}
+               }
+               img {
+                width: 90%;
+                position: absolute;
+                left: 140%;
+                top: 4%;
+                border-radius: 5%;
+            }
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    header{
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .notrehistoire{
+            .aventure{
+               img {
+                top: 13%;
+            }
+            }
+        }
+        .notresite{
+            .site{
+               img {
+                top: 7%
+            }
+            }
+        }
+
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .center {
+		width: 100%;
+		
+	}
+    header {
+        padding: 20px;
+        margin-bottom: 50px;
+        nav {
+            display: none;
+        }
+        #toggle {
+            position:fixed;
+            display: block;
+            width: 30px;
+            height: 2px;
+            top: 50px;
+            right: 50px;
+            cursor: pointer;
+            background-color:#e33131;
+        
+            transition: all .3s ease-in-out; 
+            z-index: 8;
+            &:before, &:after {
+                content: '';
+               
+                position: absolute;
+                display: block;
+                width: 30px;
+                height: 2px;
+                background-color: indianred;
+                transition: all .3s ease-in-out; 
+            }
+            &:before {
+                top: -10px;
+            }
+            &:after {
+                top: 10px;
+            }  
+        }
+        #toggle.active { 
+			 
+			background-color: transparent; 
+			&:before {
+				
+				transform: rotate(45deg);
+				top: 0;
+			}
+			&:after{
+				transform: rotate(-45deg);
+				top: 0;
+			}
+	
+        }
+        #navigation {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            right: -100%;
+            width: 100%;
+            height: 100vh;
+            transition: .5s;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 6;
+        }
+        #navigation.active {
+           right: 0;
+            ul {
+                li {
+                    display: block;
+                    margin-bottom: 20px;
+                    width: 100%;
+                    a {
+                        color: indianred;
+                        font-size: 24px;
+                        text-align: center;
+                    }
+                }
+            }    
+        }    
+    }
+    main {
+        .notrehistoire{
+            width: 70%;
+            .aventure{
+               img {
+                top: 9%;
+                width: 85%;
+           
+            }
+            }
+        }
+
+        .dreamteam{
+            .profils{
+                .profil{
+                    p{
+                        font-size: .7em;
+                    }
+                }
+            }
+        }
+        .notresite{
+            width: 70%;
+            .site{
+
+                .sitetexte{
+                    width: 40vw;
+                }
+               img {
+                top: 4%;
+                width: 80%;
+               
+            }
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    header{
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        p{
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+
+    main {
+
+    .notrehistoire{
+        width: 100%;
+        border-radius: 0px;
+        
+    }}
+}
