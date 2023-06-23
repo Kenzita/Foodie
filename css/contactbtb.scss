@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/Contact_BG.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+img {
+    display: block;
+}
+
+.center{
+    margin: 0 auto;
+    width: 80%;
+}
+
+header {
+    background-image: url(../img/NavBar_Bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    img {
+        width: 13%;
+    }
+
+    nav {
+        width: 73%;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            font-size: 0;
+
+            li {
+                a {
+                    font-size: 25px;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #F7D776;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 15%;
+    }
+
+    p {
+        margin: .5%;
+    }
+
+    .reseaux {
+        margin-top: 1%;
+        width: 10%;
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            img {
+                width: 90%;
+            }
+        }
+    }
+
+    p:last-child {
+        font-size: 10px;
+        margin-top: 4%;
+        margin-bottom: 1%;
+        text-align: center;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .titre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 3em;
+            color: #F29727;
+            text-align: center;
+            padding: 6vh 0 5vh;
+        }
+
+        p:first-of-type {
+            text-align: center;
+            width: 58vw;
+            font-size: 1em;
+            font-weight: 200;
+        }
+
+        p:nth-of-type(2) {
+            text-align: center;
+            font-size: .9em;
+            font-weight: 500;
+        }
+
+        p:nth-of-type(3) {
+            text-align: center;
+            font-size: 1em;
+            font-weight: 400;
+            padding: 5vh;
+        }
+    }
+
+    .formulaire {
+        width: 50vw;
+
+        .form1 {
+            display: flex;
+            align-items: last baseline;
+            justify-content: center;
+
+            fieldset {
+                border: none;
+
+                p {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1vh 0;
+                    width: 30vw;
+
+                    label {
+                        font-size: 1em;
+                        margin-left: 2vw;
+                    }
+
+                    input {
+                        border: none;
+                        background-color: #E2E2E2;
+                        // margin-left: 1.5vh;
+                        border-radius: 3em;
+                        padding: .6vw;
+                    }
+
+                    select {
+                        border: none;
+                        background-color: #E2E2E2;
+                        margin-left: 1.5vh;
+                        border-radius: 3em;
+                        padding: .5vw;
+                    }
+                }
+            }
+        }
+
+        .boxmessage {
+            .RGPDs {
+
+                width: 59vw;
+                display: flex;
+                justify-content: flex-end;
+        
+                p {
+                    font-size: .6em;
+     margin-left: 1vw;
+                }
+          
+            }
+
+            .messages {
+                p {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    label {
+                        align-self: flex-start;
+                        margin-left: 1.5vw;
+                    }
+
+                    textarea {
+                        padding: 1vw;
+                        background-color: #E2E2E2;
+                        border: none;
+                        font-family: poppins;
+                        border-radius: 3em;
+                        width: 60vw;
+                        height: 30vh ;
+                    }
+                }
+            }
+
+            .btn-submit {
+                background-color: #FDF5DE;
+                color: #F29727;
+                padding: 1vh 5vw;
+                font-size: 2em;
+                border: none;
+                border-radius: 3em;
+                margin: 5vh 0 10vh;
+                position: relative;
+                left: 18vw;
+            }
+        }
+    }
+}
+
+// ------- Responsive 
+
+@media screen and (max-width:960px) {
+    header {
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {  header { 
+
+       nav {
+        ul {
+            li {
+                a {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+main{
+    .formulaire{
+width: 60%;
+      
+        .form1{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            fieldset{
+        
+                width:100% ;
+                p{
+              
+                    width: 60%;
+                    input{
+                        padding: 2vw;
+                    }
+                    select{
+                        padding: 2vw;
+                    }
+                }
+            }
+        }
+        .boxmessage{
+            .messages {
+                p{
+                textarea{
+                    padding: 3vw;
+                }
+            }}
+        
+        .btn-submit{
+            font-size: 1em;
+    
+        }}
+        }
+        
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+   body{
+    background-image: none;
+   }
+    
+    header {
+        nav {
+          
+            ul {
+                li {
+                    a {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .formulaire{
+
+          margin: 0;
+            .form1{
+                width: 60vw;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                fieldset{
+    
+                  width:100%;
+                    p{
+                  width: 100%;
+                        input{
+                            padding: 2vw;
+                            margin: 0;
+                        }
+                        select{
+                            padding: 2vw;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .boxmessage{
+                .messages {
+                    p{
+                    textarea{
+                        padding: 3vw;
+                    }
+                }}
+            
+            .btn-submit{
+                font-size: 1em;
+        
+            }}
+            }
+            
+        }
+
+  
+    }
