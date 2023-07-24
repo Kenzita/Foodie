@@ -24,7 +24,7 @@ header {
   align-items: center;
 }
 header img {
-  width: 13%;
+  width: 50%;
 }
 header nav {
   width: 73%;
@@ -229,8 +229,79 @@ main .notresite .site img {
   }
 }
 @media screen and (max-width: 768px) {
-  header nav ul li a {
-    font-size: 18px;
+  .center {
+    width: 100%;
+  }
+  header {
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  header nav {
+    display: none;
+  }
+  header #toggle {
+    position: fixed;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+    background-color: #e33131;
+    transition: all 0.3s ease-in-out;
+    z-index: 8;
+  }
+  header #toggle:before, header #toggle:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: indianred;
+    transition: all 0.3s ease-in-out;
+  }
+  header #toggle:before {
+    top: -10px;
+  }
+  header #toggle:after {
+    top: 10px;
+  }
+  header #toggle.active {
+    background-color: transparent;
+  }
+  header #toggle.active:before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  header #toggle.active:after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  header #navigation {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 6;
+  }
+  header #navigation.active {
+    right: 0;
+  }
+  header #navigation.active ul li {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  header #navigation.active ul li a {
+    color: indianred;
+    font-size: 24px;
+    text-align: center;
   }
   main .notrehistoire {
     width: 70%;
@@ -265,4 +336,4 @@ main .notresite .site img {
     width: 100%;
     border-radius: 0px;
   }
-}
+}/*# sourceMappingURL=About.css.map */
