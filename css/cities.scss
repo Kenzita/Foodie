@@ -17,13 +17,15 @@ img {
 
 // Header //
 header {
-  background-image: url(../img/NavBar_BG_1.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    background-image: url(../img/NavBar_Bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10vh;
+    box-shadow: 0 -1vh 2vh;
 
   img {
     width: 50% ;
