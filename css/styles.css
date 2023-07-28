@@ -7,6 +7,18 @@
   list-style-type: none;
 }
 
+.visible {
+  display: block;
+}
+
+.invisible {
+  display: none;
+}
+
+.blurBG {
+  filter: blur(5px);
+}
+
 img {
   display: block;
 }
@@ -94,11 +106,11 @@ Section .h1.reveal {
 }
 Section .h1.reveal h1 {
   font-size: 7vw;
-  color: #CEE8A8;
+  color: #cee8a8;
   margin-right: 10%;
 }
 Section .barreVerticale {
-  background-color: #CEE8A8;
+  background-color: #cee8a8;
   height: 22vh;
   width: 4px;
 }
@@ -109,7 +121,7 @@ Section .actucontainer {
   margin-top: 10%;
 }
 Section .actucontainer .actu {
-  background-color: #CEE8A8;
+  background-color: #cee8a8;
   border-radius: 7%;
   width: 60%;
   margin-left: 5%;
@@ -158,7 +170,7 @@ Section .actucontainer .actu a {
 Section .actucontainer .eventcontainer {
   margin-right: 5%;
   width: 50%;
-  background-color: #CEE8A8;
+  background-color: #cee8a8;
   border-radius: 10%;
   font-size: 14px;
 }
@@ -207,7 +219,7 @@ Section .actucontainer .eventcontainer .restodujour .restodujourcontainer .escar
 Section .titrenoté.reveal {
   font-size: 8vh;
   font-weight: 500;
-  color: #E3C463;
+  color: #e3c463;
   text-align: center;
   margin-top: 15%;
   display: flex;
@@ -216,7 +228,7 @@ Section .titrenoté.reveal {
   margin-bottom: 10%;
 }
 Section .titrenoté.reveal .bordernoté {
-  border-bottom: 4px solid #E3C463;
+  border-bottom: 4px solid #e3c463;
   width: 800px;
 }
 Section .flexnoté {
@@ -242,7 +254,7 @@ Section .flexnoté .noté3:hover {
 }
 Section .noté1 {
   position: relative;
-  background-color: #E3C463;
+  background-color: #e3c463;
   border-radius: 7%;
   width: 50%;
   padding: 2%;
@@ -280,7 +292,7 @@ Section .noté1 i {
 }
 Section .noté2 {
   position: relative;
-  background-color: #E3C463;
+  background-color: #e3c463;
   border-radius: 7%;
   width: 50%;
   padding: 2%;
@@ -319,7 +331,7 @@ Section .noté2 i {
 }
 Section .noté3 {
   position: relative;
-  background-color: #E3C463;
+  background-color: #e3c463;
   border-radius: 7%;
   width: 50%;
   padding: 2%;
@@ -384,12 +396,12 @@ Section .flexcontainer .titreflex.reveal {
 }
 Section .flexcontainer .titreflex.reveal h2 {
   font-size: 80px;
-  color: #CEE8A8;
+  color: #cee8a8;
   margin-left: 5%;
   font-weight: 500;
 }
 Section .flexcontainer .titreflex.reveal .barre {
-  border-bottom: 4px solid #CEE8A8;
+  border-bottom: 4px solid #cee8a8;
   width: 50%;
   margin-bottom: 3.5%;
   margin-left: 8%;
@@ -400,7 +412,7 @@ Section .flexcontainer .flexfeed {
 }
 Section .flexcontainer .flexfeed .feed1 {
   position: relative;
-  background-color: #CEE8A8;
+  background-color: #cee8a8;
   width: 60%;
   height: 40vh;
   margin: 3%;
@@ -432,7 +444,7 @@ Section .flexcontainer .flexfeed .feed1 span {
 }
 Section .flexcontainer .flexfeed .feed2 {
   position: relative;
-  background-color: #CEE8A8;
+  background-color: #cee8a8;
   width: 60%;
   height: 40vh;
   margin: 3%;
@@ -464,7 +476,7 @@ Section .flexcontainer .flexfeed .feed2 span {
 }
 Section .flexcontainer .flexfeed .feed3 {
   position: relative;
-  background-color: #CEE8A8;
+  background-color: #cee8a8;
   width: 60%;
   height: 40vh;
   margin: 3%;
@@ -495,7 +507,7 @@ Section .flexcontainer .flexfeed .feed3 span {
   top: 50%;
 }
 Section .flexcontainer .voirplus {
-  --c: #CEE8A8;
+  --c: #cee8a8;
   color: var(--c);
   font-size: 16px;
   border: 0.2em solid var(--c);
@@ -553,7 +565,7 @@ Section .flexpartenaires {
 Section .flexpartenaires h4 {
   font-size: 6vw;
   text-align: center;
-  color: #F7D776;
+  color: #f7d776;
 }
 Section .flexpartenaires .img {
   display: flex;
@@ -570,12 +582,12 @@ Section .flexpartenaires .img img {
 }
 .titreAvis.reveal h2 {
   font-size: 4.5em;
-  color: #CEE8A8;
+  color: #cee8a8;
   margin-left: 5%;
   font-weight: 600;
 }
 .titreAvis.reveal .barre {
-  border-bottom: 4px solid #CEE8A8;
+  border-bottom: 4px solid #cee8a8;
   width: 35%;
   margin-bottom: 3%;
   margin-left: 5%;
@@ -629,7 +641,7 @@ Section .flexpartenaires .img img {
   border-radius: 20px;
   text-align: center;
   margin: 0 auto;
-  border: 1px solid #CEE8A8;
+  border: 1px solid #cee8a8;
 }
 .pageAvis .trieAvis .avis1 .critique1 {
   font-size: 0.9em;
@@ -649,7 +661,7 @@ Section .flexpartenaires .img img {
 .pageAvis .trieAvis .avis1 .note1 {
   margin: 0 auto;
   text-align: center;
-  border: 1px solid #CEE8A8;
+  border: 1px solid #cee8a8;
   width: 50%;
   border-radius: 20px;
   padding: 2% 2% 3%;
@@ -670,7 +682,7 @@ Section .flexpartenaires .img img {
   border-radius: 20px;
   text-align: center;
   margin: 0 auto;
-  border: 1px solid #CEE8A8;
+  border: 1px solid #cee8a8;
 }
 .pageAvis .trieAvis .avis2 .critique2 {
   font-size: 0.9em;
@@ -690,7 +702,7 @@ Section .flexpartenaires .img img {
 .pageAvis .trieAvis .avis2 .note2 {
   margin: 0 auto;
   text-align: center;
-  border: 1px solid #CEE8A8;
+  border: 1px solid #cee8a8;
   width: 50%;
   border-radius: 20px;
   padding: 2% 2% 3%;
@@ -711,7 +723,7 @@ Section .flexpartenaires .img img {
   border-radius: 20px;
   text-align: center;
   margin: 0 auto;
-  border: 1px solid #CEE8A8;
+  border: 1px solid #cee8a8;
 }
 .pageAvis .trieAvis .avis3 .critique3 {
   font-size: 0.9em;
@@ -731,7 +743,7 @@ Section .flexpartenaires .img img {
 .pageAvis .trieAvis .avis3 .note3 {
   margin: 0 auto;
   text-align: center;
-  border: 1px solid #CEE8A8;
+  border: 1px solid #cee8a8;
   width: 50%;
   border-radius: 20px;
   padding: 2% 2% 3%;
@@ -752,7 +764,7 @@ Section .flexpartenaires .img img {
   border-radius: 20px;
   text-align: center;
   margin: 0 auto;
-  border: 1px solid #CEE8A8;
+  border: 1px solid #cee8a8;
 }
 .pageAvis .trieAvis .avis4 .critique4 {
   font-size: 0.9em;
@@ -772,7 +784,7 @@ Section .flexpartenaires .img img {
 .pageAvis .trieAvis .avis4 .note4 {
   margin: 0 auto;
   text-align: center;
-  border: 1px solid #CEE8A8;
+  border: 1px solid #cee8a8;
   width: 50%;
   border-radius: 20px;
   padding: 2% 2% 3%;
@@ -781,7 +793,7 @@ Section .flexpartenaires .img img {
 }
 
 footer {
-  background-color: #F7D776;
+  background-color: #f7d776;
   color: white;
   display: flex;
   flex-direction: column;
@@ -1075,7 +1087,7 @@ footer p:last-child {
     margin-left: 12%;
     width: 75%;
     border: none;
-    border-bottom: 3px solid #CEE8A8;
+    border-bottom: 3px solid #cee8a8;
   }
   section .actucontainer {
     display: block;
@@ -1201,4 +1213,220 @@ footer p:last-child {
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+form {
+  width: 30%;
+  align-self: flex-end;
+  color: white;
+  border: none;
+  background-color: #ffffff;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-radius: 3em;
+  height: 100%;
+  margin: auto auto;
+  margin-top: 10%;
+  position: fixed;
+  top: -10%;
+  left: 35%;
+  z-index: 99;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+form fieldset {
+  border: none;
+}
+form fieldset .titre {
+  display: flex;
+}
+form fieldset .titre .connexionTitre {
+  border: none;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: white;
+  background-color: #ffb600;
+  text-align: center;
+  width: 50%;
+  border-radius: 2em 0 0 0;
+  margin-bottom: 10%;
+  padding: 3%;
+}
+form fieldset .titre .inscriptionTitre {
+  border: none;
+  font-size: 1.5em;
+  color: #ffb600;
+  background-color: #f7d776;
+  font-weight: 300;
+  text-align: center;
+  width: 50%;
+  border-radius: 0 2em 0 0;
+  margin-bottom: 10%;
+  padding: 3%;
+}
+form fieldset .contenuInscription p {
+  padding: 0 4%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1%;
+}
+form fieldset .contenuInscription p label {
+  margin-bottom: 1%;
+  color: #f29727;
+  font-weight: 600;
+}
+form fieldset .contenuInscription p input {
+  height: 5vh;
+  background-color: #f8df93;
+  border: none;
+  border-radius: 1em;
+  color: #ffffff;
+  margin-bottom: 4%;
+  padding: 2% 4%;
+  font-size: 1.3em;
+}
+form fieldset .contenuInscription p input::-moz-placeholder {
+  padding: 2% 1%;
+  font-size: 0.7em;
+  font-style: italic;
+  color: rgba(242, 151, 39, 0.4941176471);
+}
+form fieldset .contenuInscription p input::placeholder {
+  padding: 2% 1%;
+  font-size: 0.7em;
+  font-style: italic;
+  color: rgba(242, 151, 39, 0.4941176471);
+}
+form fieldset .contenuInscription .meconnecter {
+  margin-top: 6%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 4%;
+}
+form fieldset .contenuInscription .meconnecter button {
+  border: none;
+  height: 5vh;
+  width: 80%;
+  border-radius: 1em;
+  font-size: 1.5em;
+  background-color: #f29727;
+}
+form fieldset .contenuInscription .meconnecter button a {
+  color: white;
+  background-color: #f29727;
+  font-style: normal;
+  text-align: center;
+}
+form fieldset .contenuInscription .meconnecter label {
+  margin-left: -9%;
+  color: #000000;
+}
+form fieldset .contenuInscription p:nth-of-type(1) {
+  display: inline-block;
+  padding: 0 4%;
+  width: 25%;
+  margin-right: 5%;
+}
+form fieldset .contenuInscription p:nth-of-type(2) {
+  display: inline-block;
+  color: #f29727;
+  width: 25%;
+  padding: 0 4%;
+  margin-left: 5%;
+}
+form fieldset .contenuInscription p:nth-of-type(7) {
+  display: inline-block;
+  color: #f29727;
+  font-size: 0.7em;
+  padding: 5% 0 5% 5%;
+}
+form fieldset .contenuInscription a {
+  display: inline-block;
+  color: black;
+  font-size: 0.7em;
+  font-style: italic;
+}
+form .contenuConnexion p {
+  padding: 0 4%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1%;
+}
+form .contenuConnexion p label {
+  margin-bottom: 1%;
+  color: #f29727;
+  font-weight: 600;
+}
+form .contenuConnexion p input {
+  height: 5vh;
+  background-color: #f8df93;
+  border: none;
+  border-radius: 1em;
+  color: #ffffff;
+  margin-bottom: 4%;
+  padding: 2% 4%;
+  font-size: 1.3em;
+}
+form .contenuConnexion p input::-moz-placeholder {
+  padding: 2% 1%;
+  font-size: 0.7em;
+  font-style: italic;
+  color: rgba(242, 151, 39, 0.4941176471);
+}
+form .contenuConnexion p input::placeholder {
+  padding: 2% 1%;
+  font-size: 0.7em;
+  font-style: italic;
+  color: rgba(242, 151, 39, 0.4941176471);
+}
+form .contenuConnexion .meconnecter {
+  margin-top: 6%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 4%;
+}
+form .contenuConnexion .meconnecter button {
+  border: none;
+  height: 5vh;
+  width: 45%;
+  border-radius: 1em;
+  font-size: 1.5em;
+  background-color: #f29727;
+}
+form .contenuConnexion .meconnecter button a {
+  color: white;
+  background-color: #f29727;
+  font-style: normal;
+  text-align: center;
+}
+form .contenuConnexion .meconnecter input[type=checkbox] {
+  display: none;
+}
+form .contenuConnexion .meconnecter .checkbox {
+  display: inline-block;
+  width: 1.3em;
+  height: 1.3em;
+  border: 0.13rem solid #f29727;
+  border-style: dashed;
+  cursor: pointer;
+}
+form .contenuConnexion .meconnecter label {
+  margin-left: -9%;
+  color: #000000;
+}
+form .contenuConnexion p:nth-of-type(3) {
+  display: inline-block;
+  color: #f29727;
+  font-size: 0.7em;
+  padding: 5% 0 5% 5%;
+}
+form .contenuConnexion a {
+  display: inline-block;
+  color: black;
+  font-size: 0.7em;
+  font-style: italic;
 }/*# sourceMappingURL=styles.css.map */
