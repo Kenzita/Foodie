@@ -15,6 +15,7 @@ img {
     display: block;
 }
 
+
 // HEADER
 header {
     background-image: url(../img/NavBar_Bg.svg);
@@ -27,7 +28,7 @@ header {
     margin-bottom: 10vh;
     box-shadow: 0 -1vh 2vh;
     position: fixed;
-    z-index: 99;
+    z-index: 3;
 
 
     img {
@@ -50,6 +51,7 @@ header {
         }
     }
 }
+
 
 // FOOTER
 footer{
@@ -83,6 +85,7 @@ footer{
     }
 }
 
+
 // BODY → PUBLICATIONS
 .FoodieFinds{
     // PROPORTIONS ET DISPOSITION DES PUBLICATIONS SUR LA PAGE
@@ -95,7 +98,7 @@ footer{
         // PUBLICATIONS IMPAIRES → DIMENSIONS, ESPACEMENT ET POSITION
         .FindsPostYellow{
             width: 74%;
-            padding: 4vh 0;
+            margin: 4vh 0;
             display: flex;
             // DIMENSIONS, ANGLE ARRONDI ET COULEUR DE FOND DU CÔTÉ TEXTE
             .FindsTxt{
@@ -109,7 +112,7 @@ footer{
         // PUBLICATIONS PAIRES → DIMENSIONS, ESPACEMENT ET POSITION
         .FindsPostGreen{
             width: 74%;
-            padding: 4vh 0;
+            margin: 4vh 0;
             display: flex;
             align-self: flex-end;
             // DIMENSIONS, ANGLE ARRONDI ET COULEUR DE FOND DU CÔTÉ TEXTE
@@ -124,17 +127,18 @@ footer{
     }
 }
 
+
 // PUBLICATIONS → UTILISATEURS → DISPOSITION, ESPACEMENT ET TAILLES
 .users{
     display: flex;
     align-items: center;
-    padding: 3.8vh 2vw 1vh;
+    margin: 3.8vh 2vw 1vh;
     img{
         width: 25%;
         cursor: pointer;
     }
     .userInfos{
-        padding: 0 1vw;
+        margin: 0 1vw;
         .userNames{
             font-size: 1.31vw;
         }
@@ -145,18 +149,38 @@ footer{
     }
 }
 
+
 // PUBLICATIONS → CONTENUS → DISPOSITION, ESPACEMENT ET TAILLES
-.PostContent{
-    padding: 0 2vw;
-    .PostRestaurants{
-        font-size: 1.2vw;
-        text-align: center;
-        padding-bottom: 1vh;
+.PostContentComp{
+    margin: 0 2vw 2vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .PostContent{
+        .PostRestaurants{
+            font-size: 1.2vw;
+            text-align: center;
+            margin-bottom: 1vh;
+        }
+        .Post{
+            font-size: 1.06vw;
+        }
     }
-    .Post{
-        font-size: 1.06vw;
+    // LIKE → DIMENSIONS ET POSITIONNEMENT
+    #like{
+        display: none;
+    }
+    #like.active{
+        display: flex;
+        align-items: center;
+        i{
+            font-size: 2.5vw;
+            margin-right: 1vw;
+        }
     }
 }
+
 
 // PUBLICATIONS → IMAGES → BORD ARRONDI, TAILLES, DISPOSITION DES OPTIONS ET DU LIKE
 .FindsImg{
@@ -181,33 +205,20 @@ footer{
             color: #858585;
         }
     }
-    // LIKE → DIMENSIONS ET POSITIONNEMENT
-    .like{
-        font-size: 1.7vw;
-        position: absolute;
-        display: block;
-        bottom: 5%;
-        right: 10%;
-        z-index: 2;
-        cursor: pointer;
-        i{
-            background-color: rgba($color: #fffcf1, $alpha: .7);
-            color: #858585;
-            padding: .5vh .3vw .2vh .25vw;
-            border-radius: 50%;
-        }
-    }
-    .likeAmount{
-        position: absolute;
-        bottom: 7.95%;
-        right: 15.2%;
-        background-color: rgba($color: #d9d9d9, $alpha: .7);
-        font-size: .7vw;
-        padding: 0 1.8vw 0 .8vw;
-        border-top-left-radius: 15% 50%;
-        border-bottom-left-radius: 15% 50%;
-    }
 }
+
+// TOUTES LES PUBLICATIONS (SCALE)
+.BlownUp{
+    transform: scale(1.2);
+    border-top-left-radius: 14.92% 20%;
+    border-bottom-right-radius: 14.92% 20%;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2vw 0 50vw rgba($color: #000000, $alpha: .2);
+}
+
 
 // MENU / NAVIGATION DES VILLES
 // MENU BURGER
@@ -255,6 +266,7 @@ footer{
     }
 }
 
+
 // NAVIGATION DES VILLES
 // FOND
 .FoodieFinds{
@@ -271,8 +283,8 @@ footer{
         overflow-y: scroll;
         overflow-x: hidden;
         box-shadow: -1vw 0 2vw;
-        z-index: 1
-        ;
+        z-index: 1;
+        transition: ease-in-out .3s all;
         &::-webkit-scrollbar{
             background-color: #fffcf1;
             border-radius: 50% / 1%;
@@ -332,6 +344,7 @@ footer{
         }
     }
 }
+
 
 // RESPONSIVE
 @media screen and (max-width: 960px) {
