@@ -54,6 +54,8 @@ header .headercontainer div.bg {
 header .logo {
   width: 25%;
   z-index: 1;
+  animation: scaleFade auto linear;
+  animation-timeline: scroll(root);
 }
 header .logobg {
   display: flex;
@@ -62,11 +64,29 @@ header .logobg {
   justify-content: center;
   z-index: 0;
   width: 30%;
+  animation: scaleFade auto linear;
+  animation-timeline: scroll(root);
 }
 header .logobg img {
   width: 130%;
 }
-header .navbar {
+
+@keyframes scaleFade {
+  0% {
+    transform: scale(1);
+    opacity: 100%;
+  }
+  10% {
+    transform: scale(1.5);
+    opacity: 0%;
+  }
+}
+.stickyNav {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+.stickyNav .navbar {
   background-image: url(../img/NavBar_BG_1.svg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -74,21 +94,24 @@ header .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 3vh 0;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
-header .navbar .nav {
+.stickyNav .navbar .nav {
   width: 73%;
 }
-header .navbar ul {
+.stickyNav .navbar ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 0;
 }
-header .navbar ul li a {
+.stickyNav .navbar ul li a {
   font-size: 1.63vw;
   color: black;
+}
+
+.logoNav {
+  width: 50%;
 }
 
 Section {
