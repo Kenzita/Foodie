@@ -25,7 +25,7 @@ header{
         width: 100%;
         background-image: url(../img/home_header.png);
         background-size: cover;
-        height: 500px;
+        height: 100vh;
         position: relative;
         display: flex;
         justify-content: center;
@@ -95,19 +95,31 @@ Section{
     background-size: 100%;
     padding-top: 5%;
     // Actu
-    h1{
-        font-size: 6vw;
-        color:#CEE8A8;
+    .h1.reveal{
         padding-bottom: 1%;
-        width: 42%;
-        border-right: 3px solid #CEE8A8;
+        width: 100%;
         margin-bottom: 4%;
         padding-left: 7%;
+        display: flex;
+        margin-top: 5%;
+        h1{
+            font-size: 7vw;
+            color:#CEE8A8;
+            margin-right: 10%;
+        }
+
+    }
+    .barreVerticale{
+        background-color: #CEE8A8;
+        height: 22vh;
+        width: 4px;
     }
     
     .actucontainer{
         display: flex;
         justify-content: space-around;
+        margin-bottom: 20%;
+        margin-top: 10%;
 
         .actu{
             background-color: #CEE8A8;
@@ -228,24 +240,43 @@ Section{
         }
     }
     // Les mieux notés
-    .titrenoté{
+    .titrenoté.reveal{
         font-size: 8vh;
         font-weight: 500;
         color: #E3C463;
         text-align: center;  
         margin-top: 15%;
+        display: flex;
+        flex-direction: column;  
+        align-items: center; 
+        margin-bottom: 10%; 
+        .bordernoté{
+            border-bottom: 4px solid #E3C463;
+            width: 800px;
+        }
     }
 
-    .bordernoté{
-        border-bottom: 4px solid #E3C463;
-        width: 800px;
-        margin-left: 20%;
-        margin-bottom: 7%;
-    }
+
+    
 
         .flexnoté{
             display: flex;
             justify-content: space-evenly;
+            .noté1,
+            .noté2,
+            .noté3 {
+                    transition: transform 0.3s;
+                &:hover{
+                    z-index: 2;
+                    transition: all 200ms ease-in;
+                    transform: scale(1.03);
+                    transition: all 200ms ease-in;
+                    transform: scale(1.03);   
+                    transition: all 200ms ease-in;
+                    transform: scale(1.03);
+                    transition: all 200ms ease-in;
+                }
+            }
         }
 
         .noté1{
@@ -389,10 +420,29 @@ Section{
     .flexcontainer{
         position: relative;
         margin-bottom: 8%;
-        margin-top: 5%;
+        margin-top: 15%;
 
-        .titreflex{
+        // Hover--------
+        .feed1,
+        .feed2,
+        .feed3 {
+                transition: transform 0.3s;
+            &:hover{
+                box-shadow: 40px 50px 80px rgb(0, 0, 0, 50%);
+                z-index: 2;
+                transition: all 200ms ease-in;
+                transform: scale(1.2);
+                transition: all 200ms ease-in;
+                transform: scale(1.2);   
+                transition: all 200ms ease-in;
+                transform: scale(1.2);
+                transition: all 200ms ease-in;
+            }
+        }
+
+        .titreflex.reveal{
             display: flex;
+            margin-bottom: 5%;
 
             h2{
                 font-size: 80px;
@@ -460,6 +510,7 @@ Section{
                 height: 40vh;
                 margin: 3%;
                 border-radius: 10%;
+                
 
                 img{
                     width: 73px;
@@ -467,6 +518,7 @@ Section{
                     border-radius: 50%;
                     margin-left: 5%;
                     margin-top: 5%;
+                    
 
                 }
 
@@ -532,25 +584,67 @@ Section{
             }
         }
 
-        .voirplus{
-            position: absolute;
-            background-color: #CEE8A8;
-            width: 8%;
-            border-radius: 8%;
-            padding-top: 1%;
-            padding-bottom: 1%;
-            margin-bottom: 2%;
-            bottom: -30%;
-            right: 5%;
-            
-
+        .voirplus {
+            --c: #CEE8A8;
+            color: var(--c);
+            font-size: 16px;
+            border: 0.2em solid var(--c);
+            border-radius: 0.5em;
+            width: 12em;
+            height: 3em;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: sans-serif;
+            letter-spacing: 0.1em;
+            text-align: center;
+            line-height: 3em;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: 0.5s;
+            margin: 1em;
+            margin-left: 80%;
+            margin-top: 5%;
             a{
-                font-size: 18px;
-                padding-left: 18%;
                 color: black;
-
             }
-        }
+            
+          }
+        
+          .voirplus span {
+            position: absolute;
+            width: 28%;
+            height: 100%;
+            background-color: var(--c);
+            transform: translateY(150%);
+            border-radius: 50%;
+            left: calc((var(--n) - 1) * 20%);
+            margin-left: -10%;
+            transition: 0.5s;
+            transition-delay: calc((var(--n) - 1) * 0.1s);
+            z-index: -1;
+          }
+        
+        
+          .voirplus:hover span {
+            transform: translateY(0) scale(2);
+          }
+        
+          .voirplus span:nth-child(1) {
+            --n: 1;
+          }
+        
+          .voirplus span:nth-child(2) {
+            --n: 2;
+          }
+        
+          .voirplus span:nth-child(3) {
+            --n: 3;
+          }
+        
+          .voirplus span:nth-child(4) {
+            --n: 4;
+          }
         
     }
 
@@ -572,7 +666,235 @@ Section{
     }
 }
 
+.titreAvis.reveal{
+    display: flex;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    
+            h2{
+                font-size: 4.5em;
+                color: #CEE8A8;
+                margin-left: 5%;
+                font-weight: 600;
+            }
 
+            .barre{
+                border-bottom: 4px solid #CEE8A8;
+                width: 35%;
+                margin-bottom: 3%;
+                margin-left: 5%;
+            
+            }
+}
+.pageAvis{
+    font-family: 'Sanchez', serif;
+    color: white;
+    background-image: url(../img/home_header.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    padding-bottom: 3%;
+    margin-top: 5%;
+    position: relative;
+    z-index: -2;
+    margin-bottom: 0%;
+    display: flex;
+    align-items: center;
+
+    .toutnoir{
+        width: 100%;
+        background-color: rgba($color: #000000, $alpha: .30);
+        backdrop-filter: blur(.25vw);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        z-index: -1;
+    }
+
+    .trieAvis{
+        display: flex;
+        justify-content: space-around;
+        align-items: end;
+        height: 65%;
+        
+    .avis1{
+        width: 20%;
+        height: 50vh;
+        border-radius: 5px;
+        .Titre1{
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5%;
+            padding: 5%;
+            width: 73%;
+            border-radius: 20px;
+            text-align: center;
+            margin: 0 auto;
+            border: 1px solid #CEE8A8;
+            
+        }
+        .critique1{
+            font-size: 0.9em;
+            text-align: center;
+            margin-bottom: 5%;
+            border-radius: 10px;
+            padding: 2%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            height: 20vh;
+                i{
+                    font-size: 1.5em;
+                    margin-left: 4%;
+                    margin-right: 4%;
+
+                }
+        }
+        .note1{
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid #CEE8A8;
+            width: 50%;
+            border-radius: 20px;
+            padding:2% 2% 3%;
+            font-size: 1em;
+            font-weight: 400;
+        }
+    }
+    .avis2{
+        width: 20%;
+        height: 50vh;
+        border-radius: 5px;
+        .Titre2{
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5%;
+            padding: 5%;
+            width: 73%;
+            border-radius: 20px;
+            text-align: center;
+            margin: 0 auto;
+            border: 1px solid #CEE8A8;
+            
+        }
+        .critique2{
+            font-size: 0.9em;
+            text-align: center;
+            margin-bottom: 5%;
+            border-radius: 10px;
+            padding: 2%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            height: 20vh;
+            i{
+                font-size: 1.5em;
+                margin-left: 4%;
+                margin-right: 4%;
+
+            }
+        }
+        .note2{
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid #CEE8A8;
+            width: 50%;
+            border-radius: 20px;
+            padding:2% 2% 3%;
+            font-size: 1em;
+            font-weight: 400;
+        }
+    }
+    .avis3{
+        width: 20%;
+        height: 50vh;
+        border-radius: 5px;
+        .Titre3{
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5%;
+            padding: 5%;
+            width: 100%;
+            border-radius: 20px;
+            text-align: center;
+            margin: 0 auto;
+            border: 1px solid #CEE8A8;
+            
+        }
+        .critique3{
+            font-size: 0.9em;
+            text-align: center;
+            margin-bottom: 5%;
+            border-radius: 10px;
+            padding: 2%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            height: 20vh;
+            i{
+                font-size: 1.5em;
+                margin-left: 4%;
+                margin-right: 4%;
+
+            }
+        }
+        .note3{
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid #CEE8A8;
+            width: 50%;
+            border-radius: 20px;
+            padding:2% 2% 3%;
+            font-size: 1em;
+            font-weight: 400;
+        }
+    }
+    .avis4{
+        width: 20%;
+        height: 50vh;
+        border-radius: 5px;
+        .Titre4{
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5%;
+            padding: 5%;
+            width: 65%;
+            border-radius: 20px;
+            text-align: center;
+            margin: 0 auto;
+            border: 1px solid #CEE8A8;
+            
+        }
+        .critique4{
+            font-size: 0.9em;
+            text-align: center;
+            margin-bottom: 5%;
+            border-radius: 10px;
+            padding: 2%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            height: 20vh;
+            i{
+                font-size: 1.5em;
+                margin-left: 4%;
+                margin-right: 4%;
+
+            }
+        }
+        .note4{
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid #CEE8A8;
+            width: 50%;
+            border-radius: 20px;
+            padding:2% 2% 3%;
+            font-size: 1em;
+            font-weight: 400;
+        }
+    }
+    }
+}
 
 // Footer
 footer{
@@ -1211,3 +1533,15 @@ section{
     }
 
 }
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }

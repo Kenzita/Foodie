@@ -10,9 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Sanchez -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez:ital@1&display=swap" rel="stylesheet">
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/5fa515c205.js" crossorigin="anonymous"></script>
-<link rel="shortcut icon" href="img/FavIcon-Foodie.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/FavIcon-Foodie.png" type="image/x-icon">
+
 </head>
 <body>
     <!-- Header -->
@@ -37,7 +46,10 @@
     <!-- Actualités -->
     <Section>
         <!-- 1er partie -->
+        <div class="h1 reveal">
         <h1>Actualités</h1>
+        <div class="barreVerticale"></div>
+        </div>
         <div class="actucontainer">
            
             <div class="actu">
@@ -74,8 +86,11 @@
             </div>
         </div>
         <!-- Les mieux notés -->
-        <div class="titrenoté"><h2>Les mieux notés</h2></div>
-        <div class="bordernoté"></div>
+        <div class="titrenoté reveal">
+            <h2>Les mieux notés</h2>
+            <div class="bordernoté"></div>
+        </div>
+        
         <div class="flexnoté">
             <div class="noté1">
                 <img src="img/home_resto sébastopol.jpg" alt="">
@@ -88,7 +103,7 @@
                 <i class="fa-regular fa-heart"></i>
             </div>
             <div class="noté2">
-                <img src="img/home_l'entre nous.jpg" alt="">
+                <img src="img/home_l_entre nous.jpg" alt="">
                 <h4>L'Entre Nous</h4>
                 <p>Décoré de raquettes anciennes et de photos, ce restaurant lambrissé propose des spécialités savoyardes.</p>
                 <div class="info">
@@ -111,7 +126,7 @@
 
         <!-- Feed -->
         <div class="flexcontainer">
-            <div class="titreflex">
+            <div class="titreflex reveal">
                 <h2>Feed</h2>
                 <div class="barre"></div>
             </div>
@@ -119,41 +134,76 @@
                 
                 <div class="feed1">
                      <div class="title">
-                    <img src="img/home_selfie 1.jpg" alt="">
-                    <div class="Nom"><p>Damien.Y</p>
-                    <p class="loca"><i class="fa-solid fa-location-dot"></i>Le Vesuvio, Béthune</p></div>
+                    <img src="" alt="" id="DamienPP">
+                    <div class="Nom"><p id="DamienName"></p>
+                            <p class="loca" id="DamienLocalisation"><i class="fa-solid fa-location-dot"></i></p>
+                    </div>
                 </div>
-                    <span>Les serveurs ont passés la soirée à jeter des morceaux de pain sur mon fils de 8 ans. Inadmissible...</span>
+                    <span class="VesuvioComm" id="DamienTexte"></span>
                 </div>
                 <div class="feed2">
                     <div class="title">
-                    <img src="img/home_selfie 2.jpeg" alt="">
-                    <div class="Nom"><p>Lucas-Bls</p>
-                    <p class="loca"><i class="fa-solid fa-location-dot"></i>La Fleur de Lille, Lille</p></div>
+                    <img src="" alt="" id="LucasPP">
+                    <div class="Nom"><p id="LucasName"></p>
+                    <p class="loca" id="LucasLocalisation"><i class="fa-solid fa-location-dot"></i></p></div>
                 </div>
-                <span>Très bien reçu. Chaleureux, clean surtout merci aux serveuses et serveurs pour leurs professionnalisme hors pair.</span>
+                <span id="LucasTexte">Très bien reçu. Chaleureux, clean surtout merci aux serveuses et serveurs pour leurs professionnalisme hors pair.</span>
                 </div>
                 <div class="feed3">
                     <div class="title">
-                    <img src="img/home_selfie 3.jpg" alt="">
-                        <div class="Nom"><p>Marianne</p>
-                    <p class="loca"><i class="fa-solid fa-location-dot"></i>L'Entre Nous, Arras</p></div>
+                    <img src="" alt="" id="MariannePP">
+                        <div class="Nom"><p id="MarianneName"></p>
+                    <p class="loca" id="MarianneLocalisation"><i class="fa-solid fa-location-dot"></i></p></div>
                 </div>
-                    <span>Très bon, une présentation excellente.
+                    <span id="MarianneTexte">Très bon, une présentation excellente.
                         Les serveurs connaissent très bien les menus et 
                         conseillent très bien. Ils sont à l’écoute et très souriant.</span>
                 </div>
             </div>
-            <div class="voirplus"><a href="FoodieFinds.html">Voir Plus</a></div>
+            <div class="voirplus">
+                <a href="FoodieFinds.html">Voir Plus</a>
+                <span></span><span></span><span></span><span></span>
+            </div>
         </div>
-        <!-- Nos partenaires -->
+        <!-- Nos partenaires
         <div class="flexpartenaires">
             <h4>Nos Partenaires</h4>
             <divc class="img"><img src="img/home_logo_MEL.svg.png" alt="">
             <img src="img/home_office-tourisme bethune.png" alt="">
             <img src="img/home_logo_arras.jpg" alt=""></div>
         </div>
-    </Section>
+    </Section> -->
+
+    <!-- Avis des chefs -->
+    <div class="titreAvis reveal">
+        <h2>Avis d'utilisateurs</h2>
+        <div class="barre"></div>
+    </div>
+    <div class="pageAvis">
+        <div class="toutnoir"></div>
+            <div class="trieAvis">
+                <div class="avis1">
+                    <p class="Titre1">Camille Pailleau</p>
+                    <p class="critique1"><span><i class="fa-solid fa-quote-left"></i></span>Enfin un site qui met en valeur la richesse culinaire du Nord-Pas-de-Calais ! C'est une plateforme incroyable pour découvrir de nouveaux restaurants et s'inspirer de la diversité des cuisines locales.<span><i class="fa-solid fa-quote-right"></i></span></p>
+                    <p class="note1">19.5/20</p>
+                </div>
+                <div class="avis2">
+                    <p class="Titre2">Diego Delbecq</p>
+                    <p class="critique2"><span><i class="fa-solid fa-quote-left"></i></span>Un grand merci à ce site qui met en lumière les talents culinaires de notre région. Grâce à lui, j'ai pu gagner en visibilité et attirer de nouveaux clients dans mon restaurant.<span><i class="fa-solid fa-quote-right"></i></span></p>
+                    <p class="note2">19/20</p>
+                </div>
+                <div class="avis3">
+                    <p class="Titre3">Félix et Nidta Robert</p>
+                    <p class="critique3"><span><i class="fa-solid fa-quote-left"></i></span>Un grand bravo pour cette initiative qui met en relation les chefs et valorise le patrimoine culinaire de notre région. Longue vie à ce site !<span><i class="fa-solid fa-quote-right"></i></span></p>
+                    <p class="note3">10/10</p>
+                </div>
+                <div class="avis4">
+                    <p class="Titre4">Gérald Guille</p>
+                    <p class="critique4"><span><i class="fa-solid fa-quote-left"></i></span>En tant que chef, je trouve cette plateforme très utile pour découvrir les tendances culinaires de la région et connaître les restaurants incontournables à visiter.<span><i class="fa-solid fa-quote-right"></i></span></p>
+                    <p class="note4">9.7/10</p>
+                </div>
+            </div>
+    </div>
     <!-- Footer -->
     <footer>
 
@@ -170,5 +220,11 @@
             Mentions légales</p>
 
     </footer>
+
+        <!-- Fetch -->
+        <script src="fetch.js"></script>
+
+            <!-- Animation Titre -->
+    <script src="script.js"></script>
 </body>
 </html>
