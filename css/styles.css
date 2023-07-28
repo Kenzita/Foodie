@@ -262,7 +262,7 @@ Section .noté1 {
 }
 Section .noté1 img {
   width: 100%;
-  border-radius: 7%;
+  border-radius: 10%;
 }
 Section .noté1 h4 {
   padding-top: 5%;
@@ -301,7 +301,7 @@ Section .noté2 {
 Section .noté2 img {
   width: 100%;
   overflow: hidden;
-  border-radius: 7%;
+  border-radius: 10%;
 }
 Section .noté2 h4 {
   padding-top: 5%;
@@ -339,7 +339,7 @@ Section .noté3 {
 }
 Section .noté3 img {
   width: 100%;
-  border-radius: 7%;
+  border-radius: 10%;
 }
 Section .noté3 h4 {
   padding-top: 5%;
@@ -380,14 +380,14 @@ Section .flexcontainer .feed3 {
 Section .flexcontainer .feed1:hover,
 Section .flexcontainer .feed2:hover,
 Section .flexcontainer .feed3:hover {
-  box-shadow: 40px 50px 80px rgba(0, 0, 0, 0.5);
+  box-shadow: 20px 40px 40px rgba(0, 0, 0, 0.5);
   z-index: 2;
   transition: all 200ms ease-in;
-  transform: scale(1.2);
+  transform: scale(1.15);
   transition: all 200ms ease-in;
-  transform: scale(1.2);
+  transform: scale(1.15);
   transition: all 200ms ease-in;
-  transform: scale(1.2);
+  transform: scale(1.15);
   transition: all 200ms ease-in;
 }
 Section .flexcontainer .titreflex.reveal {
@@ -427,11 +427,14 @@ Section .flexcontainer .flexfeed .feed1 img {
 }
 Section .flexcontainer .flexfeed .feed1 .title {
   display: flex;
+  width: 90%;
 }
 Section .flexcontainer .flexfeed .feed1 .title .Nom {
   text-align: center;
   margin-top: 5%;
   margin-left: 15%;
+}
+Section .flexcontainer .flexfeed .feed1 .title .Nom .loca {
   border-bottom: 2px solid black;
 }
 Section .flexcontainer .flexfeed .feed1 .title .Nom i {
@@ -459,11 +462,14 @@ Section .flexcontainer .flexfeed .feed2 img {
 }
 Section .flexcontainer .flexfeed .feed2 .title {
   display: flex;
+  width: 90%;
 }
 Section .flexcontainer .flexfeed .feed2 .title .Nom {
   text-align: center;
   margin-top: 5%;
   margin-left: 15%;
+}
+Section .flexcontainer .flexfeed .feed2 .title .Nom .loca {
   border-bottom: 2px solid black;
 }
 Section .flexcontainer .flexfeed .feed2 .title .Nom i {
@@ -491,11 +497,14 @@ Section .flexcontainer .flexfeed .feed3 img {
 }
 Section .flexcontainer .flexfeed .feed3 .title {
   display: flex;
+  width: 90%;
 }
 Section .flexcontainer .flexfeed .feed3 .title .Nom {
   text-align: center;
   margin-top: 5%;
   margin-left: 15%;
+}
+Section .flexcontainer .flexfeed .feed3 .title .Nom .loca {
   border-bottom: 2px solid black;
 }
 Section .flexcontainer .flexfeed .feed3 .title .Nom i {
