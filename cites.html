@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-
+    <link rel="shortcut icon" href="img/FavIcon-Foodie.png" type="image/x-icon">
   <!-- Link FontAwesome -->
   <script src="https://kit.fontawesome.com/92bf10ee72.js" crossorigin="anonymous"></script>
   <!-- Titre de la page -->
@@ -22,59 +22,43 @@
 <body>
   <!-- Header -->
   <header>
-    <img src="img/FOODIE_LOGO.svg" alt="logoFoodie">
-    <div id="toggle"></div>
-    <nav id="navigation">
-      <ul>
-        <li><a href="">FOODIEVILLES</a></li>
-        <li><a href="">FOODIEFINDS</a></li>
-        <li><a href="">A PROPOS</a></li>
-        <li><a href=""> CONTACT</a></li>
-      </ul>
+    <a href="index.html"><img src="img/FOODIE_LOGO (1).svg" alt="logoFoodie"></a>
+    <nav>
+        <ul>
+            <li><a href="cites.html">FOODIEVILLES</a></li>
+            <li><a href="FoodieFinds.html">FOODIEFINDS</a></li>
+            <li><a href="about.html">À PROPOS</a></li>
+            <li><a href="ContactBTC.html">CONTACT</a></li>
+        </ul>
     </nav>
-  </header>
+</header>
   <main class="center">
     <h1>FOODIE VILLES</h1>
 
-    <div class="selectVilles">
-      <select name="villes" id="villes">
-        <option value="select" disabled selected>Selectionner une ville</option>
-        <option value="lille">Lille</option>
-        <option value="arras">Arras</option>
-        <option value="lens">Lens</option>
-        <option value="bethune">Béthune</option>
-        <option value="valenciennes">Valenciennes</option>
-      </select>    
-    </div>
 
-
-    <div class="carte">
+    <div class="carte" id="Carte">
       <h2>
         Clique sur la ville de ton choix pour en découvrir le restaurant du mois
       </h2>
-      <img src="img/carte.svg" alt="">
-      <a href="#lille"><i class="fa-solid fa-map-pin lille ijaune"></i></a>
-      <a href="#arras"><i class="fa-solid fa-map-pin arras ivert"></i></a>
-      <a href="#lens"><i class="fa-solid fa-map-pin lens ijaune"></i></a>
-      <a href="#bethune"><i class="fa-solid fa-map-pin bethune ivert"></i></a>
-      <a href="#valenciennes"><i class="fa-solid fa-map-pin valenciennes ijaune"></i></a>
+      <img class="carte" src="img/carte.svg" alt="">
+      <a  class="carteLille" href="#lille"><div class="ilille"><i class="fa-solid fa-map-pin  ijaune"></i></div></a>
+      <a  class="carteArras" href="#arras"><div class="iarras"><i class="fa-solid fa-map-pin  ivert"></i></div></a>
+      <a  class="carteLens" href="#lens"><div class="ilens"><i class="fa-solid fa-map-pin  ijaune"></i></div></a>
+      <a  class="carteBethune" href="#bethune"><div class="ibethune"><i class="fa-solid fa-map-pin  ivert"></div></i></a>
+      <a  class="carteValenciennes" href="#valenciennes"><div class="ivalenciennes"><i class="fa-solid fa-map-pin  ijaune"></i></div></a>
     </div>
-    <div class="cadres">
+    <div class="cadres" >
     <div class="cadre jaune" id="lille">
-      <div class="cadresImg">
-        <img src="img/cities-resto1.png" alt="">
-      </div>
-     <div class="cadretexte" > <h2>Lille</h2>
+      <img src="img/cities-resto1.png" alt="">
+     <div class="cadretexte"> <h2>Lille</h2>
       <h3>
         Le comptoir des saveurs
       </h3>
       <p> Notre ambiance chaleureuse et notre service attentif vous promettent un moment inoubliable.</p></div>
     </div>
     <div class="cadre vert" id="arras">
-      <div class="cadresImg">
-        <img src="img/cities-resto2.png" alt="">
-      </div>
-     <div class="cadretexte" > <h2>Arras</h2>
+      <img src="img/cities-resto2.png" alt="">
+       <div class="cadretexte"> <h2>Arras</h2>
       <h3>
         Le Jardin Gourmand
       </h3>
@@ -82,20 +66,16 @@
         savoureux.</p></div>
     </div>
     <div class="cadre jaune" id="lens">
-      <div class="cadresImg">
-        <img src="img/cities-resto3.png" alt="">
-      </div>
-     <div class="cadretexte" > <h2>Lens</h2>
+      <img src="img/cities-resto3.png" alt="">
+     <div class="cadretexte"> <h2>Lens</h2>
       <h3>
         La Table Enchantée
       </h3>
       <p> Bienvenue dans notre havre gourmand où chaque bouchée est une véritable expérience gustative.</p></div>
     </div>
     <div class="cadre vert" id="bethune">
-      <div class="cadresImg">
-        <img src="img/cities-resto4.png" alt="">
-      </div>
-     <div class="cadretexte" > <h2>Béthune</h2>
+      <img src="img/cities-resto4.png" alt="">
+     <div class="cadretexte"> <h2>Béthune</h2>
       <h3>
         L'Antre des Délices
       </h3>
@@ -103,10 +83,8 @@
         la gastronomie.</p></div>
     </div>
     <div class="cadre jaune" id="valenciennes">
-      <div class="cadresImg">
-        <img src="img/cities-resto5.png" alt="">
-      </div>
-    <div class="cadretexte" >  <h2>Valenciennes</h2>
+      <img src="img/cities-resto5.png" alt="">
+    <div class="cadretexte">  <h2>Valenciennes</h2>
       <h3>
         Saveurs Urbaines
       </h3>
@@ -117,12 +95,12 @@
   </div>
 
 
-
+<button> <a href="#Carte"> <i class="fa-solid fa-circle-arrow-up"></i></a></button>
   </main>
 
   <!-- Footer -->
   <footer>
-    <img src="img/FOODIE_LOGO.svg" alt="" />
+    <img src="img/FOODIE_LOGO (1).svg" alt="logoFoodie">
     <p>100 Avenue des Gourmands 62400 Béthune</p>
     <p>00 00 00 00 00</p>
     <p>contact@foodie.fr</p>
@@ -137,9 +115,7 @@
     </p>
   </footer>
 
-  <!-- JAVASCRIPT -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/burger.js"></script>
+  <script src="cities.js"></script>
 </body>
 
 </html>
