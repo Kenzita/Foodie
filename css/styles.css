@@ -93,8 +93,6 @@ header .headercontainer div.bg {
 header .logo {
   width: 25%;
   z-index: 1;
-  animation: scaleFade auto linear;
-  animation-timeline: scroll(root);
 }
 header .logobg {
   display: flex;
@@ -103,23 +101,11 @@ header .logobg {
   justify-content: center;
   z-index: 0;
   width: 30%;
-  animation: scaleFade auto linear;
-  animation-timeline: scroll(root);
 }
 header .logobg img {
   width: 130%;
 }
 
-@keyframes scaleFade {
-  0% {
-    transform: scale(1);
-    opacity: 100%;
-  }
-  10% {
-    transform: scale(1.5);
-    opacity: 0%;
-  }
-}
 .stickyNav {
   position: sticky;
   top: 0;
