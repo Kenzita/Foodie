@@ -1,0 +1,96 @@
+{
+    "restaurants": [
+        {
+            "ville" : "lille",
+            "restaux" : {
+                "restau1" : "Le comptoir des saveurs",
+                "restau2" : "Restaurant Sébastopol",
+                "restau3" : "La fleur de Lille"
+            },
+
+            "images" : {
+                "image1" :"img/cities-resto1.png",
+                "image2" : "img/home_resto sébastopol.jpg",
+                "image3" : "https://lvdneng.rosselcdn.net/sites/default/files/dpistyles_v2/vdn_864w/2020/01/06/node_689890/44829151/public/2020/01/06/B9722136269Z.1_20200106161051_000%2BGAHF834QS.1-0.jpg?itok=_2MWqJ-c1578672954"
+            }, 
+
+            "descriptions" : {
+                "description1" : "Notre ambiance chaleureuse et notre service attentif vous promettent un moment inoubliable.",
+                "description2" : "Restaurant sobre avec un menu local comprenant des entrées et des desserts originaux.",
+                "decsription3" : "Restaurant haut de gamme avec un menu de saison élaboré accompagné d'une vaste carte des vins."
+                        }
+        },
+        {
+            "ville" : "arras",
+            "restaux" : {
+                "restau1" : "Le jardin gourmand",
+                "restau2" : "L'Entre Nous",
+                "restau3" : "La serre d'acier"
+            },
+            "images" :{
+                "image1" : "img/cities-resto2.png", 
+                "image2" : "img/home_l_entre nous.jpg",
+                "image3" : "img/FindsPost1.png"
+        },
+        "descriptions" : {
+            "description1" : "Élégant et contemporain, notre restaurant offre une expérience culinaire raffinée avec des plats créatifs et savoureux.",
+            "decsription2" : "Décoré de raquettes anciennes et de photos, ce restaurant lambrissé propose des spécialités savoyardes.",
+            "descrption3" : "La Serre bénéficie d’un cadre empreint de charme et de poésie et offre uncomplément au Jardin sur les intersaisons."
+        }
+    },
+        {
+            "ville" : "lens",
+            "restaux" : {
+                "restau1" : "La Brasserie du Stade Bollaert",
+                "restau2" : "Le Vieux Moulin",
+                "restau3" : "La Table du Sommelier"
+            },
+            "images" :{
+                "image1" : "https://atoutgraphic.com/wp-content/uploads/2020/10/BRASSERIE_DU_STADE_FACADE_2.jpg", 
+                "image2" : "https://img.restaurantguru.com/r19a-exterior-LE-VIEUX-MOULIN-Hotel-restaurant-gastronomique-et-mariage-a-Hede-en-Ille-et-Vilaine-Bretagne-2022-10.jpg",
+                "image3" : "https://media-cdn.tripadvisor.com/media/photo-s/04/90/eb/25/la-table-du-sommelier.jpg"
+        },
+        "descriptions" : {
+            "description1" : " La Brasserie du Stade Bollaert était un restaurant populaire situé près du stade Bollaert-Delelis. Il proposait une cuisine traditionnelle française dans une ambiance conviviale, faisant de lui une destination idéale pour les amateurs de football et de bonne cuisine.",
+            "decsription2" : "Le Vieux Moulin était un charmant restaurant niché dans un ancien moulin à eau restauré. Son cadre rustique et chaleureux offrait une atmosphère agréable pour déguster une cuisine régionale du terroir avec des spécialités du Nord de la France.",
+            "descrption3" : "La Table du Sommelier était un restaurant réputé pour ses plats raffinés et sa carte des vins bien garnie. Les convives pouvaient y savourer une cuisine française moderne avec une touche gastronomique, accompagnée de conseils avisés sur les accords mets-vins."
+        }
+    },
+        {
+            "ville" : "béthune",
+            "restaux" : {
+                "restau1" : "Le vesuvio",
+                "restau2" : "L'O à la bouche",
+                "restau3" : "Au coq illico"
+            },
+            "images" :{
+                "image1" : "https://static.wixstatic.com/media/a476f3_f90c3d777e9a405bbf2cd2acf65d6d28~mv2.jpg/v1/fill/w_2500,h_3125,al_c/a476f3_f90c3d777e9a405bbf2cd2acf65d6d28~mv2.jpg",
+                "image2" : "https://fr.gaultmillau.com/download/6144403c7b0a4071313d826c/image/jpeg/l-o-a-la-bouche-restaurant-bethune.jpg", 
+                "image3" : "https://media-cdn.tripadvisor.com/media/photo-s/06/3f/2e/8f/restaurant-au-coq-illico.jpg"
+        },
+        "descriptions" : {
+            "description1" : "Le Vesuvio est un restaurant italien situé sur la Grand Place Art Déco de la ville de Béthune, au pied du Beffroi. On y sert une cuisine italienne traditionnelle, 100% faite maison avec des produits frais, de saison et essentiellement italiens, dans une ambiance conviviale.",
+            "decsription2" : "Décor feutré, ambiance décontractée et carte créative pour ce restaurant contemporain doté de 3 salles.",
+            "descrption3" : "Au Coq Illico est l'établissement qui a la plus petite façade de la Grand'Place, ce qui rend le lieu très cosy. Produits frais, cadre et accueil chaleureux vous attendent en plein coeur de Béthune."
+        }
+    },
+        {
+            "ville" : "valenciennes",
+            "restaux" : {
+                "restau1" : "Edito Restaurant",
+                "restau2" : "Le val en cygnes",
+                "restau3" : "Chez mon vieux"
+            },
+            "images" :{
+                "image1" : "https://static.wixstatic.com/media/8878ef_0817d2582b884dedb9f07f347a772791~mv2.jpg/v1/fill/w_1107,h_374,al_c,q_85,enc_auto/8878ef_0817d2582b884dedb9f07f347a772791~mv2.jpg", 
+                "image2" : "https://uniiti.com/images/shops/slides/fcb599a67066aef886cfeab3d48814b84ac845cf.jpeg",
+                "image3" : "https://ugc.zenchef.com/3/5/1/6/0/9/1/5/0/6/2/6/6/1615727240_309/1f93e978b08d296ff18873daaaf93626.website.jpg"
+        },
+        "descriptions" : {
+            "description1" : "Dans un cadre alliant modernité et authenticité, nous vous proposons une carte gourmande, variée et savoureuse qui saura ravir les papilles de tous les gourmets. Que vous souhaitiez partager un délicieux repas en famille ou une soirée conviviale entre amis ou collègues, nous serons ravis de vous recevoir dans notre restaurant à Valenciennes ouvert le dimanche.",
+            "decsription2" : "Le Val en Cygne, estaminet situé dans le centre de Valenciennes, vous propose une cuisine traditionnelle française et régionale. Les frites sont fraîches et épluchées pour chaque service à la main, Les viandes viennent des fermes locales. Et le sourire accompagnera vos plats.",
+            "descrption3" : "L'estaminet Chez Mon Vieux propose une cuisine simple et régionale. Dans la lignée des estaminets traditionnels, vous pourrez déguster de vrais plats du Nord qui vous raviront à coup sûr les papilles. Les plus gourmands goûteront à la carbonnade flamande ou encore au welsh accompagnés de frites ou de purée maison. De nouveaux plats sont proposés chaque jour et la sélection de bières est impressionnante. "
+        }
+    }
+    ]
+}

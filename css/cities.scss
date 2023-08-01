@@ -4,6 +4,7 @@
   list-style-type: none;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 .visible{
@@ -12,8 +13,6 @@ display: block;
 
 .invisible{
   display: none;
-
-  
 }
 
 
@@ -130,7 +129,7 @@ main {
 
     img {
       width: 80%;
-      position: relative;
+      // position: relative;
       z-index: 0;
     }
 
@@ -150,40 +149,40 @@ font-size: 1.5em;
         font-size: 1.5em;
       }
 
-      // .ibethune{
-      //   z-index: 2;
-      //   position: absolute;
-      //   top: 0;
-      //   left:0;
-      // }
+      .ibethune{
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left:0;
+      }
 
-      // .ilille{
-      //   z-index: 2;
-      //   position: absolute;
-      //   top: 79.8vh;
-      //   left:52vw;
-      // }
+      .ilille{
+        z-index: 2;
+        position: absolute;
+        top: 79.8vh;
+        left:52vw;
+      }
 
-      // .ilens{
-      //   z-index: 2;
-      //   position: absolute;
-      //   top: 89.3vh;
-      //   left:48.4vw;
-      // }
+      .ilens{
+        z-index: 2;
+        position: absolute;
+        top: 89.3vh;
+        left:48.4vw;
+      }
 
-      // .iarras{
-      //   z-index: 2;
-      //   position: absolute;
-      //   top: 95.9vh;
-      //   left:47.5vw;
-      // }
+      .iarras{
+        z-index: 2;
+        position: absolute;
+        top: 95.9vh;
+        left:47.5vw;
+      }
 
-      // .ivalenciennes{
-      //   z-index: 2;
-      //   position: absolute;
-      //   top: 92vh;
-      //   left:60vw;
-      // }
+      .ivalenciennes{
+        z-index: 2;
+        position: absolute;
+        top: 92vh;
+        left:60vw;
+      }
     }
     .carteBethune{
       z-index: 1;
@@ -220,43 +219,148 @@ font-size: 1.5em;
       left:59vw;
     }
   }
+  
+  .cadres { 
+    
+    width: 90%;
+    height: 350vh;
+    margin: 5%;
+      display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    //   align-items: center;
+    //   justify-content: center;
+    
+    
+    // .vert {
+    //   background-color: #CEE8A8;
+    // }
+    
+    // .jaune {
+    //   background-color: #F7D776;
+    // }
+    
 
- .cadres { 
-  width: 100%;
-  margin: 25vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .vert {
-    background-color: #CEE8A8;
-  }
 
-  .jaune {
-    background-color: #F7D776;
-  }
-
-  .cadre {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    border-radius: 3em;
-margin: 1vh;
-    img{
-      width: 30%;
-      margin: 1vw;
+    .filpCard{
+      background-color: transparent;
+      width: 100%;
+      perspective : 1000px;
+      border-radius: 3em;
+      transition : transform .8s;
+      &:hover{
+        transform: rotateY(180deg);
+      }
     }
-.cadretexte{
-  width: 70%;
-  text-align: center;
-  h2{
-  margin-top: 5vw;
+    
+    .flipCardinner{
+    position: relative;
+    transition : transform .8s;
+    transform-style: preserve-3d;
+    background-color: #CEE8A8;
+    &:hover{
+      transform: rotateY(180deg);
+    }
   }
-  h3{
-    margin-bottom: 3vw;
+
+  #lille{
+  top: 15vh;
+    left: 35%;
   }
+
+  #arras{
+top: 80vh;
+left: 35%;
+  }
+  #lens{
+top: 148vh;
+left: 35%;
+  }
+  #béthune{
+top: 215vh;
+left: 35%;
+  }
+  #valenciennes{
+top: 284vh;
+left: 35%;
+  }
+
+  #blille{
+  top: 15vh;
+    left: 35%;
+  }
+
+  #barras{
+top: 80vh;
+left: 35%;
+  }
+  #blens{
+top: 148vh;
+left: 35%;
+  }
+  #bbéthune{
+top: 214vh;
+left: 35%;
+  }
+  #bvalenciennes{
+top: 284vh;
+left: 35%;
+  }
+  .flipcardFront{
+    color: #000000;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7D776;
+    border-radius: 5%;
+    width: 50vh;
+    height: 64vh;
+  }
+
+
+  .flipcardBack{
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: #CEE8A8;
+    color: black;
+    border-radius: 5%;
+    width: 50vh;
+    height: 64vh;
+    display: flex;
+    align-items: center;
+
+    p{
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+
+
+    
+    .cadretexte{
+      width: 30%;
+      text-align: center;
+      padding: 2%;
+      h2{
+        margin-top: 1vw;
+      }
+      h3{
+        margin-bottom: 1vw;
+      }
+      img{
+        width: 90%;
+        height: auto;
+      }
+  }
+
+
 
 }
-  }}
 
   button{
     border: none;
@@ -271,65 +375,64 @@ margin: 1vh;
       text-decoration: none;
       font-size: 1em;
       text-align: right;
-      color: #95CD41;
+      color: #95CD41;      
+      }
+    }
+    
+      /////////////////////////////////////////// RESPONSIVE
+      
+      // 1920px
+      @media screen and (max-width: 1920px){
+        main {
+          .carte { 
+            a{
+              .bethune{
+                top: 80vh;
+                left:45.7vw;
+              }
+              .lille{
+                top: 75.8vh;
+                left:51.25vw;
+              }
+              .lens{
+                top: 84.4vh;
+                left:48.25vw;
+              }
+              .arras{
+                top: 90.5vh;
+                left:47.55vw;
+              }
+              .valenciennes{
+                top: 87.1vh;
+                left:57.65vw;
+              }
+            }
+          }
+          .cadres { 
+            .cadre {
+              width: 60%;
+              display: flex;
+              justify-content: center;
+              margin: 1vh;
+              margin-top: 5vw;
+              .cadresImg{
+                width: 30%;
+                margin: 1vw;
+                img{
+                  width: 60%;
+                }
+              }
+              .cadretexte{
+                h2{
+                  margin-top: 2vw;
+                }
+              }
+            }
     }
   }
-}
-
-
-
-/////////////////////////////////////////// RESPONSIVE
-
-// 1920px
-@media screen and (max-width: 1920px){
-  main {
-    .carte { 
-      a{
-        .bethune{
-          top: 80vh;
-          left:45.7vw;
-        }
-        .lille{
-          top: 75.8vh;
-          left:51.25vw;
-        }
-        .lens{
-          top: 84.4vh;
-          left:48.25vw;
-        }
-        .arras{
-          top: 90.5vh;
-          left:47.55vw;
-        }
-        .valenciennes{
-          top: 87.1vh;
-          left:57.65vw;
-        }
-      }
-    }
-    .cadres { 
-      .cadre {
-        width: 60%;
-        display: flex;
-        justify-content: center;
-        margin: 1vh;
-        margin-top: 5vw;
-        .cadresImg{
-          width: 30%;
-          margin: 1vw;
-          img{
-            width: 60%;
-          }
-        }
-        .cadretexte{
-          h2{
-            margin-top: 2vw;
-          }
-        }
-      }
     }    
-  }
-}
+  
+
 
 
 
@@ -625,4 +728,5 @@ margin: 1vh;
       }
     }  
   }
+}
 }
