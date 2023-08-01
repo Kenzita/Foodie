@@ -142,14 +142,41 @@ footer p:last-child {
 .PostContentComp .PostContent .Post {
   font-size: 1.06vw;
 }
-.PostContentComp #like {
+.PostContentComp .like {
   display: none;
 }
-.PostContentComp #like.active {
+.PostContentComp .like .placement {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: -30px;
+}
+.PostContentComp .like .placement .like-count {
+  font-size: 1.3em;
+  font-family: "Libre Franklin", sans-serif;
+  margin-bottom: -40px;
+}
+.PostContentComp .like .placement .heart {
+  width: 100px;
+  margin-left: -5%;
+  margin-right: -10%;
+  margin-bottom: -40px;
+  height: 100px;
+  background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  transition: background-position 1s steps(28);
+  transition-duration: 0s;
+}
+.PostContentComp .like .placement .heart.is-active {
+  transition-duration: 1s;
+  background-position: -2800px 0;
+}
+.PostContentComp .like.active {
   display: flex;
   align-items: center;
 }
-.PostContentComp #like.active i {
+.PostContentComp .like.active i {
   font-size: 2.5vw;
   margin-right: 1vw;
 }

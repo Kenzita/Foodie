@@ -28,7 +28,6 @@ const citiesNavigation = document.getElementById('FindsNavCities');
 //         }
 //     })
 // })
-
 const findsPost = document.querySelectorAll('.FindsPost');
 const findsPostArray = Array.from(findsPost);
 let activePost = null;
@@ -37,12 +36,14 @@ const findsPostMap = findsPostArray.map(post =>{
         event.stopPropagation();
         if(activePost && !post.classList.contains('BlownUp')){
             activePost.classList.remove('BlownUp');
+            activePost.querySelector('.like').classList.remove("active")
             activePost = null
             // console.log(2);
         }
         else{
             post.classList.add('BlownUp');
             activePost = post;
+            activePost.querySelector('.like').classList.add("active")
             // console.log(1);
         }
     })
@@ -50,6 +51,7 @@ const findsPostMap = findsPostArray.map(post =>{
 document.addEventListener('click', (event) => {
     if(!event.target.classList.contains('BlownUp') && activePost){
             activePost.classList.remove('BlownUp');
+            activePost.querySelector('.like').classList.remove("active")
             activePost = null;
             // console.log(3);
     }

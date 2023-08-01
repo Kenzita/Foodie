@@ -21,7 +21,13 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/5fa515c205.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img/FavIcon-Foodie.png" type="image/x-icon">
-
+    <!-- Libre Franklin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sanchez:ital@1&display=swap" rel="stylesheet">
+    <!-- Slick -->
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
 </head>
 <body>
     <!-- Header -->
@@ -179,18 +185,18 @@
         <h1>Actualités</h1>
         <div class="barreVerticale"></div>
         </div>
-        <div class="actucontainer">
+        <div class="actucontainer slick slider">
            
-            <div class="actu">
+            <!-- <div class="actu">
                 <h3>Actu</h3>
                 <p><span>Chez O-Komé, “le riz moelleux des onigiri à la douceurs régressive s’écrase sous la dent”</span></p>
                 <p>Chaque semaine, un journaliste raconte un produit ou une expérience gustative qui l’a marqué. Comme ces boules de riz, au menu de O-Komé à Lens, qui se mangent à toute heure au Japon.</p>
                 <p class="span">Publié le 20 juin 2023. Par Clément Ghys</p>
                 <img src="img/home_onigiri.jpg" alt="">
                 <a href="" class="Voir Plus">Voir Plus</a>
-            </div>
+            </div> -->
             
-            <!-- 2ème partie -->
+            <!-- 2ème partie
             <div class="eventcontainer">
                 <div class="event">
                     <h3>Évenements</h3>
@@ -211,8 +217,29 @@
                         <p>Prix moyen : Environ 35 euros par personne.</p>
                     </div>
                 </div>
-                </div>
-            </div>
+                </div> -->
+            <!-- </div> -->
+
+            <!-- TEST CAROUSEL -->
+        <div class="carousel">
+            <img src="img/home_carousel1.jpg" alt="">
+        </div>
+      <div class="carousel">
+        <img src="img/home_carousel2.jpg" style="object-position: 100%;">
+      </div>
+      <div class="carousel">
+        <img src="img/home_carousel3.jpg">
+      </div>
+      <div class="carousel">
+        <img src="img/home_carousel4.jpg" style="object-position: -15%;">
+      </div>
+      <div class="carousel">
+        <img src="img/home_carousel5.jpeg">
+      </div>
+      <div class="carousel">
+        <img src="img/home_carousel6.jpg">
+      </div>
+            
         </div>
         <!-- Les mieux notés -->
         <div class="titrenoté reveal">
@@ -229,7 +256,13 @@
                     <p>1 Pl. Sébastopol, 59000 Lille</p>
                     <p>Tel: 03 20 13 13 40</p>
                 </div>
-                <i class="fa-regular fa-heart"></i>
+                <!-- LikeJS -->
+                <div class="placement">
+                    <span class="like-count" data-like-count="302">302</span>
+                    <div class="heart">
+                    </div>
+                  </div>
+                  <!-- LikeJS -->
             </div>
             <div class="noté2">
                 <img src="img/home_l_entre nous.jpg" alt="">
@@ -239,17 +272,25 @@
                     <p>43 Grand'Place, 62000 Arras</p>
                     <p>Tel: 03 91 79 81 45</p>
                 </div>
-                <i class="fa-regular fa-heart"></i>
+                <div class="placement">
+                    <span class="like-count" data-like-count="504">504</span>
+                    <div class="heart">
+                    </div>
+                  </div>
             </div>
             <div class="noté3">
                 <img src="img/home_Bistrot gourmand.jpg" alt="">
                 <h4>Le Bistrot Gourmand</h4>
                 <p>Ambiance rustique pour cette chaîne de restaurants offrant des recettes variées autour de la pomme de terre.</p>
                 <div class="info">
-                <p>53 Rue Saint-Pry, 62400 Béthune</p>
+                <p>53 Rue Pry, 62400 Béthunne</p>
                 <p>Tel: 03 21 68 71 45</p>
                 </div>
-                <i class="fa-regular fa-heart"></i>
+                <div class="placement">
+                    <span class="like-count" data-like-count="229">229</span>
+                    <div class="heart">
+                    </div>
+                  </div>
             </div>
         </div>
 
@@ -357,5 +398,10 @@
             <!-- Animation Titre -->
     <script src="script.js"></script>
     <script src="main.js"></script>
+    <script src="like.js"></script>
+    <!-- Slick -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="slickCarousel.js"></script>
 </body>
 </html>

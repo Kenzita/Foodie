@@ -168,10 +168,42 @@ footer{
         }
     }
     // LIKE → DIMENSIONS ET POSITIONNEMENT
-    #like{
+    .like{
         display: none;
+         // LikeJS
+         .placement{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            margin-left: -30px;
+
+            .like-count{
+                font-size: 1.3em;
+                font-family: 'Libre Franklin', sans-serif;
+                margin-bottom: -40px;
+            }
+        
+        .heart {
+            width: 100px;
+            margin-left: -5%;
+            margin-right: -10%;
+            margin-bottom: -40px;
+            height: 100px;
+            background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+            background-position: 0 0;
+            cursor: pointer;
+            transition: background-position 1s steps(28);
+            transition-duration: 0s;
+            
+            &.is-active {
+              transition-duration: 1s;
+              background-position: -2800px 0;
+            }
+          }
+        }
+        // LikeJS
     }
-    #like.active{
+    .like.active{
         display: flex;
         align-items: center;
         i{

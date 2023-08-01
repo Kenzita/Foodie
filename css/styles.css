@@ -33,6 +33,45 @@ body {
   margin: 0 auto;
 }
 
+.carousel {
+  height: 15em;
+  width: 20em;
+}
+
+.slider {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.slick-slider {
+  margin: 0px auto;
+}
+
+.slick-slide img {
+  width: 90%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+
+.slick-active {
+  opacity: 0.5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
 header .headercontainer {
   width: 100%;
   background-image: url(../img/home_header.png);
@@ -137,110 +176,11 @@ Section .barreVerticale {
   height: 22vh;
   width: 4px;
 }
-Section .actucontainer {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20%;
-  margin-top: 10%;
-}
-Section .actucontainer .actu {
-  background-color: #cee8a8;
-  border-radius: 7%;
-  width: 60%;
-  margin-left: 5%;
-  margin-right: 5%;
-  position: relative;
-}
-Section .actucontainer .actu h3 {
-  font-size: 40px;
-  margin-left: 5%;
-  font-weight: 500;
-  margin-top: 2%;
-}
-Section .actucontainer .actu p {
-  padding-left: 3%;
-  width: 60%;
-  padding-top: 2%;
-}
-Section .actucontainer .actu p span {
-  font-size: 18px;
-  font-weight: 600;
-  width: 50%;
-}
-Section .actucontainer .actu .span {
-  font-size: 12px;
-  color: rgb(102, 101, 101);
-  width: 50%;
-  margin-top: 10%;
-  padding-bottom: 5%;
-}
-Section .actucontainer .actu img {
-  width: 30%;
-  height: 50%;
-  border-radius: 15%;
-  margin-left: 65%;
-  position: absolute;
-  top: 20%;
-}
-Section .actucontainer .actu a {
-  font-size: 20px;
-  position: absolute;
-  right: 10%;
-  bottom: 10%;
-  color: black;
-  border-bottom: 1px solid black;
-}
-Section .actucontainer .eventcontainer {
-  margin-right: 5%;
-  width: 50%;
-  background-color: #cee8a8;
-  border-radius: 10%;
-  font-size: 14px;
-}
-Section .actucontainer .eventcontainer .event h3 {
-  font-size: 28px;
-  margin-left: 8%;
-  padding-top: 5%;
-}
-Section .actucontainer .eventcontainer .event p {
-  padding-left: 5%;
-  font-size: 12px;
-  padding-top: 2%;
-}
-Section .actucontainer .eventcontainer .event p span {
-  color: rgb(102, 101, 101);
-}
-Section .actucontainer .eventcontainer .event .border {
-  border-bottom: 3px solid white;
-  width: 100%;
-  padding-top: 5%;
-}
-Section .actucontainer .eventcontainer .restodujour h3 {
-  font-size: 18px;
-  margin-left: 8%;
-  margin-top: 3%;
-}
-Section .actucontainer .eventcontainer .restodujour .restodujourcontainer {
-  display: flex;
-}
-Section .actucontainer .eventcontainer .restodujour .restodujourcontainer img {
-  width: 65%;
-  margin-top: 2%;
-  margin-left: 15%;
-  border-radius: 15%;
-}
-Section .actucontainer .eventcontainer .restodujour .restodujourcontainer .escargottext {
-  width: 100%;
-  margin-right: 5%;
-}
-Section .actucontainer .eventcontainer .restodujour .restodujourcontainer .escargottext p {
-  padding-top: 3%;
-}
-Section .actucontainer .eventcontainer .restodujour .restodujourcontainer .escargottext p span {
-  font-weight: 800;
+Section .actucontainer img {
+  border-radius: 15px;
 }
 Section .titrenoté.reveal {
-  font-size: 8vh;
+  font-size: 5vw;
   font-weight: 500;
   color: #e3c463;
   text-align: center;
@@ -252,7 +192,7 @@ Section .titrenoté.reveal {
 }
 Section .titrenoté.reveal .bordernoté {
   border-bottom: 4px solid #e3c463;
-  width: 800px;
+  width: 80vw;
 }
 Section .flexnoté {
   display: flex;
@@ -306,12 +246,29 @@ Section .noté1 .info p {
   padding-top: 5%;
   padding-bottom: 15%;
 }
-Section .noté1 i {
-  position: absolute;
-  color: rgb(98, 95, 95);
-  right: 8%;
-  bottom: 3%;
-  font-size: 40px;
+Section .noté1 .placement {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+Section .noté1 .placement .like-count {
+  font-size: 1.3em;
+  font-family: "Libre Franklin", sans-serif;
+}
+Section .noté1 .placement .heart {
+  width: 100px;
+  margin-left: -5%;
+  margin-right: -10%;
+  height: 100px;
+  background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  transition: background-position 1s steps(28);
+  transition-duration: 0s;
+}
+Section .noté1 .placement .heart.is-active {
+  transition-duration: 1s;
+  background-position: -2800px 0;
 }
 Section .noté2 {
   position: relative;
@@ -345,12 +302,29 @@ Section .noté2 .info p {
   padding-top: 5%;
   padding-bottom: 15%;
 }
-Section .noté2 i {
-  position: absolute;
-  color: rgb(98, 95, 95);
-  right: 8%;
-  bottom: 3%;
-  font-size: 40px;
+Section .noté2 .placement {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+Section .noté2 .placement .like-count {
+  font-size: 1.3em;
+  font-family: "Libre Franklin", sans-serif;
+}
+Section .noté2 .placement .heart {
+  width: 100px;
+  margin-left: -5%;
+  margin-right: -10%;
+  height: 100px;
+  background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  transition: background-position 1s steps(28);
+  transition-duration: 0s;
+}
+Section .noté2 .placement .heart.is-active {
+  transition-duration: 1s;
+  background-position: -2800px 0;
 }
 Section .noté3 {
   position: relative;
@@ -382,13 +356,31 @@ Section .noté3 .info {
 Section .noté3 .info p {
   padding-top: 5%;
   padding-bottom: 15%;
+  margin-left: -1%;
 }
-Section .noté3 i {
-  position: absolute;
-  color: rgb(98, 95, 95);
-  right: 8%;
-  bottom: 3%;
-  font-size: 40px;
+Section .noté3 .placement {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+Section .noté3 .placement .like-count {
+  font-size: 1.3em;
+  font-family: "Libre Franklin", sans-serif;
+}
+Section .noté3 .placement .heart {
+  width: 100px;
+  margin-left: -5%;
+  margin-right: -10%;
+  height: 100px;
+  background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  transition: background-position 1s steps(28);
+  transition-duration: 0s;
+}
+Section .noté3 .placement .heart.is-active {
+  transition-duration: 1s;
+  background-position: -2800px 0;
 }
 Section .flexcontainer {
   position: relative;
@@ -418,7 +410,7 @@ Section .flexcontainer .titreflex.reveal {
   margin-bottom: 5%;
 }
 Section .flexcontainer .titreflex.reveal h2 {
-  font-size: 80px;
+  font-size: 5vw;
   color: #cee8a8;
   margin-left: 5%;
   font-weight: 500;
@@ -613,7 +605,7 @@ Section .flexpartenaires .img img {
   margin-bottom: 10%;
 }
 .titreAvis.reveal h2 {
-  font-size: 4.5em;
+  font-size: 5vw;
   color: #cee8a8;
   margin-left: 5%;
   font-weight: 600;
@@ -985,7 +977,7 @@ footer p:last-child {
     top: 40%;
   }
   section .flexcontainer .voirplus {
-    left: 42%;
+    left: 0%;
     width: 15%;
     padding-left: 1.2%;
   }
@@ -1018,65 +1010,69 @@ footer p:last-child {
   header .navbar .nav ul li a {
     font-size: 4.4vw;
   }
-  section h1 {
+  Section h1 {
     font-size: 8vw;
     border: none;
     margin-left: 20%;
   }
-  section .bordernoté {
-    width: 80%;
+  Section .barreVerticale {
+    height: 10vh;
   }
-  section .actucontainer .actu img {
+  Section .actucontainer .actu img {
     display: none;
   }
-  section .actucontainer .actu p {
+  Section .actucontainer .actu p {
     width: 99%;
   }
-  section .eventcontainer .restodujour .escargottext p {
+  Section .eventcontainer .restodujour .escargottext p {
     padding-left: 8%;
     font-size: 12px;
   }
-  section .eventcontainer .restodujour img {
+  Section .eventcontainer .restodujour img {
     display: none;
   }
-  section .titrenoté {
+  Section .titrenoté h2 {
     font-size: 6.5vh;
   }
-  section .noté1 .info {
+  Section .titrenoté .bordernoté {
+    margin-left: 0%;
+  }
+  Section .noté1 .info {
     margin-bottom: 15%;
   }
-  section .flexcontainer .titreflex .barre {
+  Section .flexcontainer .titreflex .barre {
     margin-bottom: 7%;
   }
-  section .flexcontainer .flexfeed .feed1 {
+  Section .flexcontainer .flexfeed .feed1 {
     margin: 1%;
   }
-  section .flexcontainer .flexfeed .feed1 .title .Nom {
+  Section .flexcontainer .flexfeed .feed1 .title .Nom {
     margin-left: 0%;
     border: none;
   }
-  section .flexcontainer .flexfeed .feed2 {
+  Section .flexcontainer .flexfeed .feed2 {
     margin: 1%;
   }
-  section .flexcontainer .flexfeed .feed2 .title .Nom {
+  Section .flexcontainer .flexfeed .feed2 .title .Nom {
     margin-left: 0%;
     border: none;
   }
-  section .flexcontainer .flexfeed .feed3 {
+  Section .flexcontainer .flexfeed .feed3 {
     margin: 1%;
   }
-  section .flexcontainer .flexfeed .feed3 .title .Nom {
+  Section .flexcontainer .flexfeed .feed3 .title .Nom {
     margin-left: 0%;
     border: none;
   }
-  section .flexcontainer .voirplus {
+  Section .flexcontainer .voirplus {
     width: 21%;
+    left: -10%;
   }
-  section .flexcontainer .voirplus a {
+  Section .flexcontainer .voirplus a {
     font-size: 25px;
   }
-  section .flexpartenaires .img img {
-    width: 23%;
+  Section .titreAvis h2 {
+    font-size: 2.5vw;
   }
   footer img {
     display: none;
