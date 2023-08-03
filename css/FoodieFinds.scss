@@ -6,8 +6,23 @@
     scroll-behavior: smooth;
 }
 
+html{
+    font-size: 16px;
+}
+
+:root{
+    --main-yellow: #F7D776;
+    --main-green: #CEE8A8;
+    --ligth-text: #FFFFFF;
+    --dark-text: #000000;
+    --orange-titles: #F29727;
+    --cities-nav-bg: #FAE7AD;
+    --light-action-color: #FFFCF1;
+    --dark-action-color: #858585;
+    --to-top-btn: #95CD41;
+}
+
 body {
-    background-color: white;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -22,11 +37,12 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    height: fit-content;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 10vh;
-    box-shadow: 0 -1vh 2vh;
+    box-shadow: 0 -3vh 2.5rem;
     position: fixed;
     z-index: 3;
 
@@ -45,8 +61,8 @@ header {
             justify-content: space-around;
             font-size: 0;
             li{
-                a{font-size: 1.63vw;
-                color: black;}
+                a{font-size: 1.5rem;
+                color: var(--dark-text);}
             }
         }
     }
@@ -55,8 +71,8 @@ header {
 
 // FOOTER
 footer{
-    background-color: #F7D776;
-    color: white;
+    background-color: var(--main-yellow);
+    color: var(--ligth-text);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,7 +81,7 @@ footer{
         width: 15%;
     }
     p{
-        font-size: 1.06vw;
+        font-size: 1rem;
         margin: .5%;
     }
     .reseaux{margin-top: 1%;
@@ -79,9 +95,10 @@ footer{
         }
     }
     p:last-child{
-        font-size: .65vw;
+        font-size: .75rem;
         margin-top: 4%;
         margin-bottom: 1%;
+        cursor: pointer;
     }
 }
 
@@ -105,7 +122,7 @@ footer{
                 display: flex;
                 flex-direction: column;
                 width: 53%;
-                background-color: #F7D776;
+                background-color: var(--main-yellow);
                 border-top-left-radius: 14.92% 20%;
             }
         }
@@ -120,7 +137,7 @@ footer{
                 display: flex;
                 flex-direction: column;
                 width: 53%;
-                background-color: #CEE8A8;
+                background-color: var(--main-green);
                 border-top-left-radius: 14.92% 20%;
             }
         }
@@ -140,10 +157,10 @@ footer{
     .userInfos{
         margin: 0 1vw;
         .userNames{
-            font-size: 1.31vw;
+            font-size: 1.3rem;
         }
         .userRanks{
-            font-size: .8vw;
+            font-size: .8rem;
             margin-top: -.5vh;
         }
     }
@@ -159,26 +176,26 @@ footer{
     justify-content: space-between;
     .PostContent{
         .PostRestaurants{
-            font-size: 1.2vw;
+            font-size: 1.2rem;
             text-align: center;
             margin-bottom: 1vh;
         }
         .Post{
-            font-size: 1.06vw;
+            font-size: 1rem;
         }
     }
     // LIKE → DIMENSIONS ET POSITIONNEMENT
     .like{
         display: none;
-         // LikeJS
-         .placement{
+        // LikeJS
+        .placement{
             display: flex;
             align-items: center;
             justify-content: start;
             margin-left: -30px;
 
             .like-count{
-                font-size: 1.3em;
+                font-size: 1.3rem;
                 font-family: 'Libre Franklin', sans-serif;
                 margin-bottom: -40px;
             }
@@ -196,10 +213,10 @@ footer{
             transition-duration: 0s;
             
             &.is-active {
-              transition-duration: 1s;
-              background-position: -2800px 0;
+                transition-duration: 1s;
+                background-position: -2800px 0;
             }
-          }
+        }
         }
         // LikeJS
     }
@@ -207,7 +224,7 @@ footer{
         display: flex;
         align-items: center;
         i{
-            font-size: 2.5vw;
+            font-size: 2.5rem;
             margin-right: 1vw;
         }
     }
@@ -220,21 +237,23 @@ footer{
     position: relative;
     img{
         width: 100%;
+        height: 100%;
+        object-fit: cover;
         border-bottom-right-radius: 16.785% 20%;
     }
     // OPTIONS → DIMENSIONS ET POSITIONNEMENT
     .options{
-        font-size: 2vw;
+        font-size: 2rem;
         position: absolute;
         display: block;
         top: 4%;
         right: 10%;
         cursor: pointer;
         i{
-            background-color: rgba($color: #fffcf1, $alpha: .7);
+            background-color: rgba($color: #FFFCF1, $alpha: .7);
             border-radius: 50% / 20%;
             padding: .2vh .1vw;
-            color: #858585;
+            color: var(--dark-action-color);
         }
     }
 }
@@ -248,7 +267,17 @@ footer{
     z-index: 99;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0 2vw 0 50vw rgba($color: #000000, $alpha: .2);
+    &::before{
+        content: '';
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: -36.5%;
+        left: -18%;
+        z-index: -1;
+        background-color: rgba($color: #000000, $alpha: .2);
+        backdrop-filter: blur(.1rem);
+    }
 }
 
 
@@ -257,9 +286,9 @@ footer{
     #toggle{
         position: fixed;
         display: block;
-        background-color: #F7D776;
-        width: 1.5vw;
-        height: .4vh;
+        background-color: var(--main-yellow);
+        width: 2vw;
+        height: .5vh;
         top: 18vh;
         left: 1.7vw;
         border-radius: 10% / 50%;
@@ -270,17 +299,17 @@ footer{
             content: '';
             position: absolute;
             display: block;
-            background-color: #F7D776;
+            background-color: var(--main-yellow);
             border-radius: 10% / 50%;
-            width: 1.5vw;
-            height: .4vh;
+            width: 2vw;
+            height: .5vh;
             transition: all .3s ease-in-out;
         }
         &::before{
-            top: -1vh;
+            top: -1.25vh;
         }
         &::after{
-            top: 1vh;
+            top: 1.25vh;
         }
     }
 
@@ -289,12 +318,12 @@ footer{
     &::before{
         top: 0;
         rotate: 45deg;
-        background-color: #fffcf1;
+        background-color: var(--light-action-color);
     }
     &::after{
         top: 0;
         rotate: -45deg;
-        background-color: #fffcf1;
+        background-color: var(--light-action-color);
     }
 }
 
@@ -310,7 +339,7 @@ footer{
         z-index: -1;
         width: 20%;
         height: 100vh;
-        background-color: #FAE7AD;
+        background-color: var(--cities-nav-bg);
         // border-bottom-right-radius: 10% 5.23%;
         overflow-y: scroll;
         overflow-x: hidden;
@@ -318,12 +347,12 @@ footer{
         z-index: 1;
         transition: ease-in-out .3s all;
         &::-webkit-scrollbar{
-            background-color: #fffcf1;
+            background-color: var(--light-action-color);
             border-radius: 50% / 1%;
             height: 80%;
         }
         &::-webkit-scrollbar-thumb{
-            background-color: #F7D776;
+            background-color: var(--main-yellow);
             border-radius: 50% / 1%;
         }
         // NAVIGATION
@@ -336,14 +365,14 @@ footer{
                 width: 60%;
                 border-radius: 7% / 50%;
                 border: 0.2vw solid transparent;
-                background-color: #fffcf1;
+                background-color: var(--light-action-color);
                 padding-left: .4vw;
                 &::placeholder{
                     font-size: 1.06vw;
                 }
             }
             #menu{
-                font-size: 1vw;
+                font-size: 1rem;
                 position: absolute;
                 top: 16.7vh;
                 left: 103vw;
@@ -385,26 +414,36 @@ footer{
             ul{
                 li{
                     a{
-                        font-size: 1.86vw;
+                        font-size: 1.2rem;
                     }
                 }
             }
         }
     }
+    // ———————————————————— Continue changes from here → maybe define height of posts and use object-size (potentially object position too) ————————————————————
     .FoodieFinds{
         .FindsFeed{
-            margin: 16vh auto 0;
+            margin: 11vh auto 0;
+            width: 80%;
             .FindsPostYellow{
-                width: 80%;
+                width: 100%;
             }
             .FindsPostGreen{
-                width: 80%;
+                width: 100%;
+                align-self: flex-start;
             }
         }
         #toggle{
-            width: 2.5vw;
+            top: 13vw;
+            left: 3.25vw;
+            width: 4vw;
             &::before, &::after{
-                width: 2.5vw;
+                width: 4vw;
+            }
+        }
+        #toggle.active{
+            &::before, &::after{
+                width: 4vw;
             }
         }
         #FindsNavCities{

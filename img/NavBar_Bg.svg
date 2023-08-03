@@ -1,29 +1,8 @@
-<svg width="1440" height="85" viewBox="0 0 1440 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_169_64)">
-<rect width="1440" height="85" fill="white"/>
-<mask id="mask0_169_64" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="85">
-<g style="mix-blend-mode:multiply">
-<rect width="1440" height="85" fill="white"/>
+<svg width="1662" height="406" viewBox="0 0 1662 406" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1662" height="405" fill="white"/>
+<path d="M1589.56 405.42C1614.1 405.42 1638.28 403.868 1662 400.857V0H1043.99C1114.46 234.545 1332.06 405.42 1589.56 405.42Z" fill="#FCE6CB"/>
+<g style="mix-blend-mode:multiply" opacity="0.27">
+<path d="M1162.51 142.27C1274.95 142.27 1374.23 85.9587 1433.7 0H891.333C950.798 85.9587 1050.08 142.27 1162.51 142.27Z" fill="#F2C237"/>
 </g>
-</mask>
-<g mask="url(#mask0_169_64)">
-<mask id="mask1_169_64" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="400">
-<g style="mix-blend-mode:multiply">
-<rect width="1440" height="400" fill="white"/>
-</g>
-</mask>
-<g mask="url(#mask1_169_64)">
-<circle cx="1375.5" cy="-145.5" r="493.5" fill="#F29727" fill-opacity="0.24"/>
-<g style="mix-blend-mode:multiply">
-<circle cx="1005.5" cy="-165.5" r="285.5" fill="#F2BE22" fill-opacity="0.26"/>
-</g>
-<circle cx="-31.5" cy="-385.5" r="493.5" fill="#95CD41" fill-opacity="0.27"/>
-</g>
-</g>
-</g>
-<defs>
-<clipPath id="clip0_169_64">
-<rect width="1440" height="85" fill="white"/>
-</clipPath>
-</defs>
+<path d="M0 0V127.401C123.316 120.065 236.069 73.4943 325.949 0H0Z" fill="#E2F1CB"/>
 </svg>

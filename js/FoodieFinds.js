@@ -14,45 +14,27 @@ const citiesNavigation = document.getElementById('FindsNavCities');
 
 
 // POSTS SCALE
-
-// const findsPost = document.querySelectorAll('.FindsPost');
-// const findsPostArray = Array.from(findsPost);
-// const findsPostMap = findsPostArray.map(post =>{
-//     post.addEventListener('click', (event) => {
-//         event.stopPropagation();
-//         post.classList.add('BlownUp');
-//     })
-//     document.addEventListener('click', (event) => {
-//         if(!event.target.classList.contains('BlownUp')){
-//             post.classList.remove('BlownUp');
-//         }
-//     })
-// })
 const findsPost = document.querySelectorAll('.FindsPost');
 const findsPostArray = Array.from(findsPost);
 let activePost = null;
 const findsPostMap = findsPostArray.map(post =>{
     post.addEventListener('click', (event) => {
         event.stopPropagation();
-        if(activePost && !post.classList.contains('BlownUp')){
+
+        post.classList.add('BlownUp');
+        activePost = post;
+        activePost.querySelector('.like').classList.add("active");
+
+        const activePostDimensions = activePost.getBoundingClientRect();
+        if(
+            event.clientX < activePostDimensions.left ||
+            event.clientX > activePostDimensions.right ||
+            event.clientY < activePostDimensions.top ||
+            event.clientY > activePostDimensions.bottom
+        ){
             activePost.classList.remove('BlownUp');
-            activePost.querySelector('.like').classList.remove("active")
-            activePost = null
-            // console.log(2);
-        }
-        else{
-            post.classList.add('BlownUp');
-            activePost = post;
-            activePost.querySelector('.like').classList.add("active")
-            // console.log(1);
-        }
-    })
-});
-document.addEventListener('click', (event) => {
-    if(!event.target.classList.contains('BlownUp') && activePost){
-            activePost.classList.remove('BlownUp');
-            activePost.querySelector('.like').classList.remove("active")
+            activePost.querySelector('.like').classList.remove("active");
             activePost = null;
-            // console.log(3);
-    }
-})
+        }
+    });
+});
