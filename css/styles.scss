@@ -93,8 +93,8 @@ header {
     .logo {
         width: 25%;
         z-index: 1;
-        animation: scaleFade auto linear;
-        animation-timeline: scroll(root);
+        // animation: scaleFade auto linear;
+        // animation-timeline: scroll(root);
     }
     
     .logobg {
@@ -104,8 +104,8 @@ header {
         justify-content: center;
         z-index: 0;
         width: 30%;
-        animation: scaleFade auto linear;
-        animation-timeline: scroll(root);
+        // animation: scaleFade auto linear;
+        // animation-timeline: scroll(root);
         
         img {
             width: 130%;
@@ -113,16 +113,16 @@ header {
     }
 }
 
-@keyframes scaleFade {
-    0%{
-        transform: scale(1);
-        opacity: 100%;
-    }
-    10%{
-        transform: scale(1.5);
-        opacity: 0%;
-    }
-}
+// @keyframes scaleFade {
+//     0%{
+//         transform: scale(1);
+//         opacity: 100%;
+//     }
+//     10%{
+//         transform: scale(1.5);
+//         opacity: 0%;
+//     }
+// }
 
 // Nav
 .stickyNav{
@@ -130,7 +130,7 @@ header {
     top: 0;
     z-index: 3;
     .navbar {
-        background-image: url(../img/NavBar_BG_1.svg);
+        background-image: url(../img/NavBar_Bg.svg);
         background-repeat: no-repeat;
         background-size: 100%;
         width: 100%;
@@ -335,6 +335,8 @@ Section {
     .flexnoté {
         display: flex;
         justify-content: space-evenly;
+        width: 99.5%;
+        margin: 0 auto;
         .noté1,
         .noté2,
         .noté3 {
@@ -355,24 +357,30 @@ Section {
     .noté1 {
         position: relative;
         background-color: #e3c463;
-        border-radius: 7%;
-        width: 50%;
-        padding: 2%;
+        border-radius: 15px;
+        width: 60%;
+        padding: 0.7%;
         margin: 2%;
-
-        img {
-            width: 100%;
-            border-radius: 10%;
-        }
+            img {
+                width: 100%;
+                border-radius: 15px;
+                box-shadow: 0px 0px 2px;
+                clip-path: polygon(20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20% );
+            }
 
         h4 {
             padding-top: 5%;
             padding-bottom: 5%;
             text-align: center;
+            border-bottom: 2px solid black;
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 5%;
         }
 
         p {
             text-align: center;
+            height: 8vh;
         }
 
         .info {
@@ -384,7 +392,6 @@ Section {
 
             p {
                 padding-top: 5%;
-                padding-bottom: 15%;
             }
         }
         // JS LIKE
@@ -392,6 +399,7 @@ Section {
             display: flex;
             align-items: center;
             justify-content: end;
+            margin-right: 5%;
 
             .like-count{
                 font-size: 1.3em;
@@ -421,25 +429,32 @@ Section {
     .noté2 {
         position: relative;
         background-color: #e3c463;
-        border-radius: 7%;
-        width: 50%;
-        padding: 2%;
+        border-radius: 15px;
+        width: 60%;
+        padding: 0.7%;
         margin: 2%;
 
         img {
             width: 100%;
             overflow: hidden;
-            border-radius: 10%;
+            border-radius: 15px;
+            box-shadow: 0px 0px 2px;
+            clip-path: polygon(20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%);
         }
 
         h4 {
             padding-top: 5%;
             padding-bottom: 5%;
             text-align: center;
+            border-bottom: 2px solid black;
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 5%;
         }
 
         p {
             text-align: center;
+            height: 8vh;
         }
 
         .info {
@@ -451,7 +466,6 @@ Section {
 
             p {
                 padding-top: 5%;
-                padding-bottom: 15%;
             }
         }
 
@@ -460,6 +474,7 @@ Section {
             display: flex;
             align-items: center;
             justify-content: end;
+            margin-right: 5%;
 
             .like-count{
                 font-size: 1.3em;
@@ -489,24 +504,31 @@ Section {
     .noté3 {
         position: relative;
         background-color: #e3c463;
-        border-radius: 7%;
-        width: 50%;
-        padding: 2%;
+        border-radius: 15px;
+        width: 60%;
+        padding: 0.7%;
         margin: 2%;
 
         img {
             width: 100%;
-            border-radius: 10%;
+            border-radius: 15px;
+            box-shadow: 0px 0px 2px;
+            clip-path: polygon(20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%);
         }
 
         h4 {
             padding-top: 5%;
             padding-bottom: 5%;
             text-align: center;
+            border-bottom: 2px solid black;
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 5%;
         }
 
         p {
             text-align: center;
+            height: 8vh;
         }
 
         .info {
@@ -518,7 +540,6 @@ Section {
 
             p {
                 padding-top: 5%;
-                padding-bottom: 15%;
                 margin-left: -1%;
             }
         }
@@ -528,6 +549,7 @@ Section {
             display: flex;
             align-items: center;
             justify-content: end;
+            margin-right: 5%;
 
             .like-count{
                 font-size: 1.3em;
@@ -606,7 +628,7 @@ Section {
                 width: 60%;
                 height: 40vh;
                 margin: 3%;
-                border-radius: 10%;
+                border-radius: 20px;
 
                 img {
                     width: 73px;
@@ -648,7 +670,7 @@ Section {
                 width: 60%;
                 height: 40vh;
                 margin: 3%;
-                border-radius: 10%;
+                border-radius: 20px;
 
                 img {
                     width: 73px;
@@ -692,7 +714,7 @@ Section {
                 width: 60%;
                 height: 40vh;
                 margin: 3%;
-                border-radius: 10%;
+                border-radius: 20px;
 
                 img {
                     width: 73px;
@@ -1092,6 +1114,30 @@ footer {
                 }
             }
         }
+        .noté1{
+            h4{
+                width: 90%;
+            }
+            p{
+                margin-top: 10%;
+            }
+        }
+        .noté2{
+            h4{
+                width: 90%;
+            }
+            p{
+                margin-top: 10%;
+            }
+        }
+        .noté3{
+            h4{
+                width: 90%;
+            }
+            p{
+                margin-top: 10%;
+            }
+        }
 
         .bordernoté {
             margin-left: 11%;
@@ -1363,9 +1409,24 @@ footer {
             }
        }
 
-        .noté1 {
-            .info {
-                margin-bottom: 15%;
+       .flexnoté{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+            .noté1 {
+                width: 70%;
+                margin: 0 auto;
+                margin-bottom: 5%;
+
+            }
+            .noté2 {
+                width: 70%;
+                margin: 0 auto;
+                margin-bottom: 5%;
+            }
+            .noté3 {
+                width: 70%;
+                margin: 0 auto;
             }
         }
 
@@ -1377,34 +1438,54 @@ footer {
             }
 
             .flexfeed {
+                display: flex;
+                flex-direction: column;
                 .feed1 {
-                    margin: 1%;
-
-                    .title {
-                        .Nom {
-                            margin-left: 0%;
-                            border: none;
-                        }
+                    margin-left: 2.5%;
+                    width: 60%;
+                    margin-bottom: 10%;
+                    margin: 0 auto;
+                    margin-bottom: 8%;
+                    .title{
+                        height: 100%;
+                    }
+                    span{
+                        margin-top: 7%;
+                    }
+                    .Nom{
+                        margin-left: 20%;
                     }
                 }
                 .feed2 {
-                    margin: 1%;
-
-                    .title {
-                        .Nom {
-                            margin-left: 0%;
-                            border: none;
-                        }
+                    margin-left: 2.5%;
+                    width: 60%;
+                    margin-bottom: 10%;
+                    margin: 0 auto;
+                    margin-bottom: 8%;
+                    .title{
+                        height: 100%;
+                    }
+                    span{
+                        margin-top: 7%;
+                    }
+                    .Nom{
+                        margin-left: 20%;
                     }
                 }
                 .feed3 {
-                    margin: 1%;
-
-                    .title {
-                        .Nom {
-                            margin-left: 0%;
-                            border: none;
-                        }
+                    margin-left: 2.5%;
+                    width: 60%;
+                    margin-bottom: 10%;
+                    margin: 0 auto;
+                    margin-bottom: 8%;
+                    .title{
+                        height: 100%;
+                    }
+                    span{
+                        margin-top: 7%;
+                    }
+                    .Nom{
+                        margin-left: 20%;
                     }
                 }
             }

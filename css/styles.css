@@ -93,8 +93,6 @@ header .headercontainer div.bg {
 header .logo {
   width: 25%;
   z-index: 1;
-  animation: scaleFade auto linear;
-  animation-timeline: scroll(root);
 }
 header .logobg {
   display: flex;
@@ -103,30 +101,18 @@ header .logobg {
   justify-content: center;
   z-index: 0;
   width: 30%;
-  animation: scaleFade auto linear;
-  animation-timeline: scroll(root);
 }
 header .logobg img {
   width: 130%;
 }
 
-@keyframes scaleFade {
-  0% {
-    transform: scale(1);
-    opacity: 100%;
-  }
-  10% {
-    transform: scale(1.5);
-    opacity: 0%;
-  }
-}
 .stickyNav {
   position: sticky;
   top: 0;
   z-index: 3;
 }
 .stickyNav .navbar {
-  background-image: url(../img/NavBar_BG_1.svg);
+  background-image: url(../img/NavBar_Bg.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -197,6 +183,8 @@ Section .titrenoté.reveal .bordernoté {
 Section .flexnoté {
   display: flex;
   justify-content: space-evenly;
+  width: 99.5%;
+  margin: 0 auto;
 }
 Section .flexnoté .noté1,
 Section .flexnoté .noté2,
@@ -218,22 +206,30 @@ Section .flexnoté .noté3:hover {
 Section .noté1 {
   position: relative;
   background-color: #e3c463;
-  border-radius: 7%;
-  width: 50%;
-  padding: 2%;
+  border-radius: 15px;
+  width: 60%;
+  padding: 0.7%;
   margin: 2%;
 }
 Section .noté1 img {
   width: 100%;
-  border-radius: 10%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 2px;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%);
+          clip-path: polygon(20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%);
 }
 Section .noté1 h4 {
   padding-top: 5%;
   padding-bottom: 5%;
   text-align: center;
+  border-bottom: 2px solid black;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 5%;
 }
 Section .noté1 p {
   text-align: center;
+  height: 8vh;
 }
 Section .noté1 .info {
   display: flex;
@@ -244,12 +240,12 @@ Section .noté1 .info {
 }
 Section .noté1 .info p {
   padding-top: 5%;
-  padding-bottom: 15%;
 }
 Section .noté1 .placement {
   display: flex;
   align-items: center;
   justify-content: end;
+  margin-right: 5%;
 }
 Section .noté1 .placement .like-count {
   font-size: 1.3em;
@@ -273,23 +269,31 @@ Section .noté1 .placement .heart.is-active {
 Section .noté2 {
   position: relative;
   background-color: #e3c463;
-  border-radius: 7%;
-  width: 50%;
-  padding: 2%;
+  border-radius: 15px;
+  width: 60%;
+  padding: 0.7%;
   margin: 2%;
 }
 Section .noté2 img {
   width: 100%;
   overflow: hidden;
-  border-radius: 10%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 2px;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%);
+          clip-path: polygon(20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%);
 }
 Section .noté2 h4 {
   padding-top: 5%;
   padding-bottom: 5%;
   text-align: center;
+  border-bottom: 2px solid black;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 5%;
 }
 Section .noté2 p {
   text-align: center;
+  height: 8vh;
 }
 Section .noté2 .info {
   display: flex;
@@ -300,12 +304,12 @@ Section .noté2 .info {
 }
 Section .noté2 .info p {
   padding-top: 5%;
-  padding-bottom: 15%;
 }
 Section .noté2 .placement {
   display: flex;
   align-items: center;
   justify-content: end;
+  margin-right: 5%;
 }
 Section .noté2 .placement .like-count {
   font-size: 1.3em;
@@ -329,22 +333,30 @@ Section .noté2 .placement .heart.is-active {
 Section .noté3 {
   position: relative;
   background-color: #e3c463;
-  border-radius: 7%;
-  width: 50%;
-  padding: 2%;
+  border-radius: 15px;
+  width: 60%;
+  padding: 0.7%;
   margin: 2%;
 }
 Section .noté3 img {
   width: 100%;
-  border-radius: 10%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 2px;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%);
+          clip-path: polygon(20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%);
 }
 Section .noté3 h4 {
   padding-top: 5%;
   padding-bottom: 5%;
   text-align: center;
+  border-bottom: 2px solid black;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 5%;
 }
 Section .noté3 p {
   text-align: center;
+  height: 8vh;
 }
 Section .noté3 .info {
   display: flex;
@@ -355,13 +367,13 @@ Section .noté3 .info {
 }
 Section .noté3 .info p {
   padding-top: 5%;
-  padding-bottom: 15%;
   margin-left: -1%;
 }
 Section .noté3 .placement {
   display: flex;
   align-items: center;
   justify-content: end;
+  margin-right: 5%;
 }
 Section .noté3 .placement .like-count {
   font-size: 1.3em;
@@ -431,7 +443,7 @@ Section .flexcontainer .flexfeed .feed1 {
   width: 60%;
   height: 40vh;
   margin: 3%;
-  border-radius: 10%;
+  border-radius: 20px;
 }
 Section .flexcontainer .flexfeed .feed1 img {
   width: 73px;
@@ -466,7 +478,7 @@ Section .flexcontainer .flexfeed .feed2 {
   width: 60%;
   height: 40vh;
   margin: 3%;
-  border-radius: 10%;
+  border-radius: 20px;
 }
 Section .flexcontainer .flexfeed .feed2 img {
   width: 73px;
@@ -501,7 +513,7 @@ Section .flexcontainer .flexfeed .feed3 {
   width: 60%;
   height: 40vh;
   margin: 3%;
-  border-radius: 10%;
+  border-radius: 20px;
 }
 Section .flexcontainer .flexfeed .feed3 img {
   width: 73px;
@@ -864,6 +876,24 @@ footer p:last-child {
     height: 30%;
     top: 5%;
   }
+  section .noté1 h4 {
+    width: 90%;
+  }
+  section .noté1 p {
+    margin-top: 10%;
+  }
+  section .noté2 h4 {
+    width: 90%;
+  }
+  section .noté2 p {
+    margin-top: 10%;
+  }
+  section .noté3 h4 {
+    width: 90%;
+  }
+  section .noté3 p {
+    margin-top: 10%;
+  }
   section .bordernoté {
     margin-left: 11%;
   }
@@ -1037,32 +1067,79 @@ footer p:last-child {
   Section .titrenoté .bordernoté {
     margin-left: 0%;
   }
-  Section .noté1 .info {
-    margin-bottom: 15%;
+  Section .flexnoté {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  Section .flexnoté .noté1 {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+  Section .flexnoté .noté2 {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+  Section .flexnoté .noté3 {
+    width: 70%;
+    margin: 0 auto;
   }
   Section .flexcontainer .titreflex .barre {
     margin-bottom: 7%;
   }
-  Section .flexcontainer .flexfeed .feed1 {
-    margin: 1%;
+  Section .flexcontainer .flexfeed {
+    display: flex;
+    flex-direction: column;
   }
-  Section .flexcontainer .flexfeed .feed1 .title .Nom {
-    margin-left: 0%;
-    border: none;
+  Section .flexcontainer .flexfeed .feed1 {
+    margin-left: 2.5%;
+    width: 60%;
+    margin-bottom: 10%;
+    margin: 0 auto;
+    margin-bottom: 8%;
+  }
+  Section .flexcontainer .flexfeed .feed1 .title {
+    height: 100%;
+  }
+  Section .flexcontainer .flexfeed .feed1 span {
+    margin-top: 7%;
+  }
+  Section .flexcontainer .flexfeed .feed1 .Nom {
+    margin-left: 20%;
   }
   Section .flexcontainer .flexfeed .feed2 {
-    margin: 1%;
+    margin-left: 2.5%;
+    width: 60%;
+    margin-bottom: 10%;
+    margin: 0 auto;
+    margin-bottom: 8%;
   }
-  Section .flexcontainer .flexfeed .feed2 .title .Nom {
-    margin-left: 0%;
-    border: none;
+  Section .flexcontainer .flexfeed .feed2 .title {
+    height: 100%;
+  }
+  Section .flexcontainer .flexfeed .feed2 span {
+    margin-top: 7%;
+  }
+  Section .flexcontainer .flexfeed .feed2 .Nom {
+    margin-left: 20%;
   }
   Section .flexcontainer .flexfeed .feed3 {
-    margin: 1%;
+    margin-left: 2.5%;
+    width: 60%;
+    margin-bottom: 10%;
+    margin: 0 auto;
+    margin-bottom: 8%;
   }
-  Section .flexcontainer .flexfeed .feed3 .title .Nom {
-    margin-left: 0%;
-    border: none;
+  Section .flexcontainer .flexfeed .feed3 .title {
+    height: 100%;
+  }
+  Section .flexcontainer .flexfeed .feed3 span {
+    margin-top: 7%;
+  }
+  Section .flexcontainer .flexfeed .feed3 .Nom {
+    margin-left: 20%;
   }
   Section .flexcontainer .voirplus {
     width: 21%;
