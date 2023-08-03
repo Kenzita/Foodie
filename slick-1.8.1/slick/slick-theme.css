@@ -17,6 +17,7 @@
 .slick-next {
   position: absolute;
   display: block;
+  margin-right: 1.5%;
   height: 20px;
   width: 20px;
   line-height: 0px;
@@ -92,7 +93,7 @@
 
 .slick-dots {
   position: absolute;
-  bottom: -25px;
+  bottom: -50px;
   list-style: none;
   display: block;
   text-align: center;

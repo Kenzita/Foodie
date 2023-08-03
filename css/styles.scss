@@ -171,7 +171,7 @@ Section {
     .h1.reveal {
         padding-bottom: 1%;
         width: 100%;
-        margin-bottom: 4%;
+        margin-bottom: 8%;
         padding-left: 7%;
         display: flex;
         margin-top: 5%;
@@ -605,7 +605,7 @@ Section {
             margin-bottom: 5%;
 
             h2 {
-                font-size: 5vw;
+                font-size: 7vw;
                 color: #cee8a8;
                 margin-left: 5%;
                 font-weight: 500;
@@ -836,7 +836,7 @@ Section {
     margin-bottom: 10%;
 
     h2 {
-        font-size: 5vw;
+        font-size: 7vw;
         color: #cee8a8;
         margin-left: 5%;
         font-weight: 600;
@@ -1114,6 +1114,9 @@ footer {
                 }
             }
         }
+        .bordernoté{
+            margin: 0 auto;
+        }
         .noté1{
             h4{
                 width: 90%;
@@ -1218,6 +1221,10 @@ footer {
         }
     }
     section {
+
+        .barreVerticale{
+            height: 12vw;
+        }
         .actucontainer {
             .actu {
                 margin: 1%;
@@ -1250,7 +1257,7 @@ footer {
         }
 
         .bordernoté {
-            margin-left: 9%;
+            margin: 0 auto;
         }
 
         .flexnoté {
@@ -1402,10 +1409,10 @@ footer {
         }
        .titrenoté{
             h2{
-                font-size: 6.5vh;
+                font-size: 7vw;
             }
             .bordernoté{
-                margin-left: 0%;
+                margin: 0 auto;
             }
        }
 
@@ -1432,6 +1439,7 @@ footer {
 
         .flexcontainer {
             .titreflex {
+                font-size: 7vw;
                 .barre {
                     margin-bottom: 7%;
                 }
@@ -1502,7 +1510,7 @@ footer {
 
         .titreAvis{
             h2{
-                font-size: 2.5vw;
+                font-size: 7vw;
             }
         }
     }
@@ -1543,11 +1551,16 @@ footer {
             width: 50%;
         }
     }
-
     header .navbar {
         background-size: cover;
         height: 10vh;
         padding: 0%;
+        a{
+            width: 10%;
+            .logoNav{
+                width: 100%;
+            }
+        }
         .nav {
             width: 100%;
             ul {
@@ -1559,14 +1572,21 @@ footer {
             }
         }
     }
-
+    .titreAvis.reveal .barre {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .titreAvis.reveal h2 {
+        margin: 0 auto;
+    }
     section {
         h1 {
-            font-size: 12vw;
-            margin-left: 12%;
-            width: 75%;
+            width: 40%;
+            margin-left: 0%;
             border: none;
-            border-bottom: 3px solid #cee8a8;
+        }
+        .barreVerticale{
+            height: 12vw;
         }
         .actucontainer {
             display: block;
@@ -1627,18 +1647,42 @@ footer {
 
             .noté1 {
                 margin-bottom: 10%;
-                width: 96%;
-                p {
-                    margin-bottom: -5%;
+                width: 85%;
+                height: 65vh;
+                .info{
+                    margin-top: 0%;
+                    width: 80%;
+                    margin: 0 auto;
+                }
+                .placement{
+                    margin-top: -5%;
                 }
             }
             .noté2 {
                 margin-bottom: 10%;
-                width: 96%;
+                width: 85%;
+                height: 65vh;
+                .info{
+                    margin-top: 0%;
+                    width: 80%;
+                    margin: 0 auto;
+                }
+                .placement{
+                    margin-top: -5%;
+                }
             }
             .noté3 {
                 margin-bottom: 10%;
-                width: 96%;
+                width: 85%;
+                height: 65vh;
+                .info{
+                    margin-top: 0%;
+                    width: 80%;
+                    margin: 0 auto;
+                }
+                .placement{
+                    margin-top: -5%;
+                }
             }
         }
         .flexcontainer {
@@ -1660,16 +1704,19 @@ footer {
                 .feed1 {
                     margin-left: 2.5%;
                     width: 95%;
+                    height: 20vh;
                     margin-bottom: 10%;
                 }
                 .feed2 {
                     margin-left: 2.5%;
                     width: 95%;
+                    height: 20vh;
                     margin-bottom: 10%;
                 }
                 .feed3 {
                     margin-left: 2.5%;
                     width: 95%;
+                    height: 20vh;
                     margin-bottom: 10%;
                 }
             }
@@ -1677,7 +1724,7 @@ footer {
             .voirplus {
                 width: 33%;
                 bottom: -8%;
-                left: 35%;
+                left: -20%;
                 margin-bottom: 5%;
                 margin-top: 5%;
             }
@@ -1696,7 +1743,34 @@ footer {
                 }
             }
         }
+        .titreAvis{
+                flex-direction: column;
+            }
+        .pageAvis{
+            height: 90vh;
+            .trieAvis{
+                display: block;
+                margin-top: 10%;
+                margin-bottom: 20%;
+                .avis1{
+                    width: 50%;
+                    margin: 0 auto;
+                    height: 40vh;
+                }
+                .avis2{
+                    width: 40%;
+                    margin: 0 auto;
+                }
+                .avis3{
+                    display: none;
+                }
+                .avis4{
+                    display: none;
+                }
+            }
+        }
     }
+   
 
     footer {
         img {

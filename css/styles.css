@@ -147,7 +147,7 @@ Section {
 Section .h1.reveal {
   padding-bottom: 1%;
   width: 100%;
-  margin-bottom: 4%;
+  margin-bottom: 8%;
   padding-left: 7%;
   display: flex;
   margin-top: 5%;
@@ -422,7 +422,7 @@ Section .flexcontainer .titreflex.reveal {
   margin-bottom: 5%;
 }
 Section .flexcontainer .titreflex.reveal h2 {
-  font-size: 5vw;
+  font-size: 7vw;
   color: #cee8a8;
   margin-left: 5%;
   font-weight: 500;
@@ -617,7 +617,7 @@ Section .flexpartenaires .img img {
   margin-bottom: 10%;
 }
 .titreAvis.reveal h2 {
-  font-size: 5vw;
+  font-size: 7vw;
   color: #cee8a8;
   margin-left: 5%;
   font-weight: 600;
@@ -876,6 +876,9 @@ footer p:last-child {
     height: 30%;
     top: 5%;
   }
+  section .bordernoté {
+    margin: 0 auto;
+  }
   section .noté1 h4 {
     width: 90%;
   }
@@ -940,6 +943,9 @@ footer p:last-child {
   header .navbar .nav ul li a {
     font-size: 3vw;
   }
+  section .barreVerticale {
+    height: 12vw;
+  }
   section .actucontainer .actu {
     margin: 1%;
     padding-bottom: 10%;
@@ -965,7 +971,7 @@ footer p:last-child {
     line-height: 120%;
   }
   section .bordernoté {
-    margin-left: 9%;
+    margin: 0 auto;
   }
   section .flexnoté .noté1 {
     width: 30%;
@@ -1062,10 +1068,10 @@ footer p:last-child {
     display: none;
   }
   Section .titrenoté h2 {
-    font-size: 6.5vh;
+    font-size: 7vw;
   }
   Section .titrenoté .bordernoté {
-    margin-left: 0%;
+    margin: 0 auto;
   }
   Section .flexnoté {
     display: flex;
@@ -1085,6 +1091,9 @@ footer p:last-child {
   Section .flexnoté .noté3 {
     width: 70%;
     margin: 0 auto;
+  }
+  Section .flexcontainer .titreflex {
+    font-size: 7vw;
   }
   Section .flexcontainer .titreflex .barre {
     margin-bottom: 7%;
@@ -1149,7 +1158,7 @@ footer p:last-child {
     font-size: 25px;
   }
   Section .titreAvis h2 {
-    font-size: 2.5vw;
+    font-size: 7vw;
   }
   footer img {
     display: none;
@@ -1181,18 +1190,32 @@ footer p:last-child {
     height: 10vh;
     padding: 0%;
   }
+  header .navbar a {
+    width: 10%;
+  }
+  header .navbar a .logoNav {
+    width: 100%;
+  }
   header .navbar .nav {
     width: 100%;
   }
   header .navbar .nav ul li a {
     font-size: 4.4vw;
   }
-  section h1 {
-    font-size: 12vw;
-    margin-left: 12%;
+  .titreAvis.reveal .barre {
     width: 75%;
+    margin: 0 auto;
+  }
+  .titreAvis.reveal h2 {
+    margin: 0 auto;
+  }
+  section h1 {
+    width: 40%;
+    margin-left: 0%;
     border: none;
-    border-bottom: 3px solid #cee8a8;
+  }
+  section .barreVerticale {
+    height: 12vw;
   }
   section .actucontainer {
     display: block;
@@ -1236,18 +1259,42 @@ footer p:last-child {
   }
   section .flexnoté .noté1 {
     margin-bottom: 10%;
-    width: 96%;
+    width: 85%;
+    height: 65vh;
   }
-  section .flexnoté .noté1 p {
-    margin-bottom: -5%;
+  section .flexnoté .noté1 .info {
+    margin-top: 0%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  section .flexnoté .noté1 .placement {
+    margin-top: -5%;
   }
   section .flexnoté .noté2 {
     margin-bottom: 10%;
-    width: 96%;
+    width: 85%;
+    height: 65vh;
+  }
+  section .flexnoté .noté2 .info {
+    margin-top: 0%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  section .flexnoté .noté2 .placement {
+    margin-top: -5%;
   }
   section .flexnoté .noté3 {
     margin-bottom: 10%;
-    width: 96%;
+    width: 85%;
+    height: 65vh;
+  }
+  section .flexnoté .noté3 .info {
+    margin-top: 0%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  section .flexnoté .noté3 .placement {
+    margin-top: -5%;
   }
   section .flexcontainer .titreflex {
     margin-bottom: 15%;
@@ -1264,22 +1311,25 @@ footer p:last-child {
   section .flexcontainer .flexfeed .feed1 {
     margin-left: 2.5%;
     width: 95%;
+    height: 20vh;
     margin-bottom: 10%;
   }
   section .flexcontainer .flexfeed .feed2 {
     margin-left: 2.5%;
     width: 95%;
+    height: 20vh;
     margin-bottom: 10%;
   }
   section .flexcontainer .flexfeed .feed3 {
     margin-left: 2.5%;
     width: 95%;
+    height: 20vh;
     margin-bottom: 10%;
   }
   section .flexcontainer .voirplus {
     width: 33%;
     bottom: -8%;
-    left: 35%;
+    left: -20%;
     margin-bottom: 5%;
     margin-top: 5%;
   }
@@ -1292,6 +1342,32 @@ footer p:last-child {
   section .flexpartenaires .img img {
     width: 25%;
     margin: 5%;
+  }
+  section .titreAvis {
+    flex-direction: column;
+  }
+  section .pageAvis {
+    height: 90vh;
+  }
+  section .pageAvis .trieAvis {
+    display: block;
+    margin-top: 10%;
+    margin-bottom: 20%;
+  }
+  section .pageAvis .trieAvis .avis1 {
+    width: 50%;
+    margin: 0 auto;
+    height: 40vh;
+  }
+  section .pageAvis .trieAvis .avis2 {
+    width: 40%;
+    margin: 0 auto;
+  }
+  section .pageAvis .trieAvis .avis3 {
+    display: none;
+  }
+  section .pageAvis .trieAvis .avis4 {
+    display: none;
   }
   footer img {
     display: none;
