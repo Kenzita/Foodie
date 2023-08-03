@@ -13,7 +13,7 @@ html{
 :root{
     --main-yellow: #F7D776;
     --main-green: #CEE8A8;
-    --ligth-text: #FFFFFF;
+    --light-text: #FFFFFF;
     --dark-text: #000000;
     --orange-titles: #F29727;
     --cities-nav-bg: #FAE7AD;
@@ -32,7 +32,10 @@ img {
 
 
 // HEADER
-header {
+#toggle-navbar{
+    display: none;
+}
+#navbar {
     background-image: url(../img/NavBar_Bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,20 +44,14 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 10vh;
     box-shadow: 0 -3vh 2.5rem;
     position: fixed;
     z-index: 3;
-
-
     img {
         width: 50%;
-
     }
-
     nav {
         width: 73%;
-
         ul {
             list-style: none;
             display: flex;
@@ -72,7 +69,7 @@ header {
 // FOOTER
 footer{
     background-color: var(--main-yellow);
-    color: var(--ligth-text);
+    color: var(--light-text);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,7 +105,7 @@ footer{
     // PROPORTIONS ET DISPOSITION DES PUBLICATIONS SUR LA PAGE
     .FindsFeed{
         width: 63%;
-        margin: 18vh auto 0;
+        margin: 16vh auto 0;
         // font-weight: 400;
         display: flex;
         flex-direction: column;
@@ -281,39 +278,39 @@ footer{
 }
 
 
-// MENU / NAVIGATION DES VILLES
+// MENU NAVIGATION DES VILLES
 // MENU BURGER
-    #toggle{
-        position: fixed;
+#toggle-cities{
+    position: fixed;
+    display: block;
+    background-color: var(--main-yellow);
+    width: 2vw;
+    height: .5vh;
+    top: 18vh;
+    left: 1.7vw;
+    border-radius: 10% / 50%;
+    z-index: 2;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    &::before, &::after{
+        content: '';
+        position: absolute;
         display: block;
         background-color: var(--main-yellow);
+        border-radius: 10% / 50%;
         width: 2vw;
         height: .5vh;
-        top: 18vh;
-        left: 1.7vw;
-        border-radius: 10% / 50%;
-        z-index: 2;
-        cursor: pointer;
         transition: all .3s ease-in-out;
-        &::before, &::after{
-            content: '';
-            position: absolute;
-            display: block;
-            background-color: var(--main-yellow);
-            border-radius: 10% / 50%;
-            width: 2vw;
-            height: .5vh;
-            transition: all .3s ease-in-out;
-        }
-        &::before{
-            top: -1.25vh;
-        }
-        &::after{
-            top: 1.25vh;
-        }
     }
+    &::before{
+        top: -1.25vh;
+    }
+    &::after{
+        top: 1.25vh;
+    }
+}
 
-#toggle.active{
+#toggle-cities.active{
     background-color: transparent;
     &::before{
         top: 0;
@@ -420,20 +417,35 @@ footer{
             }
         }
     }
-    // ———————————————————— Continue changes from here → maybe define height of posts and use object-size (potentially object position too) ————————————————————
     .FoodieFinds{
         .FindsFeed{
-            margin: 11vh auto 0;
-            width: 80%;
+            margin: 9.5vh 0 0 10vw;
+            width: 85%;
             .FindsPostYellow{
                 width: 100%;
+                margin: 3vh 0;
+                .FindsTxt{
+                    width: 52%;
+                    padding: .5vh .5vw;
+                }
+                .FindsImg{
+                    width: 48%;
+                }
             }
             .FindsPostGreen{
                 width: 100%;
                 align-self: flex-start;
+                margin: 3vh 0;
+                .FindsTxt{
+                    width: 52%;
+                    padding: .5vh .5vw;
+                }
+                .FindsImg{
+                    width: 48%;
+                }
             }
         }
-        #toggle{
+        #toggle-cities{
             top: 13vw;
             left: 3.25vw;
             width: 4vw;
@@ -441,26 +453,28 @@ footer{
                 width: 4vw;
             }
         }
-        #toggle.active{
+        #toggle-cities.active{
             &::before, &::after{
                 width: 4vw;
             }
         }
+        // ———————————————————— Continue changes from here → maybe define height of posts and use object-size (potentially object position too) ————————————————————
         #FindsNavCities{
-            width: 25%;
+            width: 40%;
             #FindsNav{
                 input{
                     height: 4.5vh;
-                    top: 15.4vh;
+                    top: 9.5vh;
+                    left: 11vw;
                     border-radius: 12% / 50%;
-                    padding-left: 1vw;
+                    padding-left: 2vw;
                     &::placeholder{
-                        font-size: 1.16vw;
+                        font-size: 1rem;
                     }
                 }
             }
             nav{
-                margin-top: 21vh;
+                margin-top: 16vh;
                 .FindsCities{
                     .CityNames{
                         font-size: 1.8vw;
@@ -468,19 +482,87 @@ footer{
                 }
             }
         }
-        }
-        #toggle{
-            top: 17vh;
+    }
+    #toggle-cities{
+        top: 17vh;
+    }
+    .users{
+        margin: 2vh 2vw 1vh;
+    }
+    .BlownUp{
+        transform: scale(.9);
+        left: 0;
+    }
+    .PostContentComp{
+        .like{
+            display: flex;
         }
     }
+}
+
 
 @media screen and (max-width: 768px) {
     header{
-        nav{
-            ul{
-                li{
-                    a{
-                        font-size: 2.5vw;
+        #toggle-navbar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 5rem;
+            position: fixed;
+            z-index: 3;
+            top: 0;
+            padding: 1.5rem 0;
+            font-size: 3rem;
+            color: var(--dark-text);
+            background-image: url(../img/NavBar_Bg.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0 -3vh 3.5rem;
+            transition: ease-in-out .3s all;
+            i{
+                transition: ease-in-out .3s all;
+            }
+        }
+        #toggle-navbar.active{
+            i{
+                transform: scaleY(-1);
+            }
+            box-shadow: none;
+            background-image: none;
+            background-color: rgba($color: #fff, $alpha: .8);
+        }
+        #navbar{
+            display: none;
+            top: -105rem;
+        }
+        #navbar.active{
+            background-image: none;
+            background-color: rgba($color: #fff, $alpha: .8);
+            top: 5rem;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 1.5vh;
+            box-shadow: none;
+            img {
+                width: 80%;
+                transform: translateX(3.5vw);
+                padding-top: 3vh;
+            }
+            nav {
+                height: 85%;
+                ul {
+                    flex-direction: column;
+                    align-items: center;
+                    li{
+                        padding: 2rem;
+                        a{
+                            font-size: 3rem;
+                            width: 100%;
+                    }
                     }
                 }
             }
@@ -534,7 +616,8 @@ footer{
                 }
             }
         }
-        #toggle{
+        // MENU DÉROULANT, NAVBAR
+        #toggle-cities{
             width: 3.5vw;
             left: 3vw;
             top: 9vh;
@@ -570,11 +653,18 @@ footer{
 
 @media screen and (max-width:480px) {
     header{
-        nav{
-            ul{
-                li{
-                    a{
-                        font-size: 2vw;
+        #navbar.active{
+            img{
+                transform: translateX(6vw);
+                padding-top: 4vh;
+            }
+            nav{
+                ul{
+                    li{
+                        padding: 1.5rem 0;
+                        a{
+                            font-size: 2.5rem;
+                        }
                     }
                 }
             }
@@ -622,7 +712,7 @@ footer{
                 }
             }
         }
-        #toggle{
+        #toggle-cities{
             width: 7vw;
             height: .5vh;
             left: 4.5vw;

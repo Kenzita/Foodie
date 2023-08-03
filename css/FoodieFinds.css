@@ -13,7 +13,7 @@ html {
 :root {
   --main-yellow: #F7D776;
   --main-green: #CEE8A8;
-  --ligth-text: #FFFFFF;
+  --light-text: #FFFFFF;
   --dark-text: #000000;
   --orange-titles: #F29727;
   --cities-nav-bg: #FAE7AD;
@@ -30,7 +30,11 @@ img {
   display: block;
 }
 
-header {
+#toggle-navbar {
+  display: none;
+}
+
+#navbar {
   background-image: url(../img/NavBar_Bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,31 +44,30 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 10vh;
   box-shadow: 0 -3vh 2.5rem;
   position: fixed;
   z-index: 3;
 }
-header img {
+#navbar img {
   width: 50%;
 }
-header nav {
+#navbar nav {
   width: 73%;
 }
-header nav ul {
+#navbar nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
   font-size: 0;
 }
-header nav ul li a {
+#navbar nav ul li a {
   font-size: 1.5rem;
   color: var(--dark-text);
 }
 
 footer {
   background-color: var(--main-yellow);
-  color: var(--ligth-text);
+  color: var(--light-text);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,7 +98,7 @@ footer p:last-child {
 
 .FoodieFinds .FindsFeed {
   width: 63%;
-  margin: 18vh auto 0;
+  margin: 16vh auto 0;
   display: flex;
   flex-direction: column;
 }
@@ -247,7 +250,7 @@ footer p:last-child {
           backdrop-filter: blur(0.1rem);
 }
 
-#toggle {
+#toggle-cities {
   position: fixed;
   display: block;
   background-color: var(--main-yellow);
@@ -260,7 +263,7 @@ footer p:last-child {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-#toggle::before, #toggle::after {
+#toggle-cities::before, #toggle-cities::after {
   content: "";
   position: absolute;
   display: block;
@@ -270,22 +273,22 @@ footer p:last-child {
   height: 0.5vh;
   transition: all 0.3s ease-in-out;
 }
-#toggle::before {
+#toggle-cities::before {
   top: -1.25vh;
 }
-#toggle::after {
+#toggle-cities::after {
   top: 1.25vh;
 }
 
-#toggle.active {
+#toggle-cities.active {
   background-color: transparent;
 }
-#toggle.active::before {
+#toggle-cities.active::before {
   top: 0;
   rotate: 45deg;
   background-color: var(--light-action-color);
 }
-#toggle.active::after {
+#toggle-cities.active::after {
   top: 0;
   rotate: -45deg;
   background-color: var(--light-action-color);
@@ -371,55 +374,143 @@ footer p:last-child {
     font-size: 1.2rem;
   }
   .FoodieFinds .FindsFeed {
-    margin: 11vh auto 0;
-    width: 80%;
+    margin: 9.5vh 0 0 10vw;
+    width: 85%;
   }
   .FoodieFinds .FindsFeed .FindsPostYellow {
     width: 100%;
+    margin: 3vh 0;
+  }
+  .FoodieFinds .FindsFeed .FindsPostYellow .FindsTxt {
+    width: 52%;
+    padding: 0.5vh 0.5vw;
+  }
+  .FoodieFinds .FindsFeed .FindsPostYellow .FindsImg {
+    width: 48%;
   }
   .FoodieFinds .FindsFeed .FindsPostGreen {
     width: 100%;
     align-self: flex-start;
+    margin: 3vh 0;
   }
-  .FoodieFinds #toggle {
+  .FoodieFinds .FindsFeed .FindsPostGreen .FindsTxt {
+    width: 52%;
+    padding: 0.5vh 0.5vw;
+  }
+  .FoodieFinds .FindsFeed .FindsPostGreen .FindsImg {
+    width: 48%;
+  }
+  .FoodieFinds #toggle-cities {
     top: 13vw;
     left: 3.25vw;
     width: 4vw;
   }
-  .FoodieFinds #toggle::before, .FoodieFinds #toggle::after {
+  .FoodieFinds #toggle-cities::before, .FoodieFinds #toggle-cities::after {
     width: 4vw;
   }
-  .FoodieFinds #toggle.active::before, .FoodieFinds #toggle.active::after {
+  .FoodieFinds #toggle-cities.active::before, .FoodieFinds #toggle-cities.active::after {
     width: 4vw;
   }
   .FoodieFinds #FindsNavCities {
-    width: 25%;
+    width: 40%;
   }
   .FoodieFinds #FindsNavCities #FindsNav input {
     height: 4.5vh;
-    top: 15.4vh;
+    top: 9.5vh;
+    left: 11vw;
     border-radius: 12%/50%;
-    padding-left: 1vw;
+    padding-left: 2vw;
   }
   .FoodieFinds #FindsNavCities #FindsNav input::-moz-placeholder {
-    font-size: 1.16vw;
+    font-size: 1rem;
   }
   .FoodieFinds #FindsNavCities #FindsNav input::placeholder {
-    font-size: 1.16vw;
+    font-size: 1rem;
   }
   .FoodieFinds #FindsNavCities nav {
-    margin-top: 21vh;
+    margin-top: 16vh;
   }
   .FoodieFinds #FindsNavCities nav .FindsCities .CityNames {
     font-size: 1.8vw;
   }
-  #toggle {
+  #toggle-cities {
     top: 17vh;
+  }
+  .users {
+    margin: 2vh 2vw 1vh;
+  }
+  .BlownUp {
+    transform: scale(0.9);
+    left: 0;
+  }
+  .PostContentComp .like {
+    display: flex;
   }
 }
 @media screen and (max-width: 768px) {
-  header nav ul li a {
-    font-size: 2.5vw;
+  header #toggle-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    padding: 1.5rem 0;
+    font-size: 3rem;
+    color: var(--dark-text);
+    background-image: url(../img/NavBar_Bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 -3vh 3.5rem;
+    transition: ease-in-out 0.3s all;
+  }
+  header #toggle-navbar i {
+    transition: ease-in-out 0.3s all;
+  }
+  header #toggle-navbar.active {
+    box-shadow: none;
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  header #toggle-navbar.active i {
+    transform: scaleY(-1);
+  }
+  header #navbar {
+    display: none;
+    top: -105rem;
+  }
+  header #navbar.active {
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    top: 5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5vh;
+    box-shadow: none;
+  }
+  header #navbar.active img {
+    width: 80%;
+    transform: translateX(3.5vw);
+    padding-top: 3vh;
+  }
+  header #navbar.active nav {
+    height: 85%;
+  }
+  header #navbar.active nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  header #navbar.active nav ul li {
+    padding: 2rem;
+  }
+  header #navbar.active nav ul li a {
+    font-size: 3rem;
+    width: 100%;
   }
   .FoodieFinds .FindsFeed {
     margin: 7vh auto 0;
@@ -466,12 +557,12 @@ footer p:last-child {
     bottom: 1.6vh;
     padding: 0.1vh 2.5vw 0.1vh 0.8vw;
   }
-  .FoodieFinds #toggle {
+  .FoodieFinds #toggle-cities {
     width: 3.5vw;
     left: 3vw;
     top: 9vh;
   }
-  .FoodieFinds #toggle::before, .FoodieFinds #toggle::after {
+  .FoodieFinds #toggle-cities::before, .FoodieFinds #toggle-cities::after {
     width: 3.5vw;
   }
   .FoodieFinds #FindsNavCities {
@@ -498,8 +589,15 @@ footer p:last-child {
   }
 }
 @media screen and (max-width: 480px) {
-  header nav ul li a {
-    font-size: 2vw;
+  header #navbar.active img {
+    transform: translateX(6vw);
+    padding-top: 4vh;
+  }
+  header #navbar.active nav ul li {
+    padding: 1.5rem 0;
+  }
+  header #navbar.active nav ul li a {
+    font-size: 2.5rem;
   }
   .FoodieFinds .FindsFeed {
     width: 66%;
@@ -538,13 +636,13 @@ footer p:last-child {
     bottom: 1.25vh;
     padding: 0.1vh 3vw 0.1vh 0.8vw;
   }
-  .FoodieFinds #toggle {
+  .FoodieFinds #toggle-cities {
     width: 7vw;
     height: 0.5vh;
     left: 4.5vw;
     top: 7.5vh;
   }
-  .FoodieFinds #toggle::before, .FoodieFinds #toggle::after {
+  .FoodieFinds #toggle-cities::before, .FoodieFinds #toggle-cities::after {
     width: 7vw;
     height: 0.5vh;
   }
