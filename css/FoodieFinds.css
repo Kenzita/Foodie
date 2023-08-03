@@ -6,8 +6,23 @@
   scroll-behavior: smooth;
 }
 
+html {
+  font-size: 16px;
+}
+
+:root {
+  --main-yellow: #F7D776;
+  --main-green: #CEE8A8;
+  --ligth-text: #FFFFFF;
+  --dark-text: #000000;
+  --orange-titles: #F29727;
+  --cities-nav-bg: #FAE7AD;
+  --light-action-color: #FFFCF1;
+  --dark-action-color: #858585;
+  --to-top-btn: #95CD41;
+}
+
 body {
-  background-color: white;
   font-family: "Poppins", sans-serif;
 }
 
@@ -20,11 +35,13 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 10vh;
-  box-shadow: 0 -1vh 2vh;
+  box-shadow: 0 -3vh 2.5rem;
   position: fixed;
   z-index: 3;
 }
@@ -41,13 +58,13 @@ header nav ul {
   font-size: 0;
 }
 header nav ul li a {
-  font-size: 1.63vw;
-  color: black;
+  font-size: 1.5rem;
+  color: var(--dark-text);
 }
 
 footer {
-  background-color: #F7D776;
-  color: white;
+  background-color: var(--main-yellow);
+  color: var(--ligth-text);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,7 +74,7 @@ footer img {
   width: 15%;
 }
 footer p {
-  font-size: 1.06vw;
+  font-size: 1rem;
   margin: 0.5%;
 }
 footer .reseaux {
@@ -70,9 +87,10 @@ footer .reseaux a img {
   width: 90%;
 }
 footer p:last-child {
-  font-size: 0.65vw;
+  font-size: 0.75rem;
   margin-top: 4%;
   margin-bottom: 1%;
+  cursor: pointer;
 }
 
 .FoodieFinds .FindsFeed {
@@ -90,7 +108,7 @@ footer p:last-child {
   display: flex;
   flex-direction: column;
   width: 53%;
-  background-color: #F7D776;
+  background-color: var(--main-yellow);
   border-top-left-radius: 14.92% 20%;
 }
 .FoodieFinds .FindsFeed .FindsPostGreen {
@@ -103,7 +121,7 @@ footer p:last-child {
   display: flex;
   flex-direction: column;
   width: 53%;
-  background-color: #CEE8A8;
+  background-color: var(--main-green);
   border-top-left-radius: 14.92% 20%;
 }
 
@@ -120,10 +138,10 @@ footer p:last-child {
   margin: 0 1vw;
 }
 .users .userInfos .userNames {
-  font-size: 1.31vw;
+  font-size: 1.3rem;
 }
 .users .userInfos .userRanks {
-  font-size: 0.8vw;
+  font-size: 0.8rem;
   margin-top: -0.5vh;
 }
 
@@ -135,12 +153,12 @@ footer p:last-child {
   justify-content: space-between;
 }
 .PostContentComp .PostContent .PostRestaurants {
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   text-align: center;
   margin-bottom: 1vh;
 }
 .PostContentComp .PostContent .Post {
-  font-size: 1.06vw;
+  font-size: 1rem;
 }
 .PostContentComp .like {
   display: none;
@@ -152,7 +170,7 @@ footer p:last-child {
   margin-left: -30px;
 }
 .PostContentComp .like .placement .like-count {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-family: "Libre Franklin", sans-serif;
   margin-bottom: -40px;
 }
@@ -177,7 +195,7 @@ footer p:last-child {
   align-items: center;
 }
 .PostContentComp .like.active i {
-  font-size: 2.5vw;
+  font-size: 2.5rem;
   margin-right: 1vw;
 }
 
@@ -187,10 +205,13 @@ footer p:last-child {
 }
 .FindsImg img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-bottom-right-radius: 16.785% 20%;
 }
 .FindsImg .options {
-  font-size: 2vw;
+  font-size: 2rem;
   position: absolute;
   display: block;
   top: 4%;
@@ -201,7 +222,7 @@ footer p:last-child {
   background-color: rgba(255, 252, 241, 0.7);
   border-radius: 50%/20%;
   padding: 0.2vh 0.1vw;
-  color: #858585;
+  color: var(--dark-action-color);
 }
 
 .BlownUp {
@@ -212,15 +233,26 @@ footer p:last-child {
   z-index: 99;
   left: 50%;
   transform: translateX(-50%);
-  box-shadow: 0 2vw 0 50vw rgba(0, 0, 0, 0.2);
+}
+.BlownUp::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: -36.5%;
+  left: -18%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(0.1rem);
+          backdrop-filter: blur(0.1rem);
 }
 
 #toggle {
   position: fixed;
   display: block;
-  background-color: #F7D776;
-  width: 1.5vw;
-  height: 0.4vh;
+  background-color: var(--main-yellow);
+  width: 2vw;
+  height: 0.5vh;
   top: 18vh;
   left: 1.7vw;
   border-radius: 10%/50%;
@@ -232,17 +264,17 @@ footer p:last-child {
   content: "";
   position: absolute;
   display: block;
-  background-color: #F7D776;
+  background-color: var(--main-yellow);
   border-radius: 10%/50%;
-  width: 1.5vw;
-  height: 0.4vh;
+  width: 2vw;
+  height: 0.5vh;
   transition: all 0.3s ease-in-out;
 }
 #toggle::before {
-  top: -1vh;
+  top: -1.25vh;
 }
 #toggle::after {
-  top: 1vh;
+  top: 1.25vh;
 }
 
 #toggle.active {
@@ -251,12 +283,12 @@ footer p:last-child {
 #toggle.active::before {
   top: 0;
   rotate: 45deg;
-  background-color: #fffcf1;
+  background-color: var(--light-action-color);
 }
 #toggle.active::after {
   top: 0;
   rotate: -45deg;
-  background-color: #fffcf1;
+  background-color: var(--light-action-color);
 }
 
 .FoodieFinds {
@@ -269,7 +301,7 @@ footer p:last-child {
   z-index: -1;
   width: 20%;
   height: 100vh;
-  background-color: #FAE7AD;
+  background-color: var(--cities-nav-bg);
   overflow-y: scroll;
   overflow-x: hidden;
   box-shadow: -1vw 0 2vw;
@@ -277,12 +309,12 @@ footer p:last-child {
   transition: ease-in-out 0.3s all;
 }
 .FoodieFinds #FindsNavCities::-webkit-scrollbar {
-  background-color: #fffcf1;
+  background-color: var(--light-action-color);
   border-radius: 50%/1%;
   height: 80%;
 }
 .FoodieFinds #FindsNavCities::-webkit-scrollbar-thumb {
-  background-color: #F7D776;
+  background-color: var(--main-yellow);
   border-radius: 50%/1%;
 }
 .FoodieFinds #FindsNavCities #FindsNav input {
@@ -293,7 +325,7 @@ footer p:last-child {
   width: 60%;
   border-radius: 7%/50%;
   border: 0.2vw solid transparent;
-  background-color: #fffcf1;
+  background-color: var(--light-action-color);
   padding-left: 0.4vw;
 }
 .FoodieFinds #FindsNavCities #FindsNav input::-moz-placeholder {
@@ -303,7 +335,7 @@ footer p:last-child {
   font-size: 1.06vw;
 }
 .FoodieFinds #FindsNavCities #FindsNav #menu {
-  font-size: 1vw;
+  font-size: 1rem;
   position: absolute;
   top: 16.7vh;
   left: 103vw;
@@ -336,22 +368,29 @@ footer p:last-child {
 
 @media screen and (max-width: 960px) {
   header nav ul li a {
-    font-size: 1.86vw;
+    font-size: 1.2rem;
   }
   .FoodieFinds .FindsFeed {
-    margin: 16vh auto 0;
+    margin: 11vh auto 0;
+    width: 80%;
   }
   .FoodieFinds .FindsFeed .FindsPostYellow {
-    width: 80%;
+    width: 100%;
   }
   .FoodieFinds .FindsFeed .FindsPostGreen {
-    width: 80%;
+    width: 100%;
+    align-self: flex-start;
   }
   .FoodieFinds #toggle {
-    width: 2.5vw;
+    top: 13vw;
+    left: 3.25vw;
+    width: 4vw;
   }
   .FoodieFinds #toggle::before, .FoodieFinds #toggle::after {
-    width: 2.5vw;
+    width: 4vw;
+  }
+  .FoodieFinds #toggle.active::before, .FoodieFinds #toggle.active::after {
+    width: 4vw;
   }
   .FoodieFinds #FindsNavCities {
     width: 25%;
