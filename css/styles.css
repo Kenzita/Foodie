@@ -128,11 +128,24 @@ header .logobg img {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   font-size: 0;
+}
+.stickyNav .navbar ul li {
+  width: 20%;
 }
 .stickyNav .navbar ul li a {
   font-size: 1.63vw;
   color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stickyNav .navbar ul li a img {
+  width: 25%;
+}
+.stickyNav .navbar ul li:last-of-type a {
+  font-size: 1.3vw;
 }
 
 .logoNav {
