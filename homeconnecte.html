@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Link -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Sanchez -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez:ital@1&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/5fa515c205.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/FavIcon-Foodie.png" type="image/x-icon">
+    <!-- Libre Franklin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sanchez:ital@1&display=swap" rel="stylesheet">
+    <!-- Slick -->
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="headercontainer">
+            <div class="bg"></div>
+            <div class="logo"><img src="img/FOODIE_LOGO (1).svg" alt=""></div>
+            <div class="logobg"><img src="img/home_LOGO_BG_HEADER.svg" alt=""></div>
+        </div>
+    </header>
+    
+    <!-- Nav -->
+    <div class="stickyNav">
+        <div class="navbar">
+            <a href=""><img class="logoNav" src="img/FOODIE_LOGO (1).svg" alt="logoFoodie"></a>
+            <div class="nav">
+                <ul>
+                    <li><a href="cites.html">Foodieville</a></li>
+                    <li><a href="FoodieFinds.html">Foodie's Finds</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="ContactBTC.html">Contact</a></li>
+                    <li><a href=""> <img src="img/Findsuser2.png" alt=""> Compte </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- connexion -->
+    <form action="">
+        <fieldset>
+            <div class="titre">
+                <button class="connexionTitre">Connexion</button>
+                <button class="inscriptionTitre">Inscription</button>
+            </div>
+            <div class="contenuConnexion">
+                <p>
+                    <label for="mail">Adresse mail ou Identifiant</label>
+                    <input
+                        type="text"
+                        name="mail"
+                        id="mail"
+                        placeholder="exemple@email.com"
+                    />
+                </p>
+
+                <p>
+                    <label for="Mdp">Mot de passe</label>
+                    <input
+                        type="password"
+                        name="Mdp"
+                        id="Mdp"
+                        placeholder="Votre mot de passe"
+                    />
+                </p>
+
+                <div class="meconnecter">
+            
+                    <button>
+                        <a href="gestionprofil.html"> Connexion</a>
+                    </button>
+                    <input
+                        type="checkbox"
+                        name="souvenirdemoi"
+                        id="souvenirdemoi"
+                    />
+                    <div class="checkbox"></div>
+                    <label for="souvenirdemoi">Se souvenir de moi</label>
+                </div>
+
+                <p>Pas encore de compte ?</p>
+                <a href="inscription.html"> Inscrivez-vous</a>
+            </div>
+            <div class="contenuInscription">
+                <p>
+                    <label for="fname">Prénom</label>
+                    <input
+                        type="text"
+                        name="fname"
+                        id="fname"
+                        placeholder="Votre prénom"
+                    />
+                </p>
+                <p>
+                    <label for="name">Nom</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Votre nom"
+                    />
+                </p>
+                <p>
+                    <label for="mail1">Adresse mail </label>
+                    <input
+                        type="text"
+                        name="mail1"
+                        id="mail1"
+                        placeholder="exemple@email.com"
+                    />
+                </p>
+                <p>
+                    <label for="tel"> Numéro de téléphone</label>
+                    <input
+                        type="tel"
+                        name="tel"
+                        id="tel"
+                        placeholder="00 00 00 00 00"
+                    />
+                </p>
+
+                <p>
+                    <label for="id"> Créer votre identifiant</label>
+                    <input
+                        type="text"
+                        name="id"
+                        id="id"
+                        placeholder="Choisissez votre identifiant"
+                    />
+                </p>
+
+                <p>
+                    <label for="Mdp1">Créez votre mot de passe</label>
+                    <input
+                        type="password"
+                        name="Mdp1"
+                        id="Mdp1"
+                        placeholder="Choisissez votre mot de passe"
+                    />
+
+                    <input
+                        type="password"
+                        name="Mdp2"
+                        id="Mdp2"
+                        placeholder="Confirmez votre mot de passe"
+                    />
+                </p>
+
+                <div class="meconnecter">
+                    <button>
+                        <a href="gestionprofil.html"> M'inscrire</a>
+                    </button>
+                </div>
+
+                <p>Vous avez déjà un compte ?</p>
+                <a href="inscription.html"> Connectez-vous</a>
+            </div>
+        </fieldset>
+    </form>
+
+    <main>
+    <!-- Actualités -->
+    <Section>
+        <!-- 1er partie -->
+        <div class="h1 reveal">
+        <h1>Actualités</h1>
+        <div class="barreVerticale"></div>
+        </div>
+        <div class="actucontainer slick slider">
+           
+            <!-- <div class="actu">
+                <h3>Actu</h3>
+                <p><span>Chez O-Komé, “le riz moelleux des onigiri à la douceurs régressive s’écrase sous la dent”</span></p>
+                <p>Chaque semaine, un journaliste raconte un produit ou une expérience gustative qui l’a marqué. Comme ces boules de riz, au menu de O-Komé à Lens, qui se mangent à toute heure au Japon.</p>
+                <p class="span">Publié le 20 juin 2023. Par Clément Ghys</p>
+                <img src="img/home_onigiri.jpg" alt="">
+                <a href="" class="Voir Plus">Voir Plus</a>
+            </div> -->
+            
+            <!-- 2ème partie
+            <div class="eventcontainer">
+                <div class="event">
+                    <h3>Évenements</h3>
+                    <p>Démonstration de cuisine afghane en partenariat avec France Horizon !</p>
+                    <p>Venez participer à une démonstration de cuisine afghane avec Laila Mohammadi en partenariat avec France Horizon ! 
+                        Cet événement est gratuit ! Mardi 20 juin, de 17h30 à 18h30.</p>
+                    <p><span>Le 20 juin 2023, de 17h30 à 18h30</span></p>
+                    <div class="border"></div>
+                </div>
+                <div class="restodujour">
+                    <h3>Le Resto du jour !</h3>
+                <div class="restodujourcontainer">
+                    <div class="escargot"><img src="img/home_escargot resto.png" alt=""></div>
+                    <div class="escargottext">
+                        <p><span>Restaurant l'Escargot</span></p>
+                        <p>46 bis Rue de Famars, Valenciennes</p>
+                        <p>réservation: +33 (0)1 234 567 890.</p>
+                        <p>Prix moyen : Environ 35 euros par personne.</p>
+                    </div>
+                </div>
+                </div> -->
+            <!-- </div> -->
+
+            <!-- TEST CAROUSEL -->
+        <div class="carousel">
+            <img src="img/home_carousel1.jpg" alt="">
+        </div>
+      <div class="carousel">
+        <img src="img/home_carousel2.jpg" style="object-position: 100%;">
+      </div>
+      <div class="carousel">
+        <img src="img/home_carousel3.jpg">
+      </div>
+      <div class="carousel">
+        <img src="img/home_carousel4.jpg" style="object-position: -15%;">
+      </div>
+      <div class="carousel">
+        <img src="img/home_carousel5.jpeg">
+      </div>
+      <div class="carousel">
+        <img src="img/home_carousel6.jpg">
+      </div>
+            
+        </div>
+        <!-- Les mieux notés -->
+        <div class="titrenoté reveal">
+            <h2>Les mieux notés</h2>
+            <div class="bordernoté"></div>
+        </div>
+        
+        <div class="flexnoté">
+            <div class="noté1">
+                <img src="img/home_resto sébastopol.jpg" alt="">
+                <h4>Restaurant Sébastopol</h4>
+                <p>Restaurant sobre avec un menu local comprenant des entrées et des desserts originaux.</p>
+                <div class="info">
+                    <p>1 Pl. Sébastopol, 59000 Lille</p>
+                    <p>Tel: 03 20 13 13 40</p>
+                </div>
+                <!-- LikeJS -->
+                <div class="placement">
+                    <span class="like-count" data-like-count="302">302</span>
+                    <div class="heart">
+                    </div>
+                  </div>
+                  <!-- LikeJS -->
+            </div>
+            <div class="noté2">
+                <img src="img/home_l_entre nous.jpg" alt="">
+                <h4>L'Entre Nous</h4>
+                <p>Décoré de raquettes anciennes et de photos, ce restaurant lambrissé propose des spécialités savoyardes.</p>
+                <div class="info">
+                    <p>43 Grand'Place, 62000 Arras</p>
+                    <p>Tel: 03 91 79 81 45</p>
+                </div>
+                <div class="placement">
+                    <span class="like-count" data-like-count="504">504</span>
+                    <div class="heart">
+                    </div>
+                  </div>
+            </div>
+            <div class="noté3">
+                <img src="img/home_Bistrot gourmand.jpg" alt="">
+                <h4>Le Bistrot Gourmand</h4>
+                <p>Ambiance rustique pour cette chaîne de restaurants offrant des recettes variées autour de la pomme de terre.</p>
+                <div class="info">
+                <p>53 Rue Pry, 62400 Béthunne</p>
+                <p>Tel: 03 21 68 71 45</p>
+                </div>
+                <div class="placement">
+                    <span class="like-count" data-like-count="229">229</span>
+                    <div class="heart">
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <!-- Feed -->
+        <div class="flexcontainer">
+            <div class="titreflex reveal">
+                <h2>Feed</h2>
+                <div class="barre"></div>
+            </div>
+            <div class="flexfeed">
+                
+                <div class="feed1 flexfeed">
+                     <div class="title">
+                    <img src="" alt="" class="userPhotos">
+                    <div class="Nom"><p class="userNames"></p>
+                            <p class="loca PostRestaurants"><i class="fa-solid fa-location-dot"></i></p>
+                    </div>
+                </div>
+                    <span class="Post"></span>
+                </div>
+                <div class="feed2 flexfeed">
+                    <div class="title">
+                    <img src="" alt="" class="userPhotos">
+                    <div class="Nom">
+                        <p class="userNames"></p>
+                        <p class="loca PostRestaurants"><i class="fa-solid fa-location-dot"></i></p></div>
+                    </div>
+                <span class="Post">Très bien reçu. Chaleureux, clean surtout merci aux serveuses et serveurs pour leurs professionnalisme hors pair.</span>
+                </div>
+                <div class="feed3 flexfeed">
+                    <div class="title">
+                    <img src="" alt="" class="userPhotos">
+                        <div class="Nom"><p class="userNames"></p>
+                    <p class="loca PostRestaurants"><i class="fa-solid fa-location-dot"></i></p></div>
+                </div>
+                    <span class="Post">Très bon, une présentation excellente.
+                        Les serveurs connaissent très bien les menus et 
+                        conseillent très bien. Ils sont à l’écoute et très souriant.</span>
+                </div>
+            </div>
+            <div class="voirplus">
+                <a href="FoodieFinds.html">Voir Plus</a>
+                <span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+        <!-- Nos partenaires
+        <div class="flexpartenaires">
+            <h4>Nos Partenaires</h4>
+            <divc class="img"><img src="img/home_logo_MEL.svg.png" alt="">
+            <img src="img/home_office-tourisme bethune.png" alt="">
+            <img src="img/home_logo_arras.jpg" alt=""></div>
+        </div>
+    </Section> -->
+
+    <!-- Avis des chefs -->
+    <div class="titreAvis reveal">
+        <h2>Avis d'utilisateurs</h2>
+        <div class="barre"></div>
+    </div>
+    <div class="pageAvis">
+        <div class="toutnoir"></div>
+            <div class="trieAvis">
+                <div class="avis1">
+                    <p class="Titre1">Camille Pailleau</p>
+                    <p class="critique1"><span><i class="fa-solid fa-quote-left"></i></span>Enfin un site qui met en valeur la richesse culinaire du Nord-Pas-de-Calais ! C'est une plateforme incroyable pour découvrir de nouveaux restaurants et s'inspirer de la diversité des cuisines locales.<span><i class="fa-solid fa-quote-right"></i></span></p>
+                    <p class="note1">19.5/20</p>
+                </div>
+                <div class="avis2">
+                    <p class="Titre2">Diego Delbecq</p>
+                    <p class="critique2"><span><i class="fa-solid fa-quote-left"></i></span>Un grand merci à ce site qui met en lumière les talents culinaires de notre région. Grâce à lui, j'ai pu gagner en visibilité et attirer de nouveaux clients dans mon restaurant.<span><i class="fa-solid fa-quote-right"></i></span></p>
+                    <p class="note2">19/20</p>
+                </div>
+                <div class="avis3">
+                    <p class="Titre3">Félix et Nidta Robert</p>
+                    <p class="critique3"><span><i class="fa-solid fa-quote-left"></i></span>Un grand bravo pour cette initiative qui met en relation les chefs et valorise le patrimoine culinaire de notre région. Longue vie à ce site !<span><i class="fa-solid fa-quote-right"></i></span></p>
+                    <p class="note3">10/10</p>
+                </div>
+                <div class="avis4">
+                    <p class="Titre4">Gérald Guille</p>
+                    <p class="critique4"><span><i class="fa-solid fa-quote-left"></i></span>En tant que chef, je trouve cette plateforme très utile pour découvrir les tendances culinaires de la région et connaître les restaurants incontournables à visiter.<span><i class="fa-solid fa-quote-right"></i></span></p>
+                    <p class="note4">9.7/10</p>
+                </div>
+            </div>
+    </div></main>
+    <!-- Footer -->
+    <footer>
+
+        <img src="img/FOODIE_LOGO (1).svg" alt="logoFoodie">
+        <p>100 Avenue des Gourmands 62400 Béthune</p>
+        <p>00 00 00 00 00</p>
+        <p> contact@foodie.fr</p>
+        <div class="reseaux">
+            <a href=""><img src="img/icon _LinkedIn In_.png" alt=""></a>
+            <a href=""><img src="img/icon _Twitter_.png" alt=""></a>
+            <a href=""><img src="img/icon _Instagram_.png" alt=""></a>
+        </div>
+        <p> © Foodie - 2023 - Tous droits réservés - Conditions générales d’utilisation - Politique de cookies -
+            Mentions légales</p>
+
+    </footer>
+
+    <!-- Fetch -->
+    <script src="fetch.js"></script>
+
+    <!-- Animation Header -->
+    <script src='js/script_scroll_logo_header.js'></script>
+
+    <!-- Animation Titre -->
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+    <script src="like.js"></script>
+    <!-- Slick -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="slickCarousel.js"></script>
+</body>
+</html>
