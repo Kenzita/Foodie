@@ -10,18 +10,6 @@ html {
   font-size: 16px;
 }
 
-.visible {
-  display: block;
-}
-
-.invisible {
-  display: none;
-}
-
-.blurBG {
-  filter: blur(5px);
-}
-
 :root {
   --main-yellow: #F7D776;
   --main-green: #CEE8A8;
@@ -40,222 +28,6 @@ body {
 
 img {
   display: block;
-}
-
-form {
-  width: 30%;
-  align-self: flex-end;
-  color: white;
-  border: none;
-  background-color: #ffffff;
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
-  border-radius: 3em;
-  height: 100%;
-  margin: auto auto;
-  margin-top: 10%;
-  position: fixed;
-  top: -10%;
-  left: 35%;
-  z-index: 99;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-form fieldset {
-  border: none;
-}
-form fieldset .titre {
-  display: flex;
-}
-form fieldset .titre .connexionTitre {
-  border: none;
-  font-size: 1.5em;
-  font-weight: 300;
-  color: white;
-  background-color: #ffb600;
-  text-align: center;
-  width: 50%;
-  border-radius: 2em 0 0 0;
-  margin-bottom: 10%;
-  padding: 3%;
-}
-form fieldset .titre .inscriptionTitre {
-  border: none;
-  font-size: 1.5em;
-  color: #ffb600;
-  background-color: #f7d776;
-  font-weight: 300;
-  text-align: center;
-  width: 50%;
-  border-radius: 0 2em 0 0;
-  margin-bottom: 10%;
-  padding: 3%;
-}
-form fieldset .contenuInscription p {
-  padding: 0 4%;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1%;
-}
-form fieldset .contenuInscription p label {
-  margin-bottom: 1%;
-  color: #f29727;
-  font-weight: 600;
-}
-form fieldset .contenuInscription p input {
-  height: 5vh;
-  background-color: #f8df93;
-  border: none;
-  border-radius: 1em;
-  color: #ffffff;
-  margin-bottom: 4%;
-  padding: 2% 4%;
-  font-size: 1.3em;
-}
-form fieldset .contenuInscription p input::-moz-placeholder {
-  padding: 2% 1%;
-  font-size: 0.7em;
-  font-style: italic;
-  color: rgba(242, 151, 39, 0.4941176471);
-}
-form fieldset .contenuInscription p input::placeholder {
-  padding: 2% 1%;
-  font-size: 0.7em;
-  font-style: italic;
-  color: rgba(242, 151, 39, 0.4941176471);
-}
-form fieldset .contenuInscription .meconnecter {
-  margin-top: 6%;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 4%;
-}
-form fieldset .contenuInscription .meconnecter button {
-  border: none;
-  height: 5vh;
-  width: 80%;
-  border-radius: 1em;
-  font-size: 1.5em;
-  background-color: #f29727;
-}
-form fieldset .contenuInscription .meconnecter button a {
-  color: white;
-  background-color: #f29727;
-  font-style: normal;
-  text-align: center;
-}
-form fieldset .contenuInscription .meconnecter label {
-  margin-left: -9%;
-  color: #000000;
-}
-form fieldset .contenuInscription p:nth-of-type(1) {
-  display: inline-block;
-  padding: 0 4%;
-  width: 25%;
-  margin-right: 5%;
-}
-form fieldset .contenuInscription p:nth-of-type(2) {
-  display: inline-block;
-  color: #f29727;
-  width: 25%;
-  padding: 0 4%;
-  margin-left: 5%;
-}
-form fieldset .contenuInscription p:nth-of-type(7) {
-  display: inline-block;
-  color: #f29727;
-  font-size: 0.7em;
-  padding: 5% 0 5% 5%;
-}
-form fieldset .contenuInscription a {
-  display: inline-block;
-  color: black;
-  font-size: 0.7em;
-  font-style: italic;
-}
-form .contenuConnexion p {
-  padding: 0 4%;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1%;
-}
-form .contenuConnexion p label {
-  margin-bottom: 1%;
-  color: #f29727;
-  font-weight: 600;
-}
-form .contenuConnexion p input {
-  height: 5vh;
-  background-color: #f8df93;
-  border: none;
-  border-radius: 1em;
-  color: #ffffff;
-  margin-bottom: 4%;
-  padding: 2% 4%;
-  font-size: 1.3em;
-}
-form .contenuConnexion p input::-moz-placeholder {
-  padding: 2% 1%;
-  font-size: 0.7em;
-  font-style: italic;
-  color: rgba(242, 151, 39, 0.4941176471);
-}
-form .contenuConnexion p input::placeholder {
-  padding: 2% 1%;
-  font-size: 0.7em;
-  font-style: italic;
-  color: rgba(242, 151, 39, 0.4941176471);
-}
-form .contenuConnexion .meconnecter {
-  margin-top: 6%;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 4%;
-}
-form .contenuConnexion .meconnecter button {
-  border: none;
-  height: 5vh;
-  width: 45%;
-  border-radius: 1em;
-  font-size: 1.5em;
-  background-color: #f29727;
-}
-form .contenuConnexion .meconnecter button a {
-  color: white;
-  background-color: #f29727;
-  font-style: normal;
-  text-align: center;
-}
-form .contenuConnexion .meconnecter input[type=checkbox] {
-  display: none;
-}
-form .contenuConnexion .meconnecter .checkbox {
-  display: inline-block;
-  width: 1.3em;
-  height: 1.3em;
-  border: 0.13rem solid #f29727;
-  border-style: dashed;
-  cursor: pointer;
-}
-form .contenuConnexion .meconnecter label {
-  margin-left: -9%;
-  color: #000000;
-}
-form .contenuConnexion p:nth-of-type(3) {
-  display: inline-block;
-  color: #f29727;
-  font-size: 0.7em;
-  padding: 5% 0 5% 5%;
-}
-form .contenuConnexion a {
-  display: inline-block;
-  color: black;
-  font-size: 0.7em;
-  font-style: italic;
 }
 
 #toggle-navbar {
@@ -610,11 +382,11 @@ footer p:last-child {
     margin: 3vh 0;
   }
   .FoodieFinds .FindsFeed .FindsPostYellow .FindsTxt {
-    width: 52%;
-    padding: 0.5vh 0.5vw;
+    width: 80%;
+    padding: 2vw 2vw;
   }
   .FoodieFinds .FindsFeed .FindsPostYellow .FindsImg {
-    width: 48%;
+    width: 80%;
   }
   .FoodieFinds .FindsFeed .FindsPostGreen {
     width: 100%;
@@ -622,11 +394,11 @@ footer p:last-child {
     margin: 3vh 0;
   }
   .FoodieFinds .FindsFeed .FindsPostGreen .FindsTxt {
-    width: 52%;
+    width: 80%;
     padding: 0.5vh 0.5vw;
   }
   .FoodieFinds .FindsFeed .FindsPostGreen .FindsImg {
-    width: 48%;
+    width: 80%;
   }
   .FoodieFinds #toggle-cities {
     top: 13vw;
@@ -741,49 +513,50 @@ footer p:last-child {
     width: 100%;
   }
   .FoodieFinds .FindsFeed {
-    margin: 7vh auto 0;
+    margin: 14vw auto 0;
   }
   .FoodieFinds .FindsFeed .FindsPostYellow {
     width: 100%;
-    padding: 2vh 0;
+    margin: 2vh 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .FoodieFinds .FindsFeed .FindsPostYellow .FindsTxt {
+    padding: 1.5vw 3vw;
+    height: 50%;
   }
   .FoodieFinds .FindsFeed .FindsPostGreen {
     width: 100%;
-    padding: 2vh 0;
+    margin: 2vh 0;
+    flex-direction: column;
+    align-items: center;
   }
-  .FoodieFinds .FindsFeed .users {
-    padding: 2vh 3vw 0.7vh;
+  .FoodieFinds .FindsFeed .FindsPostGreen .FindsTxt {
+    padding: 1.5vw 3vw;
+    height: 50%;
+  }
+  .FoodieFinds .FindsFeed .users img {
+    margin-right: 1.5vw;
+    width: 25%;
   }
   .FoodieFinds .FindsFeed .users .userNames {
-    font-size: 1.71vw;
+    font-size: 1.5rem;
   }
   .FoodieFinds .FindsFeed .users .userRanks {
-    font-size: 1vw;
+    font-size: 1rem;
     margin-top: -0.2vh;
   }
-  .FoodieFinds .FindsFeed .PostContent {
-    padding: 0 3vw;
-  }
   .FoodieFinds .FindsFeed .PostContent .PostRestaurants {
-    font-size: 1.5vw;
+    font-size: 1.375rem;
   }
   .FoodieFinds .FindsFeed .PostContent .Post {
-    font-size: 1.26vw;
+    font-size: 1.125rem;
+  }
+  .FoodieFinds .FindsFeed .FindsImg {
+    height: 50%;
   }
   .FoodieFinds .FindsFeed .FindsImg .options {
     font-size: 3vw;
-  }
-  .FoodieFinds .FindsFeed .FindsImg .like {
-    font-size: 2.7vw;
-  }
-  .FoodieFinds .FindsFeed .FindsImg .like i {
-    padding: 0.5vh 0.4vw 0.1vh 0.4vw;
-  }
-  .FoodieFinds .FindsFeed .FindsImg .likeAmount {
-    font-size: 1vw;
-    right: 4.7vw;
-    bottom: 1.6vh;
-    padding: 0.1vh 2.5vw 0.1vh 0.8vw;
   }
   .FoodieFinds #toggle-cities {
     width: 3.5vw;
@@ -854,15 +627,6 @@ footer p:last-child {
   }
   .FoodieFinds .FindsFeed .FindsImg .options {
     font-size: 4vw;
-  }
-  .FoodieFinds .FindsFeed .FindsImg .like {
-    font-size: 3.7vw;
-  }
-  .FoodieFinds .FindsFeed .FindsImg .likeAmount {
-    font-size: 1.1vw;
-    right: 5.3vw;
-    bottom: 1.25vh;
-    padding: 0.1vh 3vw 0.1vh 0.8vw;
   }
   .FoodieFinds #toggle-cities {
     width: 7vw;
