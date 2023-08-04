@@ -13,6 +13,18 @@ body {
  
 }
 
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
+
+.blurBG {
+    filter: blur(5px);
+}
+
 img {
     display: block;
 }
@@ -57,6 +69,7 @@ header {
         }
     }
 }
+
 
 footer {
     background-color: #F7D776;

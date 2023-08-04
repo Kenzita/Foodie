@@ -14,6 +14,127 @@
     <link rel="shortcut icon" href="img/FavIcon-Foodie.png" type="image/x-icon">
     <title>FoodieFinds</title>
 </head>
+   <!-- connexion -->
+   <form action="">
+    <fieldset>
+        <div class="titre">
+            <button class="connexionTitre">Connexion</button>
+            <button class="inscriptionTitre">Inscription</button>
+        </div>
+        <div class="contenuConnexion">
+            <p>
+                <label for="mail">Adresse mail ou Identifiant</label>
+                <input
+                    type="text"
+                    name="mail"
+                    id="mail"
+                    placeholder="exemple@email.com"
+                />
+            </p>
+
+            <p>
+                <label for="Mdp">Mot de passe</label>
+                <input
+                    type="password"
+                    name="Mdp"
+                    id="Mdp"
+                    placeholder="Votre mot de passe"
+                />
+            </p>
+
+            <div class="meconnecter">
+        
+                <button>
+                    <a href="homeconnecte.html"> Connexion</a>
+                </button>
+                <input
+                    type="checkbox"
+                    name="souvenirdemoi"
+                    id="souvenirdemoi"
+                />
+                <div class="checkbox"></div>
+                <label for="souvenirdemoi">Se souvenir de moi</label>
+            </div>
+
+            <p>Pas encore de compte ?</p>
+            <a href="inscription.html"> Inscrivez-vous</a>
+        </div>
+        <div class="contenuInscription">
+            <p>
+                <label for="fname">Prénom</label>
+                <input
+                    type="text"
+                    name="fname"
+                    id="fname"
+                    placeholder="Votre prénom"
+                />
+            </p>
+            <p>
+                <label for="name">Nom</label>
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Votre nom"
+                />
+            </p>
+            <p>
+                <label for="mail1">Adresse mail </label>
+                <input
+                    type="text"
+                    name="mail1"
+                    id="mail1"
+                    placeholder="exemple@email.com"
+                />
+            </p>
+            <p>
+                <label for="tel"> Numéro de téléphone</label>
+                <input
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    placeholder="00 00 00 00 00"
+                />
+            </p>
+
+            <p>
+                <label for="id"> Créer votre identifiant</label>
+                <input
+                    type="text"
+                    name="id"
+                    id="id"
+                    placeholder="Choisissez votre identifiant"
+                />
+            </p>
+
+            <p>
+                <label for="Mdp1">Créez votre mot de passe</label>
+                <input
+                    type="password"
+                    name="Mdp1"
+                    id="Mdp1"
+                    placeholder="Choisissez votre mot de passe"
+                />
+
+                <input
+                    type="password"
+                    name="Mdp2"
+                    id="Mdp2"
+                    placeholder="Confirmez votre mot de passe"
+                />
+            </p>
+
+            <div class="meconnecter">
+                <button>
+                    <a href="monprofil.html"> M'inscrire</a>
+                </button>
+            </div>
+
+            <p>Vous avez déjà un compte ?</p>
+            <a href="inscription.html"> Connectez-vous</a>
+        </div>
+    </fieldset>
+</form>
 
 <body>
     <header>
@@ -455,6 +576,7 @@
         <script src="fetchFinds.js"></script>
         <!-- Like JS -->
         <script src="like.js"></script>
+        <script src="main.js"></script>
 </body>
 
 </html>

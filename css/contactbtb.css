@@ -13,6 +13,18 @@ body {
   background-repeat: no-repeat;
 }
 
+.visible {
+  display: block;
+}
+
+.invisible {
+  display: none;
+}
+
+.blurBG {
+  filter: blur(5px);
+}
+
 img {
   display: block;
 }

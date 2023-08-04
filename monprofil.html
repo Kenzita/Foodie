@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Compte</title>
+        <!-- Link -->
+        <link rel="stylesheet" href="css/monprofil.css" />
+        <!-- Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Playfair Display -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Sanchez -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sanchez:ital@1&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Fontawesome -->
+        <script
+            src="https://kit.fontawesome.com/5fa515c205.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="shortcut icon"
+            href="img/FavIcon-Foodie.png"
+            type="image/x-icon"
+        />
+        <!-- Libre Franklin -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sanchez:ital@1&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Slick -->
+        <link rel="stylesheet" href="slick-1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <a href="index.html"><img src="img/FOODIE_LOGO (1).svg" alt="logoFoodie"></a>
+            <nav>
+                <ul>
+                    <li><a href="cites.html">FOODIEVILLES</a></li>
+                    <li><a href="FoodieFinds.html">FOODIEFINDS</a></li>
+                    <li><a href="about.html">À PROPOS</a></li>
+                    <li><a href="ContactBTC.html">CONTACT</a></li>
+                    <li><a href=""><img src="img/Findsuser2.png" alt="">Mon Compte</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <h1>Mon Profil</h1>
+        <main>
+            <div class="gauche">
+                <img src="img/Findsuser2.png" alt="">
+                <a href="">Modifier ma photo de profil</a>
+            </div>
+           
+            <fieldset>
+            <div class="contenuInscription">
+                <p>
+                    <label for="fname">Prénom</label>
+                    <input
+                    readonly
+                        type="text"
+                        name="fname"
+                        id="fname"
+                        placeholder="Votre prénom"
+                    />
+                </p>
+                <p>
+                    <label for="name">Nom</label>
+                    <input
+                    readonly
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Votre nom"
+                    />
+                </p>
+                <p>
+                    <label for="mail1">Adresse mail </label>
+                    <input
+                    readonly
+                        type="text"
+                        name="mail1"
+                        id="mail1"
+                        placeholder="exemple@email.com"
+                    />
+                </p>
+                <p>
+                    <label for="tel"> Numéro de téléphone</label>
+                    <input
+                        type="tel"
+                        name="tel"
+                        id="tel"
+                        placeholder="00 00 00 00 00"
+                        readonly
+                    />
+                </p>
+
+                <p>
+                    <label for="id"> Modifier mon identifiant</label>
+                    <input
+                        type="text"
+                        name="id"
+                        id="id"
+                        placeholder="Choisissez votre nouvel identifiant"
+                    />
+                </p>
+
+                <p>
+                    <label for="Mdp1">Modifier votre mot de passe</label>
+                    <input
+                        type="password"
+                        name="Mdp1"
+                        id="Mdp1"
+                        placeholder="Choisissez votre nouveau mot de passe"
+                    />
+
+                    <input
+                        type="password"
+                        name="Mdp2"
+                        id="Mdp2"
+                        placeholder="Confirmez votre mot de passe"
+                    />
+                </p>
+
+                <div class="meconnecter">
+                    <button>
+                        <a href=""> Valider mes choix</a>
+                    </button>
+                </div>
+
+        
+        </fieldset>
+
+        </main>
+
+
+        <!-- Footer -->
+        <footer>
+            <img src="img/FOODIE_LOGO (1).svg" alt="logoFoodie" />
+            <p>100 Avenue des Gourmands 62400 Béthune</p>
+            <p>00 00 00 00 00</p>
+            <p>contact@foodie.fr</p>
+            <div class="reseaux">
+                <a href=""><img src="img/cities-linkedin.png" alt="" /></a>
+                <a href=""><img src="img/cities-twitter.png" alt="" /></a>
+                <a href=""><img src="img/cities-insta.png" alt="" /></a>
+            </div>
+            <p>
+                © Foodie - 2023 - Tous droits réservés - Conditions générales
+                d’utilisation - Politique de cookies - Mentions légales
+            </p>
+        </footer>
+    </body>
+</html>

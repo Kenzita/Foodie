@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/FoodieVilles_BG.svg);
+  background-size: cover;
+}
+
+img {
+  display: block;
+}
+
+header {
+  background-image: url(../img/NavBar_Bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10vh;
+  box-shadow: 0 -1vh 2vh;
+}
+header img {
+  width: 50%;
+}
+header nav {
+  width: 73%;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0;
+}
+header nav ul li {
+  width: 20%;
+}
+header nav ul li a {
+  font-size: 1.63vw;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header nav ul li a:last-of-type img {
+  width: 25%;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #f29727;
+}
+
+main {
+  margin: 8%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+main .gauche {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+main .gauche img {
+  width: 80%;
+  margin-bottom: 5%;
+}
+main .gauche a {
+  text-decoration: none;
+  color: #f29727;
+}
+main fieldset {
+  border: none;
+}
+main fieldset .contenuInscription {
+  width: 100%;
+}
+main fieldset .contenuInscription p {
+  padding: 0 4%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1%;
+}
+main fieldset .contenuInscription p:first-of-type {
+  width: 43%;
+}
+main fieldset .contenuInscription p:nth-of-type(2) {
+  margin-left: 1%;
+  width: 46%;
+}
+main fieldset .contenuInscription p label {
+  margin-bottom: 1%;
+  color: #f29727;
+  font-weight: 600;
+}
+main fieldset .contenuInscription p input {
+  height: 5vh;
+  background-color: #f8df93;
+  border: none;
+  border-radius: 1em;
+  color: #ffffff;
+  margin-bottom: 4%;
+  padding: 2% 4%;
+  font-size: 1.3em;
+}
+main fieldset .contenuInscription p input::-moz-placeholder {
+  padding: 2em 1em;
+  font-size: 0.7em;
+  font-style: italic;
+  color: rgba(242, 151, 39, 0.4941176471);
+}
+main fieldset .contenuInscription p input::placeholder {
+  padding: 2em 1em;
+  font-size: 0.7em;
+  font-style: italic;
+  color: rgba(242, 151, 39, 0.4941176471);
+}
+main fieldset .contenuInscription p input[readonly] {
+  background-color: #eaa550;
+}
+main fieldset .contenuInscription p input[readonly]::-moz-placeholder {
+  padding: 2% 1%;
+  font-size: 0.7em;
+  font-style: italic;
+  color: white;
+}
+main fieldset .contenuInscription p input[readonly]::placeholder {
+  padding: 2% 1%;
+  font-size: 0.7em;
+  font-style: italic;
+  color: white;
+}
+main fieldset .meconnecter {
+  margin-top: 6%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 4%;
+}
+main fieldset .meconnecter button {
+  border: none;
+  height: 5vh;
+  width: 80%;
+  border-radius: 1em;
+  font-size: 1.5em;
+  background-color: #f29727;
+}
+main fieldset .meconnecter button a {
+  color: white;
+  background-color: #f29727;
+  font-style: normal;
+  text-align: center;
+}
+main fieldset .meconnecter label {
+  margin-left: -9%;
+  color: #000000;
+}
+main fieldset p:nth-of-type(1) {
+  display: inline-block;
+  padding: 0 4%;
+  width: 25%;
+  margin-right: 5%;
+}
+main fieldset p:nth-of-type(2) {
+  display: inline-block;
+  color: #f29727;
+  width: 25%;
+  padding: 0 4%;
+  margin-left: 5%;
+}
+main fieldset p:nth-of-type(7) {
+  display: inline-block;
+  color: #f29727;
+  font-size: 0.7em;
+  padding: 5% 0 5% 5%;
+}
+main fieldset a {
+  display: inline-block;
+  color: black;
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+footer {
+  background-color: #f7d776;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer img {
+  width: 15%;
+}
+footer p {
+  margin: 0.5%;
+}
+footer .reseaux {
+  margin-top: 1%;
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+footer .reseaux a img {
+  width: 90%;
+}
+footer p:last-child {
+  font-size: 10px;
+  margin-top: 4%;
+  margin-bottom: 1%;
+}
+
+.centre {
+  margin: 0 auto;
+  width: 100%;
+}/*# sourceMappingURL=monprofil.css.map */
